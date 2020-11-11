@@ -19,7 +19,11 @@ Auth::routes();
 
 Route::get('/', 'landingPageController@index');
 
+Route::get('/contact', 'contactController@index');
+
+
 Route::get('/posts', 'PostsController@index');
+
 
 
 /*Dashboard route(Which users gets redirected to after login)*/
