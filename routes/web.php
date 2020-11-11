@@ -12,14 +12,16 @@
 */
 
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
 /*Authentication Routes*/
 Auth::routes();
 /*Application Routes*/
 /*Index route(Initial route that loads when users comes to the website)*/
-Route::get('/', 'PostsController@index');
+
+Route::get('/', 'landingPageController@index');
+
+Route::get('/posts', 'PostsController@index');
+
+
 /*Dashboard route(Which users gets redirected to after login)*/
 Route::resource('/blogposts','PostsController');
 
