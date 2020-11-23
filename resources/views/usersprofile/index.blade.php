@@ -1,5 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.userDashboard')
+
 @section('content')
+<br><br><br>
+<br><br><br>
+
 <div class="container container-margin">
     @if(Session::has('user_updated'))
     <div class="alert alert-dismissible alert-success fade show">
@@ -9,8 +13,7 @@
         </button>
     </div>
     @endif
-    <h2>My Profile</h2>
-    <hr>
+   
     <button type="button" onclick="window.location='{{ URL::route('dashboard.index') }}'" class="btn btn-dark">Go Back</button>
     <hr>
     <div class="row">

@@ -64,7 +64,7 @@
                         <a class="navbar-brand" href="index.html">
                             <img src="assets/images/logo.png" alt="Logo">
                         </a> <!-- Logo -->
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="bar-icon"></span>
                             <span class="bar-icon"></span>
                             <span class="bar-icon"></span>
@@ -73,38 +73,28 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul id="nav" class="navbar-nav ml-auto">
                                 <li class="nav-item active">
-                                    <a data-scroll-nav="0" href="/">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#product">Market</a>
+                                    <a href="/product">Create Post</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#service">Our impacts</a>
+                                    <a href="/service">Manage Products</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#showcase">Opportunities</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#showcase">Profile</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a data-scroll-nav="0" href="/blogs">Blogs</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a data-scroll-nav="0" href="/contact">Contact</a>
-                                </li>
+                              
+                               
                                 @guest
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="{{ route('login') }}">Login</a>
+                                    <a href="{{ route('login') }}">Login</a>
                                 </li>
                                 @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="{{ route('register') }}">Register</a>
+                                    <a href="{{ route('register') }}">Register</a>
                                 </li>
                                 @endif
                                 @else
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="/dashboard">Dashboard</a>
+                                    <a href="/dashboard">Dashboard</a>
                                 </li>
                                 <li class="nav-item">
 											 <a href="{{ route('logout') }}" style="color:red"
@@ -137,14 +127,14 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-5 col-sm-7">
                         <div class="footer-logo mt-40">
-                            <a href="#">
+                            <a href="/">
                                 <img src="assets/images/logo.png" alt="Logo">
                             </a>
                             <p class="mt-10">Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit.</p>
                             <ul class="footer-social mt-25">
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-instagram"></i></a></li>
+                                <li><a href="/"><i class="lni-facebook-filled"></i></a></li>
+                                <li><a href="/"><i class="lni-twitter-original"></i></a></li>
+                                <li><a href="/"><i class="lni-instagram"></i></a></li>
                             </ul>
                         </div> <!-- footer logo -->
                     </div>
@@ -152,11 +142,11 @@
                         <div class="footer-link mt-50">
                             <h5 class="f-title">Services</h5>
                             <ul>
-                                <li><a href="#">Architechture Design</a></li>
-                                <li><a href="#">Interior Design</a></li>
-                                <li><a href="#">Autocad Services</a></li>
-                                <li><a href="#">Lighting Design</a></li>
-                                <li><a href="#">Poster Design</a></li>
+                                <li><a href="/">Architechture Design</a></li>
+                                <li><a href="/">Interior Design</a></li>
+                                <li><a href="/">Autocad Services</a></li>
+                                <li><a href="/">Lighting Design</a></li>
+                                <li><a href="/">Poster Design</a></li>
                             </ul>
                         </div> <!-- footer link -->
                     </div>
@@ -164,11 +154,11 @@
                         <div class="footer-link mt-50">
                             <h5 class="f-title">Help</h5>
                             <ul>
-                                <li><a href="#">Forum</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Help Center</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="/">Forum</a></li>
+                                <li><a href="/">Blog</a></li>
+                                <li><a href="/">Help Center</a></li>
+                                <li><a href="/">Contact Us</a></li>
+                                <li><a href="/">Privacy Policy</a></li>
                             </ul>
                         </div> <!-- footer link -->
                     </div>
@@ -226,7 +216,7 @@
 
     <!--====== BACK TO TOP PART START ======-->
 
-    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+    <a href="/" class="back-to-top"><i class="lni-chevron-up"></i></a>
 
     <!--====== BACK TO TOP PART ENDS ======-->
 

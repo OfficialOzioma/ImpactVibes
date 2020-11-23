@@ -1,9 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.userDashboard')
+
 @section('content')
+<br><br><br>
+<br><br><br>
 <div class="container container-margin">
     <h2>Edit User</h2>
     <hr>
-    <button type="button" onclick="window.location='{{ URL::route('user.index') }}'" class="btn btn-dark">Go Back</button>
+    <button type="button" onclick="window.location='{{ URL::route('dashboard.index') }}'" class="btn btn-dark">Go Back</button>
     <hr>
     <div class="row">
         <div class="col-md-2">
