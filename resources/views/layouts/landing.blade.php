@@ -76,7 +76,7 @@
                                     <a data-scroll-nav="0" href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#product">Market Place</a>
+                                    <a data-scroll-nav="0" href="#product">Market</a>
                                 </li>
                                 <li class="nav-item">
                                     <a data-scroll-nav="0" href="#service">Our impacts</a>
@@ -85,14 +85,49 @@
                                     <a data-scroll-nav="0" href="#showcase">Opportunities</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#showcase">Personality profliling</a>
+                                    <a data-scroll-nav="0" href="#showcase">Profile</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#blog">Blogs</a>
+                                    <a data-scroll-nav="0" href="/blogs">Blogs</a>
                                 </li>
                                 <li class="nav-item">
                                     <a data-scroll-nav="0" href="/contact">Contact</a>
                                 </li>
+
+                                @guest
+                            <li class="nav-item"> 
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                        
+                            <li class="has-dropdown"><a>{{ Auth::user()->name }}</a>
+								<ul class="dropdown">
+									<li> @if (Auth::user()->checkRole() == "Admin")
+                                    <a class="dropdown-item" href="/admin">Admin Panel</a>
+                                    @else
+                                    <a class="dropdown-item" href="dashboard">Dashboard</a>
+                                    @endif
+                                    
+									</li>
+									<li>
+											 <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+									</li>
+								</ul>
+                               
+                            </li>
+                        @endguest
                             </ul> <!-- navbar nav -->
                         </div>
                     </nav> <!-- navbar -->

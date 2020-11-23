@@ -1,8 +1,7 @@
-@extends('layouts.app')
-@section('header-styles')
-    <link rel="stylesheet" href="{{ asset('css/commentBox.css') }}">
-@endsection
+@extends('layouts.landing')
+
 @section('content')
+
 <br>
 <div class="container">
     <div class="page-header">
@@ -33,8 +32,7 @@
     </div>
     <div class="tag"><b>{{$post->category->name }}<b></div><hr>
 </div>
-@endsection
-@section('responses')
+
     <div class="responses">
         <div class="container"><br><br>
             <h3><b>Responses</b></h3>
@@ -89,27 +87,7 @@
             <p>Login/Register to comment on the post...</p><hr>
             @endif
 
-            <!-- Loading discus comment plugin -->
-            <!--<div id="disqus_thread"></div>
-            <script>
-
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            /*(function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://laraveleducation.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();*/
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>-->
+       
 
             <!-- Displaying all the comments and its reply-->
             <div class="comments-container">

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Post;
 
 use Illuminate\Http\Request;
 
@@ -8,6 +9,7 @@ class landingPageController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $posts = Post::orderBy('created_at', 'DESC')->paginate(3);
+        return view('index', compact('posts'));
     }
 }

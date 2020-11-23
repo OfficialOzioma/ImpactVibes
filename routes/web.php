@@ -22,7 +22,7 @@ Route::get('/', 'landingPageController@index');
 Route::get('/contact', 'contactController@index');
 
 
-Route::get('/posts', 'PostsController@index');
+Route::get('/blogs', 'PostsController@index');
 
 
 
@@ -59,5 +59,5 @@ Route::group(['middleware' => 'auth'],function(){
     Route::get('/usersposts/{id}/unsave','UserPostsController@unsavePost');
     Route::get('/usersposts/savedposts','UserPostsController@savePostIndex');
     /*User Profile Settings*/
-    Route::resource('user', 'UserProfileController');
+    Route::resource('dashboard', 'UserProfileController');
 });

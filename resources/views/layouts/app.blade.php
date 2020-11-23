@@ -72,7 +72,7 @@
                                     <a class="dropdown-item" href="/admin">Admin Panel</a>
                                     @endif
                                     <!-- User profile settings -->
-                                    <a class="dropdown-item" href="{{ route('user.index') }}">My Account</a>
+                                    <a class="dropdown-item" href="{{ route('dashboard.index') }}">My Account</a>
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

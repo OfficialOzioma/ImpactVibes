@@ -957,17 +957,20 @@
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                 </div> <!-- section title -->
             </div>
-        </div> <!-- row -->
+        </div> 
+        @if(count($posts) > 0)<!-- row -->
         <div class="row justify-content-center">
+
+        @foreach ($posts as $key => $post)
             <div class="col-lg-4 col-md-6">
                 <div class="single-blog mt-30">
                     <div class="blog-image">
-                        <img src="assets/images/blog/b-1.jpg" alt="Blog">
+                        <img src="{{$post->photo ? $post->photo->file : '/images/placeholder_blog.png'}}" alt="Blog">
                     </div>
                     <div class="blog-content">
                         <div class="content">
-                            <h4 class="title"><a href="#">Rowan an orangutan known  & loved</a></h4>
-                            <span>25 JULY, 2022</span>
+                            <h4 class="title"><a href="#">{{ str_limit($post->title,70) }}</a></h4>
+                            <span>{{ $post->created_at ? $post->created_at->toFormattedDateString() : 'Date Unavailable' }}</span>
                         </div>
                         <div class="meta d-flex justify-content-between align-items-center">
                             <div class="meta-admin d-flex align-items-center">
@@ -975,77 +978,31 @@
                                     <a href="#"><img src="assets/images/blog/admin.jpg" alt="Admin"></a>
                                 </div>
                                 <div class="admin-title">
-                                    <h6 class="title"><a href="#">J. PARKER</a></h6>
+                                    <h6 class="title"><a href="#">By {{ $post->user_id ? $post->user->name : 'Anonymous' }}</a></h6>
                                 </div>
                             </div>  <!-- meta admin -->
                             <div class="meta-icon">
                                 <ul>
-                                    <li><a href="#"><i class="lni-share"></i></a></li>
-                                    <li><a href="#"><i class="lni-heart"></i></a></li>
+                                    <li><a class="primary-button" href="{{ route('blogposts.show',$post->slug) }}" >Read More</a></li>
+                                   
                                 </ul>
                             </div> <!-- meta icon -->
                         </div> <!-- meta -->
                     </div>
                 </div> <!-- single blog -->
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog mt-30">
-                    <div class="blog-image">
-                        <img src="assets/images/blog/b-2.jpg" alt="Blog">
-                    </div>
-                    <div class="blog-content">
-                        <div class="content">
-                            <h4 class="title"><a href="#">Rowan an orangutan known  & loved</a></h4>
-                            <span>25 JULY, 2022</span>
-                        </div>
-                        <div class="meta d-flex justify-content-between align-items-center">
-                            <div class="meta-admin d-flex align-items-center">
-                                <div class="image">
-                                    <a href="#"><img src="assets/images/blog/admin.jpg" alt="Admin"></a>
-                                </div>
-                                <div class="admin-title">
-                                    <h6 class="title"><a href="#">J. PARKER</a></h6>
-                                </div>
-                            </div>  <!-- meta admin -->
-                            <div class="meta-icon">
-                                <ul>
-                                    <li><a href="#"><i class="lni-share"></i></a></li>
-                                    <li><a href="#"><i class="lni-heart"></i></a></li>
-                                </ul>
-                            </div> <!-- meta icon -->
-                        </div> <!-- meta -->
-                    </div>
-                </div> <!-- single blog -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog mt-30">
-                    <div class="blog-image">
-                        <img src="assets/images/blog/b-3.jpg" alt="Blog">
-                    </div>
-                    <div class="blog-content">
-                        <div class="content">
-                            <h4 class="title"><a href="#">Rowan an orangutan known  & loved</a></h4>
-                            <span>25 JULY, 2022</span>
-                        </div>
-                        <div class="meta d-flex justify-content-between align-items-center">
-                            <div class="meta-admin d-flex align-items-center">
-                                <div class="image">
-                                    <a href="#"><img src="assets/images/blog/admin.jpg" alt="Admin"></a>
-                                </div>
-                                <div class="admin-title">
-                                    <h6 class="title"><a href="#">J. PARKER</a></h6>
-                                </div>
-                            </div>  <!-- meta admin -->
-                            <div class="meta-icon">
-                                <ul>
-                                    <li><a href="#"><i class="lni-share"></i></a></li>
-                                    <li><a href="#"><i class="lni-heart"></i></a></li>
-                                </ul>
-                            </div> <!-- meta icon -->
-                        </div> <!-- meta -->
-                    </div>
-                </div> <!-- single blog -->
-            </div>
+            @endforeach
+			<!-- Pagination -->
+			<div class="row">
+				<div class="col">
+					<div class="d-flex align-items-center justify-content-center"> {{ $posts->links() }}</div>
+				</div>
+			</div>
+			@else
+			<div class="NoDataMessage">
+				<h2><b>No Posts to Show!!</b></h2>
+			</div>
+			@endif
         </div> <!-- row -->
     </div> <!-- container -->
 </section>

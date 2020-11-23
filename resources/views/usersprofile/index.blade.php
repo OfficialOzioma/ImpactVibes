@@ -11,7 +11,7 @@
     @endif
     <h2>My Profile</h2>
     <hr>
-    <button type="button" onclick="window.location='{{ URL::route('user.index') }}'" class="btn btn-dark">Go Back</button>
+    <button type="button" onclick="window.location='{{ URL::route('dashboard.index') }}'" class="btn btn-dark">Go Back</button>
     <hr>
     <div class="row">
         <div class="col-md-2">
@@ -49,7 +49,7 @@
                     </table>
                 </div>
             </div><br>
-            <a class="btn btn-success" href="{{route('user.edit',$user->id)}}" style="color:white;">Update Profile</a>
+            <a class="btn btn-success" href="{{route('dashboard.edit',$user->id)}}" style="color:white;">Update Profile</a>
             <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Delete Account</button>
                 <!-- Modal for deleting user confirmation-->
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
