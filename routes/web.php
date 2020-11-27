@@ -60,4 +60,8 @@ Route::group(['middleware' => 'auth'],function(){
     Route::get('/usersposts/savedposts','UserPostsController@savePostIndex');
     /*User Profile Settings*/
     Route::resource('dashboard', 'UserProfileController');
+    Route::resource('product', 'ProductController');
+
+
+
 });

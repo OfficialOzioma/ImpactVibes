@@ -18,11 +18,14 @@
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
 
+     <!--====== fontawasome css ======-->
+     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.min.css') }}">
+
     <!--====== Animate css ======-->
-<link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
 
     <!--====== Magnific Popup css ======-->
-<link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
 
     <!--====== Slick css ======-->
     <link rel="stylesheet" href="{{ asset('assets/css/slick.css') }} ">
@@ -76,13 +79,13 @@
                                     <a href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/product">Create Post</a>
+                                    <a href="#">Create Post</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/service">Manage Products</a>
+                                    <a href="product">Manage Products</a>
                                 </li>
-                              
-                               
+
+
                                 @guest
                                 <li class="nav-item">
                                     <a href="{{ route('login') }}">Login</a>
@@ -106,7 +109,8 @@
                                         @csrf
                                     </form>
 									</li>
-                                @endguest
+
+                      @endguest
                             </ul> <!-- navbar nav -->
                         </div>
                     </nav> <!-- navbar -->
