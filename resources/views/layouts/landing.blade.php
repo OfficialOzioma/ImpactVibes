@@ -42,16 +42,17 @@
 
 </head>
 
-<body>
+<body style="color:black;">
 
     <!--====== PRELOADER PART START ======-->
 
-    <!-- <div class="preloader">
+    <div class="preloader">
         <div class="spin">
             <div class="cube1"></div>
             <div class="cube2"></div>
         </div>
-    </div> -->
+       
+    </div>
 
     <!--====== PRELOADER PART START ======-->
 
