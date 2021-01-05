@@ -2,6 +2,7 @@
 
 @section('content')
 <!--====== CONTACT PART START ======-->
+<br><br>
 <section id="contact" class="contact-area pt-115">
     <div class="container">
         <div class="row justify-content-center">
