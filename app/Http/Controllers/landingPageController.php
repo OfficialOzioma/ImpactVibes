@@ -12,4 +12,12 @@ class landingPageController extends Controller
         $posts = Post::orderBy('created_at', 'DESC')->paginate(3);
         return view('index', compact('posts'));
     }
+
+
+
+    public function getProfile()
+    {
+       // $posts = Post::orderBy('created_at', 'DESC')->paginate(3);
+        return view('profile' );
+    }
 }

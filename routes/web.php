@@ -24,6 +24,8 @@ Route::get('/contact', 'contactController@index');
 
 Route::get('/blogs', 'PostsController@index');
 
+Route::get('/profile', 'landingPageController@getProfile');
+
 
 
 /*Dashboard route(Which users gets redirected to after login)*/

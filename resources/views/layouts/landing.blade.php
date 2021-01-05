@@ -77,16 +77,16 @@
                                     <a data-scroll-nav="0" href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#product">Market</a>
+                                    <a data-scroll-nav="0" href="/market">Market</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#service">Our impacts</a>
+                                    <a data-scroll-nav="0" href="/services">Our impacts</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#showcase">Opportunities</a>
+                                    <a data-scroll-nav="0" href="/opportunity">Opportunities</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#showcase">Profile</a>
+                                    <a data-scroll-nav="0" href="/profile">Profile</a>
                                 </li>
                                 <li class="nav-item">
                                     <a data-scroll-nav="0" href="/blogs">Blogs</a>
