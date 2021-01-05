@@ -732,7 +732,7 @@
                 <div class="services-left mt-45">
                     <div class="services">
                         <img src="assets/images/services/services.jpg" alt="">
-                        <a href="#" class="main-btn mt-30">Read More <i class="lni-chevron-right"></i></a>
+                        <a href="/ourimpactstories" class="main-btn mt-30">Read More <i class="lni-chevron-right"></i></a>
                     </div> <!-- services btn -->
                 </div> <!-- services left -->
             </div>
@@ -748,6 +748,7 @@
                                 <div class="services-content mt-20">
                                     <h5 class="title mb-10">RipplePrize</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
+                                    <a href="/ourimpactstories" class="main-btn mt-30">Read More <i class="lni-chevron-right"></i></a>
                                 </div>
                             </div> <!-- single services -->
 
@@ -758,6 +759,7 @@
                                 <div class="services-content mt-20">
                                     <h5 class="title mb-10">RipplePrize</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
+                                    <a href="/ourimpactstories" class="main-btn mt-30">Read More <i class="lni-chevron-right"></i></a>
                                 </div>
                             </div> <!-- single services -->
                         </div>
@@ -769,6 +771,7 @@
                                 <div class="services-content mt-20">
                                     <h5 class="title mb-10">RipplePrize</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
+                                    <a href="/ourimpactstories" class="main-btn mt-30">Read More <i class="lni-chevron-right"></i></a>
                                 </div>
                             </div> <!-- single services -->
 
@@ -779,6 +782,7 @@
                                 <div class="services-content mt-20">
                                     <h5 class="title mb-10">RipplePrize</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
+                                    <a href="/ourimpactstories" class="main-btn mt-30">Read More <i class="lni-chevron-right"></i></a>
                                 </div>
                             </div> <!-- single services -->
                         </div>

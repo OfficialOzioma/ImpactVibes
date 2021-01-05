@@ -74,38 +74,38 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul id="nav" class="navbar-nav ml-auto">
                                 <li class="nav-item active">
-                                    <a data-scroll-nav="0" href="/">Home</a>
+                                    <a  href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="/market">Market</a>
+                                    <a  href="/market">Market</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="/services">Our impacts</a>
+                                    <a  href="/ourimpactstories">Our impacts</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="/opportunity">Opportunities</a>
+                                    <a  href="/opportunity">Opportunities</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="/profile">Profile</a>
+                                    <a  href="/profiles">Profile</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="/blogs">Blogs</a>
+                                    <a  href="/blogs">Blogs</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="/contact">Contact</a>
+                                    <a  href="/contact">Contact</a>
                                 </li>
                                 @guest
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="{{ route('login') }}">Login</a>
+                                    <a  href="{{ route('login') }}">Login</a>
                                 </li>
                                 @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="{{ route('register') }}">Register</a>
+                                    <a  href="{{ route('register') }}">Register</a>
                                 </li>
                                 @endif
                                 @else
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="/dashboard">Dashboard</a>
+                                    <a  href="/dashboard">Dashboard</a>
                                 </li>
                                 <li class="nav-item">
 											 <a href="{{ route('logout') }}" style="color:red"

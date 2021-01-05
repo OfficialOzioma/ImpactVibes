@@ -24,7 +24,9 @@ Route::get('/contact', 'contactController@index');
 
 Route::get('/blogs', 'PostsController@index');
 
-Route::get('/profile', 'landingPageController@getProfile');
+Route::get('/profiles', 'landingPageController@getProfile');
+
+Route::get('/ourimpactstories', 'landingPageController@getImpact');
 
 
 
