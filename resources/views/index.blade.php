@@ -860,8 +860,7 @@
             <div class="col-lg-3 col-md-6 col-sm-8">
                 <div class="single-temp text-center mt-30">
                     <div class="team-image">
-                        <img src="assets/images/team/t-1.jpg"
-                         alt="Team">
+                        <img src="assets/images/services/services.jpg" alt="Team">
                     </div>
                     <div class="team-content mt-30">
                         <h4 class="title mb-10"><a href="#">Sir Abel</a></h4>
@@ -877,8 +876,7 @@
             <div class="col-lg-3 col-md-6 col-sm-8">
                 <div class="single-temp text-center mt-30">
                     <div class="team-image">
-                        <img src="assets/images/team/t-2.jpg"
-                         alt="Team">
+                        <img src="assets/images/team/austin.jpg" alt="Team">
                     </div>
                     <div class="team-content mt-30">
                         <h4 class="title mb-10"><a href="#">Amadi Austin </a></h4>
