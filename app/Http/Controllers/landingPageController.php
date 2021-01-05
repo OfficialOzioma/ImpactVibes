@@ -27,4 +27,11 @@ class landingPageController extends Controller
        // $posts = Post::orderBy('created_at', 'DESC')->paginate(3);
         return view('impact');
     }
+
+
+    public function getOpportunity()
+    {
+       // $posts = Post::orderBy('created_at', 'DESC')->paginate(3);
+        return view('opportunities');
+    }
 }

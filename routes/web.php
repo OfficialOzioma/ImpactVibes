@@ -29,6 +29,8 @@ Route::get('/profiles', 'landingPageController@getProfile');
 Route::get('/ourimpactstories', 'landingPageController@getImpact');
 
 
+Route::get('/opportunity', 'landingPageController@getOpportunity');
+
 
 /*Dashboard route(Which users gets redirected to after login)*/
 Route::resource('/blogposts','PostsController');
