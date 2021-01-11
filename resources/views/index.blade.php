@@ -14,14 +14,14 @@
                             <div class="slider-product-image d-none d-md-block">
                                 <img src="assets/images/slider/1.svg" alt="Slider">
                                 <div class="slider-discount-tag">
-                                    <p>Changing the <br> World</p>
+                                    <p>Explore</p>
                                 </div>
                             </div> <!-- slider product image -->
                         </div>
                         <div class="col-lg-8 col-md-7">
                             <div class="slider-product-content">
                             <br><br>
-                                <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>The</span> Impact <span>Circe</span></h1>
+                                <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>Welcome</span> to the <span>Vibes</span></h1>
                                 <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">One day however a small line of blind text by the name of Lorem Ipsum <br> decided to leave for the far World of Grammar.</p>
                                 <a class="main-btn" href="#" data-animation="fadeInUp" data-delay="1.5s">Explore More <i class="lni-chevron-right"></i></a>
                             </div> <!-- slider product content -->
@@ -37,14 +37,14 @@
                                 <div class="slider-product-image d-none d-md-block">
                                     <img src="assets/images/slider/2.svg" alt="Slider">
                                     <div class="slider-discount-tag">
-                                        <p>One Life at <br> a Time</p>
+                                        <p>Connect</p>
                                     </div>
                                 </div> <!-- slider product image -->
                             </div>
                             <div class="col-lg-8 col-md-7">
                                 <div class="slider-product-content">
                                 <br><br>
-                                    <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>Impacting</span> One Life at a <span>Time</span></h1>
+                                    <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>We are</span> changing the <span>narrative</span></h1>
                                     <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">One day however a small line of blind text by the name of Lorem Ipsum <br> decided to leave for the far World of Grammar.</p>
                                     <a class="main-btn" href="#" data-animation="fadeInUp" data-delay="1.5s">Explore More <i class="lni-chevron-right"></i></a>
                                 </div> <!-- slider product content -->
@@ -60,16 +60,16 @@
                                 <div class="slider-product-image d-none d-md-block">
                                     <img src="assets/images/slider/3.svg" alt="Slider">
                                     <div class="slider-discount-tag">
-                                        <p>Impact<br> Circle</p>
+                                        <p>Grow</p>
                                     </div>
                                 </div> <!-- slider product image -->
                             </div>
                             <div class="col-lg-8 col-md-7">
                                 <div class="slider-product-content">
                                 <br><br>
-                                    <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>We</span> are Changing the <span>Narative</span></h1>
+                                    <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>Brace up</span> for the  <span>Impact</span></h1>
                                     <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">One day however a small line of blind text by the name of Lorem Ipsum <br> decided to leave for the far World of Grammar.</p>
-                                    <a class="main-btn" href="#contact" data-animation="fadeInUp" data-delay="1.5s">Contact Us <i class="lni-chevron-right"></i></a>
+                                    <a class="main-btn" href="/contact" data-animation="fadeInUp" data-delay="1.5s">Contact Us <i class="lni-chevron-right"></i></a>
                                 </div> <!-- slider product content -->
                             </div>
                         </div> <!-- row -->
@@ -114,8 +114,8 @@
                         <img src="assets/images/services/2.svg" alt="opportunity">
                     </div> <!-- product image -->
                     <div class="product-content">
-                        <h4 class="content-title mb-15">Hot Opportunities <br> Trusted</h4>
-                        <a href="#">Click to view<i class="lni-chevron-right"></i></a>
+                        <h4 class="content-title mb-15">Hot Opportunities</h4>
+                        <a style="color:red" href="/opportunity">Click to view<i class="lni-chevron-right"></i></a>
                     </div> <!-- product content -->
                 </div> <!-- single discount product -->
             </div>
@@ -134,11 +134,6 @@
                 <div class="collection-menu text-center mt-30">
                     <h4 class="collection-tilte">OUR MARKET PLACE</h4>
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="active" id="v-pills-furniture-tab" data-toggle="pill" href="#v-pills-furniture" role="tab" aria-controls="v-pills-furniture" aria-selected="true">London Used</a></li>
-
-                        <a id="v-pills-decorative-tab" data-toggle="pill" href="#v-pills-decorative" role="tab" aria-controls="v-pills-decorative" aria-selected="false">Farly Used</a>
-
-                        <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">New</a>
                         <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">Visit Our Market</a>
 
                                
@@ -851,7 +846,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section-title text-center pb-25">
-                    <h3 class="title mb-15">Our Expert Team</h3>
+                    <h3 class="title mb-15">Team</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div> <!-- section title -->
             </div>
@@ -863,8 +858,8 @@
                         <img src="assets/images/services/services.jpg" alt="Team">
                     </div>
                     <div class="team-content mt-30">
-                        <h4 class="title mb-10"><a href="#">Sir Abel</a></h4>
-                        <span>FOUNDER</span>
+                        <h4 class="title mb-10"><a href="#">Abel Onyekachi Uchegbulam</a></h4>
+                        <span>Founder/CEO</span>
                         <ul class="social mt-15">
                             <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
                             <li><a href="#"><i class="lni-twitter-original"></i></a></li>
@@ -913,7 +908,7 @@
                          alt="Team">
                     </div>
                     <div class="team-content mt-30">
-                        <h4 class="title mb-10"><a href="#">Sir Abel</a></h4>
+                        <h4 class="title mb-10"><a href="#">Abel Onyekachi Uchegbulam</a></h4>
                         <span>Marketing Manager</span>
                         <ul class="social mt-15">
                             <li><a href="#"><i class="lni-facebook-filled"></i></a></li>

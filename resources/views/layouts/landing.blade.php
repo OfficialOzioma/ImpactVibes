@@ -79,20 +79,28 @@
                                 <li class="nav-item">
                                     <a  href="/market">Market</a>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a  href="/ourimpactstories">Our impacts</a>
+                                    <a  href="/mentorsConnect">Mentors'Connect</a>
                                 </li>
+
+                                <li class="nav-item">
+                                    <a  href="/profiles">VenturesDeal</a>
+                                </li>
+
+                            
+
+
                                 <li class="nav-item">
                                     <a  href="/opportunity">Opportunities</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a  href="/profiles">Profile</a>
-                                </li>
+                               
                                 <li class="nav-item">
                                     <a  href="/blogs">Blogs</a>
                                 </li>
+                               
                                 <li class="nav-item">
-                                    <a  href="/contact">Contact</a>
+                                    <a  href="/ourimpactstories">Impacts</a>
                                 </li>
                                 @guest
                                 <li class="nav-item">
@@ -151,11 +159,11 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-5">
                         <div class="footer-link mt-50">
-                            <h5 class="f-title">Services</h5>
+                            <h5 class="f-title">More</h5>
                             <ul>
-                                <li><a href="#">Product Sells</a></li>
-                                <li><a href="#">Profiling</a></li>
-                                <li><a href="#">Mentors Connect</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Carrier/Work with us</a></li>
+                                <li><a href="#">Subscribe</a></li>
                                
                             </ul>
                         </div> <!-- footer link -->
@@ -165,7 +173,6 @@
                             <h5 class="f-title">Help</h5>
                             <ul>
                                 <li><a href="#">Forum</a></li>
-                                <li><a href="#">Blog</a></li>
                                 <li><a href="#">Help Center</a></li>
                                 <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
@@ -211,7 +218,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright text-center">
-                            <p>Powered by <a href="https://amadiaustin.me" rel="nofollow">Rex-Tech-Group</a></p>
+                           An Impact Circle Enterprise Initiative <p>Powered by <a href="https://amadiaustin.me" rel="nofollow">Rex-Tech-Group</a></p>
                         </div> <!-- copyright -->
                     </div>
                 </div> <!-- row -->
