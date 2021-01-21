@@ -38,7 +38,15 @@ class landingPageController extends Controller
 
     public function getMarketPlace()
     {
-       // $posts = Post::orderBy('created_at', 'DESC')->paginate(3);
+       // $posts = Post::orderBy('created_at', 'DESC')->paginate(3);getMentors
         return view('market');
+    }
+
+
+
+    public function getMentors()
+    {
+       // $posts = Post::orderBy('created_at', 'DESC')->paginate(3);
+        return view('mentors');
     }
 }

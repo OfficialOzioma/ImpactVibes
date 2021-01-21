@@ -96,7 +96,7 @@
                                 </li>
                                
                                 <li class="nav-item">
-                                    <a  href="/blogs">Blogs</a>
+                                    <a  href="/blogs">Blog</a>
                                 </li>
                                
                                 <li class="nav-item">
@@ -161,8 +161,8 @@
                         <div class="footer-link mt-50">
                             <h5 class="f-title">More</h5>
                             <ul>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Carrier/Work with us</a></li>
+                                <li><a href="#">Meet the Team</a></li>
+                                <li><a href="#">Career/Work with us</a></li>
                                 <li><a href="#">Subscribe</a></li>
                                
                             </ul>

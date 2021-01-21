@@ -21,8 +21,10 @@
                         <div class="col-lg-8 col-md-7">
                             <div class="slider-product-content">
                             <br><br>
-                                <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>Welcome</span> to the <span>Vibes</span></h1>
-                                <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">One day however a small line of blind text by the name of Lorem Ipsum <br> decided to leave for the far World of Grammar.</p>
+                
+                                <h3 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>Hi! Welcome</span> to the <span>Vibes</span></h3>
+                                <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">We’re your all – in – one place impact companion – providing  <br>
+                                YOU and EVERYONE with varied exciting services and opportunities, every innovating step of the way.</p>
                                 <a class="main-btn" href="#" data-animation="fadeInUp" data-delay="1.5s">Explore More <i class="lni-chevron-right"></i></a>
                             </div> <!-- slider product content -->
                         </div>

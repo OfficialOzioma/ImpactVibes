@@ -33,6 +33,8 @@ Route::get('/opportunity', 'landingPageController@getOpportunity');
 
 Route::get('/market', 'landingPageController@getMarketPlace');
 
+Route::get('/mentorsConnect', 'landingPageController@getMentors');
+
 
 
 /*Dashboard route(Which users gets redirected to after login)*/
@@ -56,6 +58,10 @@ Route::group(['middleware' => 'Admin'],function(){
     Route::resource('/admin/comments/replies','CommentRepliesController');
     /*For bulk media delete*/
     Route::delete('/admin/delete/media','AdminMediaController@deleteBulkMedia');
+
+    /* for creating mentors */
+    Route::get('/createMentors','MentorController@create');
+    Route::post('/createMentor','MentorController@store');
 
 });
 /*Authenticated Route - Accessible when user is logged in */
