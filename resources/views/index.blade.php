@@ -848,7 +848,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section-title text-center pb-25">
-                    <h3 class="title mb-15">Team</h3>
+                    <h3 class="title mb-15">Meet the Team</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div> <!-- section title -->
             </div>

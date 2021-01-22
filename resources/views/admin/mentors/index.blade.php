@@ -8,11 +8,11 @@
     </button>
   </div>
 @endif
-<h2>Create Post</h2>
+<h2>Create mentor</h2>
 <hr />
 <button
     type="button"
-    onclick="window.location='{{ URL::route('posts.index') }}'"
+
     class="btn btn-dark"
 >
     Go Back
@@ -21,7 +21,7 @@
 
 <div class="row">
     <div class="col-md-4">
-    <form action="/createMentor" class="tm-edit-product-form" method="POST" enctype="multipart/form-data">
+    <form action="/createMentor" class="tm-edit-product-form" method="Post" enctype="multipart/form-data">
                             @csrf
             <div class="form-group">
                 <label for="exampleInputEmail1">Mentor Name</label>
@@ -49,6 +49,40 @@
                 <input
                 required
                 name="contact"
+                    type="text"
+                    class="form-control"
+                    placeholder="Contact Number"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">LinkedIn Profile Url</label>
+                <input
+                required
+                name="linkedin"
+                    type="text"
+                    class="form-control"
+                    placeholder="Contact Number"
+                />
+            </div>
+
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Facebook Profile Url</label>
+                <input
+                required
+                name="facebook"
+                    type="text"
+                    class="form-control"
+                    placeholder="Contact Number"
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Twitter Profile Url</label>
+                <input
+                required
+                name="twitter"
                     type="text"
                     class="form-control"
                     placeholder="Contact Number"
@@ -131,6 +165,47 @@
             <button type="submit" class="btn btn-primary">Create</button>
         </form>
     </div>
+    <div class="col-md-8">
+    @if(count($mentors) > 0)
+
+   
+<div class="row">
+@foreach($mentors as $key => $mentor)
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+@endforeach
+</div>
+
+
+
+            
+    <!-- Pagination links -->
+    <!-- Pagination -->
+    <div class="row">
+        <div class="col">
+            <div class="d-flex align-items-center justify-content-center"> {{ $mentors->links() }}</div>
+        </div>
+    </div>
+@else
+    <div class="NoDataMessage">
+        <h2><b>No mentors to Show!!</b></h2>
+    </div>
+@endif
+</div>
+</div>
+
+
+<div class="row">
+
+
+
+
 </div>
 
 @include('layouts.messages') @endsection

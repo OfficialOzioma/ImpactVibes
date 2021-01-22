@@ -25,7 +25,9 @@ class MentorController extends Controller
      */
     public function create()
     {
-        return view('admin/mentors/index');
+        $mentors = Mentor::paginate(4);
+
+        return view('/admin/mentors/index',compact('mentors'));
     }
 
     /**
@@ -43,6 +45,9 @@ class MentorController extends Controller
         $mentor->email = $request->input('email');
         $mentor->contact = $request->input('contact');
         $mentor->category = $request->input('category');
+        $mentor->twitter = $request->input('twitter');
+        $mentor->linkedin = $request->input('linkedin');
+        $mentor->facebook = $request->input('facebook');
 
 
         if($request->hasfile('image')){
@@ -70,6 +75,9 @@ class MentorController extends Controller
     public function show(Mentor $mentor)
     {
         //
+        $mentors = Mentor::paginate(12);
+
+        return view('/admin/mentors/index',compact('mentors'));
     }
 
     /**

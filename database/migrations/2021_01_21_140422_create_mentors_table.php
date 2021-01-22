@@ -20,6 +20,9 @@ class CreateMentorsTable extends Migration
             $table->string('contact');
             $table->string('image');
             $table->string('category');
+            $table->string('linkedin');
+            $table->string('twitter');
+            $table->string('facebook');
             $table->timestamps();
         });
     }
