@@ -29,6 +29,9 @@
                     <a href="{{route('media.index')}}">Media</a>
                 </li>
                 <li>
+                    <a href="{{route('category.index')}}">Market</a>
+                </li>
+                <li>
                     <a href="{{route('comments.index')}}">Comments</a>
 
                     <li>

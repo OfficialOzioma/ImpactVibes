@@ -52,6 +52,14 @@ Route::group(['middleware' => 'Admin'],function(){
     Route::resource('/admin/categories','AdminCategoriesController');
     /*Routes for media management on admin panel*/
     Route::resource('/admin/media','AdminMediaController');
+    /*Routes for Market management on admin panel*/
+    // Route::resource('/admin/market','AdminMarketController');
+    /*Routes for Market Catagories management on admin panel*/
+    Route::resource('/admin/market/category','MarketCatagoriesController');
+
+    Route::resource('/admin/market/products','ViewProductsController');
+    Route::resource('/admin/market/shop','ViewShopOwnersController');
+
     /*Routes for comments management on admin panel*/
     Route::resource('/admin/comments','PostCommentsController');
     /*Routes for comments replies management on admin panel*/
