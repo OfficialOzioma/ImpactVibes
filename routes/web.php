@@ -33,6 +33,12 @@ Route::get('/opportunity', 'landingPageController@getOpportunity');
 
 Route::get('/market', 'landingPageController@getMarketPlace');
 
+Route::get('/market/{id}', 'landingPageController@viewProduct');
+
+Route::get('/market/category/{id}', 'landingPageController@viewProductByCategory');
+
+
+
 Route::get('/mentorsConnect', 'landingPageController@getMentors');
 
 

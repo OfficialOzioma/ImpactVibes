@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\MarketCategory;
 
 
 class ProductController extends Controller
@@ -28,7 +29,9 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('product.create');
+        $categories = MarketCategory::get();
+
+        return view('product.create', compact('categories'));
     }
 
     /**

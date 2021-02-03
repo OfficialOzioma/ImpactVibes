@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\product;
+use App\User;
 
 class ViewShopOwnersController extends Controller
 {
@@ -13,7 +15,9 @@ class ViewShopOwnersController extends Controller
      */
     public function index()
     {
-       return view('admin.market.shop.index');
+        $products = product::with('user')->get();
+
+        return view('admin.market.shop.index', compact('products'));
     }
 
     /**
@@ -45,7 +49,11 @@ class ViewShopOwnersController extends Controller
      */
     public function show($id)
     {
-        //
+        $products = product::where('user_id', $id)
+                            ->with('user')
+                            ->get();
+
+        return view('admin.market.shop.show', compact('products'));
     }
 
     /**

@@ -22,7 +22,11 @@
                         </div>
                         <div class="form-group mb-3">
                             <label for="description" >Details</label>
-                            <h4 class="form-control font-weight-bold">{{$product_view->details}}</h4>
+                            <h4 class="form-control font-weight-bold">
+                                <div style="height: 100%">
+                                    {{$product_view->details}}
+                                </div>
+                            </h4>
                         </div>
                         <div class="form-group mb-3">
                             <label for="category">Category</label>

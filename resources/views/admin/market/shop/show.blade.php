@@ -3,14 +3,6 @@
 @section('pageContent')
     @include('admin.market.index')
 
-    @if(Session::has('Product_deleted'))
-        <div class="alert alert-dismissible alert-success fade show">
-            {{ session('Product_deleted')}}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-    @endif
     <div class="row">
         @foreach ($products as $product)
             <div class="col-sm-6 mt-3">
@@ -31,6 +23,4 @@
             </div>
         @endforeach
     </div>
-
-
 @endsection

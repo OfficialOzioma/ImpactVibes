@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+use App\product;
+use App\User;
 
 class ViewProductsController extends Controller
 {
@@ -13,7 +16,8 @@ class ViewProductsController extends Controller
      */
     public function index()
     {
-        return view('admin.market.products.index');
+        $products = product::orderBy('id', 'desc')->get();;
+        return view('admin.market.products.index', compact('products'));
     }
 
     /**
@@ -45,7 +49,10 @@ class ViewProductsController extends Controller
      */
     public function show($id)
     {
-        //
+        $product = product::findOrFail($id);
+        $user = User::findOrFail($product->user_id);
+        return view('admin.market.products.show', compact('product', 'user'));
+
     }
 
     /**
@@ -79,6 +86,9 @@ class ViewProductsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $product = product::findOrFail($id);
+        Session::flash('Product_deleted','Product "'.$product->name.'" has been successfully deleted');
+        $product->delete();
+        return redirect()->route('products.index');
     }
 }

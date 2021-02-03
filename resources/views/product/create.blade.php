@@ -27,10 +27,9 @@
                             <div class="form-group mb-3">
                                 <label for="category">Category</label>
                                 <select name="product_category" class="custom-select tm-select-accounts"id="category" required>
-                                    <option >Select category</option>
-                                    <option value="1">New Arrival</option>
-                                    <option value="2">Most Popular</option>
-                                    <option value="3">Trending</option>
+                                    @foreach ($categories as $category)
+                                        <option value="{{$category->id}}">{{$category->category_name}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                             <div class="row">

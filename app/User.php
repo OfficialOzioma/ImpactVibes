@@ -48,9 +48,9 @@ class User extends Authenticatable
     public function post(){
         return $this->hasMany('App\Post');
     }
-    public function products()
+    public function product()
     {
-        return $this->hasMany('App\product');
+        return $this->hasMany('App\product', 'user_id');
     }
      /*Many-to-many relationship with the SavePosts model(i.e One User can have multiple saved post)*/
      public function savedPost(){

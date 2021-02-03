@@ -32,7 +32,11 @@
                             <h4 class="collection-tilte">OUR MARKET PLACE</h4>
                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
                                 aria-orientation="vertical">
-                                <a class="active" id="v-pills-furniture-tab" data-toggle="pill"
+                                @foreach ($categories as $category)
+                                    <a id="v-pills-{{$category->id}}-tab" data-toggle="pill" href="/market/category/{{$category->id}}" role="tab"
+                                    aria-controls="v-pills-decorative" aria-selected="false">{{$category->category_name}}</a>
+                                @endforeach
+                                {{-- <a class="active" id="v-pills-furniture-tab" data-toggle="pill"
                                     href="#v-pills-furniture" role="tab" aria-controls="v-pills-furniture"
                                     aria-selected="true">London Used</a></li>
 
@@ -40,7 +44,7 @@
                                     aria-controls="v-pills-decorative" aria-selected="false">Farly Used</a>
 
                                 <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab"
-                                    aria-controls="v-pills-lighting" aria-selected="false">New</a>
+                                    aria-controls="v-pills-lighting" aria-selected="false">New</a> --}}
 
 
 
@@ -49,32 +53,36 @@
                     </div>
                     <div class="col-lg-9 col-md-8">
                         <div class="row">
-
-                            <div class="col-md-3">
+                            @foreach ($products as $product)
+                            <div class="col-md-3 mt-3">
                                 <div class="single-product-items">
                                     <div class="product-item-image">
-                                        <a href="#"><img src="assets/images/product/p-1.jpeg" alt="Product"></a>
-                                        <div class="product-discount-tag">
+                                        <a href="/market/{{$product->id}}"><img src="product_images/{{$product->picture}}" alt="Product"></a>
+                                        {{-- <div class="product-discount-tag">
                                             <p>-60%</p>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                     <div class="product-item-content text-center mt-30">
-                                        <h5 class="product-title"><a href="#">For Sale</a></h5>
-                                        <ul class="rating">
+                                        <h5 class="product-title"><a href="/market/{{$product->id}}">{{$product->name}}</a></h5>
+                                        {{-- <ul class="rating">
                                             <li><i class="lni-star-filled"></i></li>
                                             <li><i class="lni-star-filled"></i></li>
                                             <li><i class="lni-star-filled"></i></li>
                                             <li><i class="lni-star-filled"></i></li>
-                                        </ul>
-                                        <span class="regular-price">$49.00</span>
-                                        <span class="discount-price">$69.00</span>
+                                        </ul> --}}
+                                        <span class="regular-price">N {{$product->price}}</span>
+                                        {{-- <span class="discount-price"></span> --}}
                                     </div>
                                     <div>
-                                        <button class="btn btn-success">View Details</button>
+                                        <button class="btn btn-success">
+                                            <a href="/market/{{$product->id}}" class="text-white text-decoration-none">View Details</a>
+                                        </button>
                                     </div>
                                 </div> <!-- single product items -->
                             </div>
-                            <div class="col-md-3">
+                            @endforeach
+
+                            {{-- <div class="col-md-3">
                                 <div class="single-product-items">
                                     <div class="product-item-image">
                                         <a href="#"><img src="assets/images/product/p-2.jpg" alt="Product"></a>
@@ -145,7 +153,7 @@
                                         <button class="btn btn-success">View Details</button>
                                     </div>
                                 </div> <!-- single product items -->
-                            </div>
+                            </div> --}}
 
 
                         </div>

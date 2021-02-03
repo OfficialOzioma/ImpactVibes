@@ -51,7 +51,7 @@
             <div class="cube1"></div>
             <div class="cube2"></div>
         </div>
-       
+
     </div>
 
     <!--====== PRELOADER PART START ======-->
@@ -63,7 +63,7 @@
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
                         <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/logo5.png" alt="Logo">
+                            <img src="{{ asset('assets/images/logo5.png') }} " alt="Logo">
                         </a> <!-- Logo -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="bar-icon"></span>
@@ -88,17 +88,17 @@
                                     <a  href="/profiles">VenturesDeal</a>
                                 </li>
 
-                            
+
 
 
                                 <li class="nav-item">
                                     <a  href="/opportunity">Opportunities</a>
                                 </li>
-                               
+
                                 <li class="nav-item">
                                     <a  href="/blogs">Blog</a>
                                 </li>
-                               
+
                                 <li class="nav-item">
                                     <a  href="/ourimpactstories">Impacts</a>
                                 </li>
@@ -147,7 +147,7 @@
                     <div class="col-lg-3 col-md-5 col-sm-7">
                         <div class="footer-logo mt-40">
                             <a href="#">
-                                <img src="assets/images/logo5.png" alt="Logo">
+                                <img src="{{ asset('assets/images/logo5.png') }}" alt="Logo">
                             </a>
                             <p class="mt-10">Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit.</p>
                             <ul class="footer-social mt-25">
@@ -164,7 +164,7 @@
                                 <li><a href="#">Meet the Team</a></li>
                                 <li><a href="#">Career/Work with us</a></li>
                                 <li><a href="#">Subscribe</a></li>
-                               
+
                             </ul>
                         </div> <!-- footer link -->
                     </div>
