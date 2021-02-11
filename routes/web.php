@@ -74,8 +74,15 @@ Route::group(['middleware' => 'Admin'],function(){
     Route::delete('/admin/delete/media','AdminMediaController@deleteBulkMedia');
 
     /* for creating mentors */
-    Route::get('/createMentors','MentorController@create');
+    Route::get('/createMentor','MentorController@create');
     Route::post('/createMentor','MentorController@store');
+    /* For Editing created mentors */
+    Route::get('/editMentor/{mentor}','MentorController@edit');
+    Route::post('/updateMentor/{mentor}','MentorController@update');
+    /* For displaying created mentors */
+    Route::get('/mentors','MentorController@index');
+    /* For displaying created mentors */
+    Route::get('/showMentor/{mentor}', 'MentorController@show');
 
 });
 /*Authenticated Route - Accessible when user is logged in */

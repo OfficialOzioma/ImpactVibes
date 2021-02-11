@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Post;
+use App\Mentor;
 use App\MarketCategory;
 use App\product;
 use Illuminate\Http\Request;
@@ -59,7 +60,7 @@ class landingPageController extends Controller
 
     public function getMentors()
     {
-       // $posts = Post::orderBy('created_at', 'DESC')->paginate(3);
-        return view('mentors');
+        $mentors = Mentor::orderBy('created_at', 'DESC')->paginate(4);
+        return view('mentors', compact('mentors'));
     }
 }

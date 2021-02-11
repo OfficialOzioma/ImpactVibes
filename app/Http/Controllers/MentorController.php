@@ -8,34 +8,20 @@ use Illuminate\Support\Facades\Session;
 
 class MentorController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        $mentors = Mentor::paginate(4);
+        $mentors = Mentor::paginate(12);
 
         return view('/admin/mentors/index',compact('mentors'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+   
+    public function create()
+    {
+        return view('/admin/mentors/create');
+    }
+
+    
     public function store(Request $request)
     {
         //
@@ -63,52 +49,53 @@ class MentorController extends Controller
 
         $mentor->save();
         Session::flash('mentor_created',"Mentor has been successfully created");
-        return redirect('/createMentors');
+        return redirect('/mentors');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Mentor  $mentor
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Mentor $mentor)
+    public function show($id)
     {
-        //
-        $mentors = Mentor::paginate(12);
-
-        return view('/admin/mentors/index',compact('mentors'));
+        $mentor = Mentor::find($id);
+       return view('admin/mentors/show', compact('mentor'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Mentor  $mentor
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Mentor $mentor)
+    
+    public function edit($id)
     {
-        //
+        $mentor = Mentor::find($id);
+        return view('admin/mentors/edit', compact('mentor'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Mentor  $mentor
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Mentor $mentor)
+    
+    public function update(Request $request, $id)
     {
-        //
+        $mentor = Mentor::find($id);
+
+        $mentor->name = $request->input('name');
+        $mentor->email = $request->input('email');
+        $mentor->contact = $request->input('contact');
+        $mentor->category = $request->input('category');
+        $mentor->twitter = $request->input('twitter');
+        $mentor->linkedin = $request->input('linkedin');
+        $mentor->facebook = $request->input('facebook');
+
+        $data =array(
+                "name"=> $mentor->name,
+                "email"=> $mentor->email,
+                "contact"=> $mentor->contact,
+                "category"=> $mentor->category,
+                "twitter"=> $mentor->twitter,
+                "linkedin"=> $mentor->linkedin,
+                "facebook"=> $mentor->facebook
+        );
+
+            Mentor::where('id', $id)->update($data);
+            $mentor->update();
+
+            return redirect('/mentors');
+            return $id;
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Mentor  $mentor
-     * @return \Illuminate\Http\Response
-     */
+    
     public function destroy(Mentor $mentor)
     {
         //
