@@ -76,10 +76,12 @@ Route::group(['middleware' => 'Admin'],function(){
     /* for creating mentors */
     Route::get('/createMentor','MentorController@create');
     Route::post('/createMentor','MentorController@store');
-    /* For Editing created mentors */
+    /* For Editing mentors */
     Route::get('/editMentor/{mentor}','MentorController@edit');
     Route::post('/updateMentor/{mentor}','MentorController@update');
-    /* For displaying created mentors */
+    /* For deleting mentors */
+    Route::get('/deleteMentor/{mentor}','MentorController@delete');
+    /* For displaying mentors detail*/
     Route::get('/mentors','MentorController@index');
     /* For displaying created mentors */
     Route::get('/showMentor/{mentor}', 'MentorController@show');

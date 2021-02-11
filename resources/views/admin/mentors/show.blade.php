@@ -7,7 +7,10 @@
     
     <div class="col-md-10">
         <div class="card">
-            <h5 class="card-header"><b>{{$mentor->name}}'s Information</b></h5>
+            <h5 class="card-header">
+                <b>{{$mentor->name}}'s Information</b>
+                <a href="/editMentor/{{$mentor->id}}" style="float:right;" class="btn btn-default">Edit</a>
+            </h5>
             <div class="card-body">
                     <table class="table table-striped table-hover">
                             <tr>
