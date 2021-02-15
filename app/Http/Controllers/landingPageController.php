@@ -60,7 +60,14 @@ class landingPageController extends Controller
 
     public function getMentors()
     {
-        $mentors = Mentor::orderBy('created_at', 'DESC')->paginate(4);
+        $mentors = Mentor::orderBy('created_at', 'DESC')->paginate(15);
         return view('mentors', compact('mentors'));
     }
+
+    public function mentorProfile($id)
+    {
+        $mentor = Mentor::find($id);
+        return view('mentorProfile', compact('mentor'));
+    }
+
 }

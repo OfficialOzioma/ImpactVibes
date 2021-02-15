@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mentor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
 
 class MentorController extends Controller
 {
@@ -24,7 +25,17 @@ class MentorController extends Controller
     
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name'=> 'required',
+            'email'=> 'required',
+            'contact'=> 'required',
+            'category'=> 'required',
+            'twitter'=> 'required',
+            'linkedin'=> 'required',
+            'facebook'=> 'required',
+            'image'=> 'required || max: 2000'
+        ]);
+
         $mentor = new Mentor();
 
         $mentor->name = $request->input('name');
@@ -34,13 +45,13 @@ class MentorController extends Controller
         $mentor->twitter = $request->input('twitter');
         $mentor->linkedin = $request->input('linkedin');
         $mentor->facebook = $request->input('facebook');
-
+        $mentor->image = $request->input('image');
 
         if($request->hasfile('image')){
+            
             $file = $request->file('image');
-            $extension = $file->getClientoriginalExtension();
-            $filename = time() . '.' . $extension;
-            $file->move('mentor_images/', $filename);
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('storage/', $filename);
             $mentor->image = $filename;
         }else {
             return $request;
@@ -70,6 +81,17 @@ class MentorController extends Controller
     {
         $mentor = Mentor::find($id);
 
+        $this->validate($request, [
+            'name'=> 'required',
+            'email'=> 'required',
+            'contact'=> 'required',
+            'category'=> 'required',
+            'twitter'=> 'required',
+            'linkedin'=> 'required',
+            'facebook'=> 'required',
+            'image'=> 'required || max: 2000'
+        ]);
+
         $mentor->name = $request->input('name');
         $mentor->email = $request->input('email');
         $mentor->contact = $request->input('contact');
@@ -77,6 +99,17 @@ class MentorController extends Controller
         $mentor->twitter = $request->input('twitter');
         $mentor->linkedin = $request->input('linkedin');
         $mentor->facebook = $request->input('facebook');
+        if($request->hasfile('image')){
+            
+            $file = $request->file('image');
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('storage/', $filename);
+            $mentor->image = $filename;
+        }else {
+            return $request;
+            $mentor->image = "";
+        }
+
 
         $data =array(
                 "name"=> $mentor->name,
@@ -85,7 +118,8 @@ class MentorController extends Controller
                 "category"=> $mentor->category,
                 "twitter"=> $mentor->twitter,
                 "linkedin"=> $mentor->linkedin,
-                "facebook"=> $mentor->facebook
+                "facebook"=> $mentor->facebook,
+                "image"=> $filename
         );
 
             Mentor::where('id', $id)->update($data);

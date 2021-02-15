@@ -93,7 +93,7 @@
                     >Category Of Mentorship</label
                 >
                 <select class="custom-select" name="category">
-                    <option selected>Open this select menu</option>
+                    <option selected>{{$mentor->category}}</option>
                     <option value="Agriculture">Agriculture</option>
                     <option value="ArtificialIntelligence">Artificial Intelligence</option>
                     <option value="Entertainment">Entertainment</option>
@@ -152,7 +152,7 @@
 
             <div class="form-group">
                 <label for="exampleInputPassword1">Choose Photo</label>
-                <input name="image" type="file" class="form-control"/>
+            <input name="image" type="file" value="{{$mentor->image}}" class="form-control"/>
             </div>
 
             <button type="submit" class="btn btn-primary">Edit</button>
