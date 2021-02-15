@@ -35,7 +35,7 @@
                     <a href="{{route('comments.index')}}">Comments</a>
 
                     <li>
-                    <a href="/createMentors">Create Mentors</a>
+                    <a href="/mentors">Mentors</a>
                 </li>
                 </li>
             </ul>
