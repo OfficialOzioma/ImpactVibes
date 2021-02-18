@@ -47,7 +47,9 @@ class landingPageController extends Controller
 
     public function viewProduct($id)
     {
-        return view('viewproduct');
+        $product = product::findOrFail($id);
+        $category = MarketCategory::findOrFail($product->category_id);
+        return view('viewproduct', compact('product', 'category'));
     }
 
     public function viewProductByCategory($id)

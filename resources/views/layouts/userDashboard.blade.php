@@ -41,7 +41,7 @@
 
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }} ">
-
+    @yield('style')
 
 </head>
 
@@ -65,7 +65,7 @@
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
                         <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/logo.png" alt="Logo">
+                            <img src="{{asset('assets/images/logo.png')}}" alt="Logo">
                         </a> <!-- Logo -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="bar-icon"></span>
@@ -132,7 +132,7 @@
                     <div class="col-lg-3 col-md-5 col-sm-7">
                         <div class="footer-logo mt-40">
                             <a href="/">
-                                <img src="assets/images/logo.png" alt="Logo">
+                                <img src="{{asset('assets/images/logo.png')}}" alt="Logo">
                             </a>
                             <p class="mt-10">Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit.</p>
                             <ul class="footer-social mt-25">
@@ -256,7 +256,7 @@
 
     <!--====== Main js ======-->
     <script src="{{ asset('assets/js/main.js') }}"></script>
-
+    @yield('script')
 </body>
 
 </html>

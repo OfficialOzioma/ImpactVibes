@@ -90,6 +90,8 @@ Route::group(['middleware' => 'auth'],function(){
     /*User Profile Settings*/
     Route::resource('dashboard', 'UserProfileController');
     Route::resource('product', 'ProductController');
+    /** Ventures deal route */
+    Route::resource('ventures', 'VentureDealController');
 
 
 
