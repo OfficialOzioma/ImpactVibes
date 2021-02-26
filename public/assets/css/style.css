@@ -1205,7 +1205,8 @@ p.form-message.error {
        12.FOOTER css
 ===========================*/
 .footer-area {
-  position: relative;
+  position: inherit;
+  width: 100%;
 }
 
 .footer-area::before {
@@ -1604,3 +1605,77 @@ p.form-message.error {
           cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
+/************************************/
+/************************************/
+/************Mentors Connect Page Styling************************/
+
+          #mentorContainer {
+           display: block;
+            width: 100%;
+            float: right;
+          }
+
+            #mentorRow {
+              margin: 10px;
+              display: block;
+              
+            }
+            
+
+            .left {
+              float:left;
+              width: 12rem;
+            }
+
+            #figure {
+              display: block;
+              
+              overflow: hidden;
+              border-radius: 8rem;
+            }
+
+            #mentorProfile {
+              float: left;
+              width: 10rem;
+              height: 15rem;
+              margin: 1.6rem;
+              margin-top: 4.5rem;
+            }
+
+            #mentor_img {
+                width: 12rem;
+                height: 12rem;
+                border-radius: 4.5rem;
+            }
+
+            .text-body{
+              width: 12rem;
+              height: 12rem;
+              text-align: center;
+            }
+            
+            #profileButton {
+              color:#ffffff;
+              background:#e0652c;
+              text-align:center;
+            }
+
+            #profileButton:hover {
+              color:#e0652c;
+              background:#ffffff;
+              border: 1px solid #e0652c;
+            }
+      
+          
+            #mentorTable {
+              background-color: #e0652c;
+            }
+           
+            
+
+    
+
+
+
+
+

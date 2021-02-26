@@ -40,6 +40,8 @@ Route::get('/market/category/{id}', 'landingPageController@viewProductByCategory
 
 
 Route::get('/mentorsConnect', 'landingPageController@getMentors');
+/* Routes for viewing Mentors profile by the user*/ 
+Route::get('/profile/{mentor}', 'landingPageController@mentorProfile');
 
 
 
@@ -74,8 +76,17 @@ Route::group(['middleware' => 'Admin'],function(){
     Route::delete('/admin/delete/media','AdminMediaController@deleteBulkMedia');
 
     /* for creating mentors */
-    Route::get('/createMentors','MentorController@create');
+    Route::get('/createMentor','MentorController@create');
     Route::post('/createMentor','MentorController@store');
+    /* For Editing mentors */
+    Route::get('/editMentor/{mentor}','MentorController@edit');
+    Route::post('/updateMentor/{mentor}','MentorController@update');
+    /* For deleting mentors */
+    Route::get('/deleteMentor/{mentor}','MentorController@delete');
+    /* For displaying mentors detail*/
+    Route::get('/mentors','MentorController@index');
+    /* For displaying created mentors */
+    Route::get('/showMentor/{mentor}', 'MentorController@show');
 
 });
 /*Authenticated Route - Accessible when user is logged in */
