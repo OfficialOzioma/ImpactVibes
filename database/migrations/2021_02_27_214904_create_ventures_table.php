@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVentureDealsTable extends Migration
+class CreateVenturesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateVentureDealsTable extends Migration
      */
     public function up()
     {
-        Schema::create('venture_deals', function (Blueprint $table) {
+        Schema::create('ventures', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('user_id');
             $table->string('startup_name');
@@ -50,6 +50,6 @@ class CreateVentureDealsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('venture_deals');
+        Schema::dropIfExists('ventures');
     }
 }

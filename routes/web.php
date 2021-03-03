@@ -40,7 +40,7 @@ Route::get('/market/category/{id}', 'landingPageController@viewProductByCategory
 
 
 Route::get('/mentorsConnect', 'landingPageController@getMentors');
-/* Routes for viewing Mentors profile by the user*/ 
+/* Routes for viewing Mentors profile by the user*/
 Route::get('/profile/{mentor}', 'landingPageController@mentorProfile');
 
 
@@ -87,6 +87,8 @@ Route::group(['middleware' => 'Admin'],function(){
     Route::get('/mentors','MentorController@index');
     /* For displaying created mentors */
     Route::get('/showMentor/{mentor}', 'MentorController@show');
+
+    Route::resource('/adminVentures', 'adminVentureController');
 
 });
 /*Authenticated Route - Accessible when user is logged in */
