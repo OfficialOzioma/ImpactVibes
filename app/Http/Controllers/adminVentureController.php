@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use App\Venture;
 
 class adminVentureController extends Controller
@@ -14,7 +15,7 @@ class adminVentureController extends Controller
      */
     public function index()
     {
-        $getventures = Venture::get();
+        $getventures = Venture::with('user')->get();
         // dd($getventures);
         return view('admin.ventures.index', compact('getventures'));
     }
@@ -48,7 +49,8 @@ class adminVentureController extends Controller
      */
     public function show($id)
     {
-        //
+        $getventure = Venture::findOrFail($id);
+        return view('admin.ventures.show', compact('getventure'));
     }
 
     /**
@@ -59,7 +61,8 @@ class adminVentureController extends Controller
      */
     public function edit($id)
     {
-        //
+        $venturesRecord = Venture::findOrFail($id);
+        return view('admin.ventures.edit', compact('venturesRecord'));
     }
 
     /**
@@ -71,7 +74,11 @@ class adminVentureController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $updateVenture = Venture::findOrFail($id);
+        $updateVenture->status = $request->input('status');
+        $updateVenture->update();
+        Session::flash('Status_update','You have Successfully updated the status');
+        return redirect('adminVentures');
     }
 
     /**

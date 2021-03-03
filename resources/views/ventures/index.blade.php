@@ -16,6 +16,7 @@
                     <th>City</th>
                     <th>State</th>
                     <th>country</th>
+                    <th>Status</th>
                     <th>View Details</th>
                 </tr>
             </thead>
@@ -27,6 +28,7 @@
                     <td>{{$venture->city}}</td>
                     <td>{{$venture->state}}</td>
                     <td>{{$venture->country}}</td>
+                    <td>{{$venture->status}}</td>
                     <td>
                         <a href="{{route('ventures.show', $venture->id)}}" class="btn btn-primary">View Details</a>
                     </td>

@@ -1,15 +1,10 @@
-@extends('layouts.userDashboard')
+@extends('layouts.sidebar')
 
-@section('content')
-<br><br><br>
-<br><br><br>
-@include('ventures.menu')
-<br>
-<br>
+@section('pageContent')
 <div class="container">
     <div class="bg-dark text-white m-3 p-3">
         <div class="table-responsive">
-            <table id="example" class="table table-striped table-bordered" style="width:100%">
+            <table id="example" class="table table-striped table-bordered text-white" style="width:100%">
                 <tbody>
                     <tr>
                         <td><strong>Business Name</strong> </td>
@@ -43,7 +38,7 @@
                         <td><strong >Linkedin Profile</strong> </td>
                         <td>{{$getventure->linkedIn_profile}}</td>
                     </tr>
-                    <tr>
+                    <tr>ventures.edit
                         <td><strong>Facebook Profile</strong> </td>
                         <td>{{$getventure->facebook_profile}}</td>
                     </tr><tr>
@@ -94,16 +89,20 @@
                         <td><strong>Team member phone number</strong> </td>
                         <td>{{$getventure->team_member_phone_number}}</td>
                     </tr>
+                    <tr>
+                        <td><strong>Status</strong> </td>
+                        <td>{{$getventure->status}}</td>
+                    </tr>
                 </tbody>
             </table>
 
         </div>
         <div class="row">
             <div class="col-6">
-                <a href="{{$getventure->id }}/edit" class=" btn btn-primary p-2 w-100"> <strong><i class="fas fa-edit"></i> Edit Record</strong> </a>
+                <a href="{{$getventure->id }}/edit" class=" btn btn-primary p-2 w-100"> <strong><i class="fas fa-edit"></i>Change Status</strong> </a>
             </div>
             <div class="col-6">
-                <form action="/ventures/{{$getventure->id }}" method="post">
+                <form action="ventures/{{$getventure->id }}" method="post">
                     {{ method_field('DELETE') }}
                     @csrf
                     <button type="submit" class="btn btn-danger p-2 w-100">
@@ -114,6 +113,6 @@
             </div>
         </div>
     </div>
+ 
 </div>
-
 @endsection

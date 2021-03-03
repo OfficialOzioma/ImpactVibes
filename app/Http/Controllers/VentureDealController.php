@@ -65,6 +65,7 @@ class VentureDealController extends Controller
         $startup->team_member_name = $request->input('team_member_name');
         $startup->team_member_designation = $request->input('team_member_designation');
         $startup->team_member_phone_number = $request->input('team_member_phone_number');
+        $startup->status = 'Not Approved';
 
         if($request->hasfile('picture_of_the_startup')){
             $file = $request->file('picture_of_the_startup');
@@ -143,20 +144,21 @@ class VentureDealController extends Controller
         $updateVenture->team_member_designation = $request->input('team_member_designation');
         $updateVenture->team_member_phone_number = $request->input('team_member_phone_number');
 
-        if($request->hasfile('picture_of_the_startup')){
-            $file = $request->file('picture_of_the_startup');
-            $extension = $file->getClientoriginalExtension();
-            $filename = time() . '.' . $extension;
-            $file->move('ventures_images/', $filename);
-            $updateVenture->picture_of_the_startup = $filename;
-        }else {
-            $file = $request->file('picture_of_the_startup');
-            $updateVenture->picture_of_the_startup = "";
+        // if($request->hasfile('picture_of_the_startup')){
+        //     $file = $request->file('picture_of_the_startup');
+        //     $extension = $file->getClientoriginalExtension();
+        //     $filename = time() . '.' . $extension;
+        //     $file->move('ventures_images/', $filename);
+        //     $updateVenture->picture_of_the_startup = $filename;
+        // }else {
+        //     $file = $request->file('picture_of_the_startup');
+        //     $updateVenture->picture_of_the_startup = "";
 
-            return $file;
-        }
+        //     return $file;
+        // }
 
         $updateVenture->update();
+        return redirect('ventures');
     }
 
     /**

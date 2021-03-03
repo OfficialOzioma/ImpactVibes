@@ -39,6 +39,7 @@ class CreateVenturesTable extends Migration
             $table->string('team_member_name');
             $table->string('team_member_designation');
             $table->string('team_member_phone_number');
+            $table->string('status');
             $table->timestamps();
         });
     }

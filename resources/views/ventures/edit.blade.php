@@ -32,7 +32,7 @@
                                     <div class="value">
                                         <div class="form-group">
                                             <select class="form-control form-control-lg" name="venture_type" id="venture_type">
-                                                <option selected disabled value="{{$venturesRecord->venture_type}}">{{$venturesRecord->venture_type}}</option>
+                                                <option selected value="{{$venturesRecord->venture_type}}">{{$venturesRecord->venture_type}}</option>
                                                 <option value="For Profit">For Profit</option>
                                                 <option value="Nonprofit">NonProfit</option>
                                             </select>
@@ -123,7 +123,7 @@
                                             <div class="value">
                                                 <div class="form-group">
                                                     <select class="form-control form-control-lg" name="making_revenue" id="making_revenue" required>
-                                                        <option selected disabled value="{{$venturesRecord->making_revenue}}">{{$venturesRecord->making_revenue}}</option>
+                                                        <option selected value="{{$venturesRecord->making_revenue}}">{{$venturesRecord->making_revenue}}</option>
                                                         <option value="Yes">Yes</option>
                                                         <option value="No">No</option>
                                                     </select>
@@ -135,7 +135,7 @@
                                             <div class="value">
                                                 <div class="form-group">
                                                     <select class="form-control form-control-lg" name="venture_stage" id="venture_stage" >
-                                                        <option selected disabled value="{{$venturesRecord->venture_stage}}">{{$venturesRecord->venture_stage}}</option>
+                                                        <option selected  value="{{$venturesRecord->venture_stage}}">{{$venturesRecord->venture_stage}}</option>
                                                         <option value="Idea">Idea</option>
                                                         <option value="MVP">MVP</option>
                                                         <option value="MVP Validated">MVP Validated</option>
