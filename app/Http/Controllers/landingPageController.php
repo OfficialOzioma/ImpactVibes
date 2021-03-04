@@ -5,6 +5,7 @@ use App\Post;
 use App\Mentor;
 use App\MarketCategory;
 use App\product;
+use App\Venture;
 use Illuminate\Http\Request;
 
 class landingPageController extends Controller
@@ -17,12 +18,18 @@ class landingPageController extends Controller
 
 
 
-    public function getProfile()
+    public function getVentures()
     {
-       // $posts = Post::orderBy('created_at', 'DESC')->paginate(3);
-        return view('profile' );
+        $ventures = Venture::where('status','Approve')->get();
+        return view('ventures', compact('ventures'));
     }
 
+    public function getVenturesDetails($id)
+    {
+        $venturesDetails = Venture::findOrFail($id);
+
+        return view('venturesDetails', compact('venturesDetails'));
+    }
 
     public function getImpact()
     {
