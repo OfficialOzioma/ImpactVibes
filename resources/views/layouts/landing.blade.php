@@ -85,7 +85,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a  href="/profiles">VenturesDeal</a>
+                                    <a  href="/ventureDeals">VenturesDeal</a>
                                 </li>
 
 

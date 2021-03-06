@@ -89,9 +89,7 @@
             </div>
 
             <div class="form-group">
-                <label for="exampleInputPassword1"
-                    >Category Of Mentorship</label
-                >
+                <label for="exampleInputPassword1">Category Of Mentorship</label>
                 <select class="custom-select" name="category">
                     <option selected>{{$mentor->category}}</option>
                     <option value="Agriculture">Agriculture</option>
@@ -148,7 +146,22 @@
                 </select>
             </div>
 
-           
+            <div class="form-group">
+                <label for="exampleInputPassword1">Nationality</label>
+                <select class="custom-select" name="nationality">
+                    <option selected>{{$mentor->nationality}}</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Guinea">Guinea</option>
+                    <option value="Benin Republic">Benin Republic</option>
+                    <option value="Niger">Niger</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+            <textarea name="profile_bio" value="{{$mentor->profile_bio}}" cols="30" rows="10" placeholder="You can add bio later. No more than 50 characters"></textarea>
+            </div>         
 
             <div class="form-group">
                 <label for="exampleInputPassword1">Choose Photo</label>

@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c62f9dd48445cc0d5100d7c7329beea",
+    "content-hash": "dea764ac11fa47d30606c934c0fed15d",
     "packages": [
+        {
+            "name": "claretnnamocha/php-logger",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/claretnnamocha/php-logger.git",
+                "reference": "e499ae4d4f6a8adaba12da4aa618c859328483f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/claretnnamocha/php-logger/zipball/e499ae4d4f6a8adaba12da4aa618c859328483f6",
+                "reference": "e499ae4d4f6a8adaba12da4aa618c859328483f6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Alpha\\Console\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Claret Nnamocha",
+                    "email": "devclareo@gmail.com"
+                }
+            ],
+            "description": "A simple PHP logger used to ouput data to server terminal",
+            "keywords": [
+                "clareo",
+                "debugging",
+                "logging",
+                "php-logger",
+                "terminal"
+            ],
+            "time": "2020-12-05T09:41:35+00:00"
+        },
         {
             "name": "cocur/slugify",
             "version": "v3.2",
@@ -6314,5 +6357,5 @@
         "php": "^7.1.3"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }

@@ -30,10 +30,11 @@ class MentorController extends Controller
             'email'=> 'required',
             'contact'=> 'required',
             'category'=> 'required',
+            'nationality'=> 'required',
             'twitter'=> 'required',
             'linkedin'=> 'required',
             'facebook'=> 'required',
-            'image'=> 'required || max: 2000'
+            'image'=> 'required || max: 5000'
         ]);
 
         $mentor = new Mentor();
@@ -42,6 +43,7 @@ class MentorController extends Controller
         $mentor->email = $request->input('email');
         $mentor->contact = $request->input('contact');
         $mentor->category = $request->input('category');
+        $mentor->nationality = $request->input('nationality');
         $mentor->twitter = $request->input('twitter');
         $mentor->linkedin = $request->input('linkedin');
         $mentor->facebook = $request->input('facebook');
@@ -50,8 +52,8 @@ class MentorController extends Controller
         if($request->hasfile('image')){
             
             $file = $request->file('image');
-            $filename = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('storage/', $filename);
+            $filename = time() . '.' . $file->getClientOriginalName();
+            $file->move('public/mentors/', $filename);
             $mentor->image = $filename;
         }else {
             return $request;
@@ -86,6 +88,7 @@ class MentorController extends Controller
             'email'=> 'required',
             'contact'=> 'required',
             'category'=> 'required',
+            'nationality'=> 'required',
             'twitter'=> 'required',
             'linkedin'=> 'required',
             'facebook'=> 'required',
@@ -96,14 +99,15 @@ class MentorController extends Controller
         $mentor->email = $request->input('email');
         $mentor->contact = $request->input('contact');
         $mentor->category = $request->input('category');
+        $mentor->nationality = $request->input('nationality');
         $mentor->twitter = $request->input('twitter');
         $mentor->linkedin = $request->input('linkedin');
         $mentor->facebook = $request->input('facebook');
         if($request->hasfile('image')){
             
             $file = $request->file('image');
-            $filename = time() . '.' . $file->getClientOriginalExtension();
-            $file->move('storage/', $filename);
+            $filename = time() . '.' . $file->getClientOriginalName();
+            $file->move('public/mentors/', $filename);
             $mentor->image = $filename;
         }else {
             return $request;
@@ -116,6 +120,7 @@ class MentorController extends Controller
                 "email"=> $mentor->email,
                 "contact"=> $mentor->contact,
                 "category"=> $mentor->category,
+                "nationality"=> $mentor->nationality,
                 "twitter"=> $mentor->twitter,
                 "linkedin"=> $mentor->linkedin,
                 "facebook"=> $mentor->facebook,

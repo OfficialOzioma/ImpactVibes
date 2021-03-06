@@ -34,9 +34,15 @@
                 <li>
                     <a href="{{route('comments.index')}}">Comments</a>
 
-                    <li>
+                </li>
+                <li>
                     <a href="/mentors">Mentors</a>
                 </li>
+                <li>
+                    <a href="/ventures">Venture Deals</a>
+                </li>
+                <li>
+                    <a href="/listOpportunities">Opportunities</a>
                 </li>
             </ul>
         </div>

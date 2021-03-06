@@ -5,6 +5,9 @@ use App\Post;
 use App\Mentor;
 use App\MarketCategory;
 use App\product;
+use App\VenturesDeal;
+use App\VenturesDealImages;
+use App\Opportunities;
 use Illuminate\Http\Request;
 
 class landingPageController extends Controller
@@ -17,10 +20,22 @@ class landingPageController extends Controller
 
 
 
-    public function getProfile()
+    public function getVentures()
     {
-       // $posts = Post::orderBy('created_at', 'DESC')->paginate(3);
-        return view('profile' );
+       $ventures = VenturesDeal::orderBy('created_at', 'DESC')->paginate(10);
+        return view('ventures', compact('ventures'));
+    }
+
+    public function aboutVenture($id)
+    {
+        $ventureImages = VenturesDealImages::where('venturesDeal_id', $id)->pluck('image');
+        $venture = VenturesDeal::find($id);
+
+        foreach($ventureImages as $key) {
+            $ventImages = explode(",", $key);
+        }
+    
+         return view('aboutVenture', compact('ventImages', 'venture', 'image'));
     }
 
 
@@ -33,8 +48,8 @@ class landingPageController extends Controller
 
     public function getOpportunity()
     {
-       // $posts = Post::orderBy('created_at', 'DESC')->paginate(3);
-        return view('opportunities');
+       $opportunities = Opportunities::orderBy('created_at', 'DESC')->get();
+        return view('opportunities', compact('opportunities'));
     }
 
 
