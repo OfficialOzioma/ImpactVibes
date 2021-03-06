@@ -38,7 +38,8 @@
 
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }} ">
-
+    <!--====== Custom css ======-->
+    @yield('style')
 
 </head>
 
@@ -81,11 +82,11 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a  href="/mentorsConnect">Mentors'Connect</a>
+                                    <a  href="/mentorsConnect">Mentors</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a  href="/ventureDeals">VenturesDeal</a>
+                                    <a  href="/venturesdeal">Ventures Deal</a>
                                 </li>
 
 

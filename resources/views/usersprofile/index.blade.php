@@ -13,8 +13,12 @@
         </button>
     </div>
     @endif
-   
+
     <button type="button" onclick="window.location='{{ URL::route('dashboard.index') }}'" class="btn btn-dark">Go Back</button>
+    <button type="button" onclick="window.location='{{ URL::route('dashboard.index') }}'" class="btn btn-success float-right">
+    <a href="{{ route('ventures.index') }}" class="text-white text-decoration-none">Create a ventures deal</a>
+    </button>
+
     <hr>
     <div class="row">
         <div class="col-md-2">

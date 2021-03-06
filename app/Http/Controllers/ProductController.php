@@ -43,6 +43,7 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $product = new product();
+
         // request()->validate([
         //     'product_name' => 'required|string',
         //     'product_detail' => 'required',
@@ -85,6 +86,7 @@ class ProductController extends Controller
     public function show(product $product)
     {
         $product_view = product::findOrFail($product->id);
+
         return view('product.view', compact('product_view'));
     }
 
@@ -96,7 +98,6 @@ class ProductController extends Controller
      */
     public function edit(product $product)
     {
-
         $product_edit = product::findOrFail($product->id);
         return view('product.edit', compact('product_edit'));
     }

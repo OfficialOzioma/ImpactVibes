@@ -24,8 +24,9 @@ Route::get('/contact', 'contactController@index');
 
 Route::get('/blogs', 'PostsController@index');
 
-Route::get('/ventureDeals', 'landingPageController@getVentures');
-Route::get('/aboutVenture/{venture}', 'landingPageController@aboutVenture');
+Route::get('/venturesdeal', 'landingPageController@getVentures');
+
+Route::get('/venturesdeal/{id}', 'landingPageController@getVenturesDetails');
 
 Route::get('/ourimpactstories', 'landingPageController@getImpact');
 
@@ -41,7 +42,7 @@ Route::get('/market/category/{id}', 'landingPageController@viewProductByCategory
 
 
 Route::get('/mentorsConnect', 'landingPageController@getMentors');
-/* Routes for viewing Mentors profile by the user*/ 
+/* Routes for viewing Mentors profile by the user*/
 Route::get('/profile/{mentor}', 'landingPageController@mentorProfile');
 
 
@@ -113,6 +114,7 @@ Route::group(['middleware' => 'Admin'],function(){
     Route::get('/editOpportunity/{opportunity}','OpportunitiesController@edit');
     Route::post('/updateOpportunity/{opportunity}','OpportunitiesController@update');
     Route::get('/deleteOpportunity/{opportunity}','OpportunitiesController@destroy');
+    Route::resource('/adminVentures', 'adminVentureController');
 
 });
 /*Authenticated Route - Accessible when user is logged in */
@@ -127,6 +129,8 @@ Route::group(['middleware' => 'auth'],function(){
     /*User Profile Settings*/
     Route::resource('dashboard', 'UserProfileController');
     Route::resource('product', 'ProductController');
+    /** Ventures deal route */
+    Route::resource('ventures', 'VentureDealController');
 
 
 
