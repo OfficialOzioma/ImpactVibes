@@ -32,11 +32,7 @@
                     <a href="{{route('category.index')}}">Market</a>
                 </li>
                 <li>
-                    <a href="{{route('adminVentures.index')}}">Ventures Deal</a>
-                </li>
-                <li>
                     <a href="{{route('comments.index')}}">Comments</a>
-
                 </li>
                 <li>
                     <a href="/mentors">Mentors</a>
