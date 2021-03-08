@@ -1,9 +1,12 @@
 @extends('layouts.landing')
 
 @section('content')
-<br><br><br><br><br><br>
-
+<br><br><br><br><br><br><br>
+<div class="container">
+    <a href="/mentorsConnect" class="btn btn-danger">Back</a>
+</div>
 <div class="row">
+    
     <div class="col-lg-4 col-sm-6" style="margin: 20px;">
         {{-- <div class="container" style="width:100%;"> --}}
             <img id="profile_img" src="{{ url('public/mentors/'. $mentor->image)}}" alt="NoImage" style="border: 2px solid black">

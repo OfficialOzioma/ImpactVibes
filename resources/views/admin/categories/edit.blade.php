@@ -1,8 +1,8 @@
 @extends('layouts.sidebar')
 @section('pageContent')
+<div class="container">
+    <a href="/admin/categories" class="btn btn-danger">Back</a>
 <h2>Edit Category</h2>
-<hr>
-<button type="button" onclick="window.location='{{ URL::route('categories.index') }}'" class="btn btn-dark">Go Back</button>
 <hr>
     {!! Form::model($category,['method' => 'PATCH','action'=> ['AdminCategoriesController@update',$category->id]]) !!}
     <div class="form-group">
@@ -14,4 +14,5 @@
     </div>
     {!! Form::close() !!}
 @include('layouts.messages')
+</div>
 @endsection

@@ -1,6 +1,8 @@
 @extends('layouts.sidebar')
 @section('pageContent')
-
+<div class="container">
+    <a href="/listOpportunities" class="btn btn-danger">Back</a>
+</div>
 <div class="row">
 
     <div class="col-lg-4">

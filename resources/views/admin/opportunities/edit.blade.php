@@ -1,6 +1,7 @@
 @extends('layouts.sidebar') 
 @section('pageContent')
-
+<div class="container">
+<a href="/showOpportunity/{{$opportunity->id}}" class="btn btn-danger">Back</a>
 <div class="venture">
     <h2>Edit Opportunity</h2>
 
@@ -17,5 +18,5 @@
         <input type="submit" value="Update">
     </form>
 </div>
-
+</div>
 @endsection

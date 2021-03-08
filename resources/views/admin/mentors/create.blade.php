@@ -1,5 +1,9 @@
-@extends('layouts.sidebar') @section('pageContent')
+@extends('layouts.sidebar') 
+@section('pageContent')
 @include('layouts.tinyeditor')
+<div class="container">
+    <a href="/mentors" class="btn btn-danger">Back</a>
+
 @if(Session::has('mentor_created'))
   <div class="alert alert-dismissible alert-success fade show">
     {{ session('mentor_created')}}
@@ -10,13 +14,6 @@
 @endif
 <h2>Create mentor</h2>
 <hr />
-<button
-    type="button"
-
-    class="btn btn-dark"
->
-    Go Back
-</button>
 <hr />
 
 <div class="row">
@@ -123,7 +120,7 @@
             </div>
 
             <div class="form-group">
-                <textarea name="profile_bio" id="body" cols="30" rows="10" placeholder="You can add bio later. No more than 50 characters"></textarea>
+                <textarea name="profile_bio" id="body" class="textarea--style-6" placeholder="Briefly tell us about your Venture (500 Characters Max.)"></textarea>
             </div>
 
             <div class="form-group">
@@ -135,15 +132,11 @@
         </form>
     </div>
    
-
-
 </div>
-
 
 <div class="row">
 
-
-
+</div>
 
 </div>
 

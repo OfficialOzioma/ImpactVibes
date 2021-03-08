@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'ImpactVibes') }}</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href=" {{ asset('assets/images/favicon.png') }}" type="image/png">
@@ -47,13 +47,13 @@
 
     <!--====== PRELOADER PART START ======-->
 
-    <div class="preloader">
+    {{-- <div class="preloader">
         <div class="spin">
             <div class="cube1"></div>
             <div class="cube2"></div>
         </div>
 
-    </div>
+    </div> --}}
 
     <!--====== PRELOADER PART START ======-->
 

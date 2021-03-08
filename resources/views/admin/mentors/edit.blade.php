@@ -1,15 +1,9 @@
 @extends('layouts.sidebar') @section('pageContent')
 @include('layouts.tinyeditor')
-
+<div class="container">
+<a href="/showMentor/{{$mentor->id}}" class="btn btn-danger">Back</a>
 <h2>Edit Mentor</h2>
 <hr />
-<button
-    type="button"
-
-    class="btn btn-dark"
->
-    Go Back
-</button>
 <hr />
 
 <div class="row">
@@ -171,16 +165,7 @@
             <button type="submit" class="btn btn-primary">Edit</button>
         </form>
     </div>
-   
-
-
 </div>
-
-
-<div class="row">
-
-
-
 
 </div>
 

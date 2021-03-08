@@ -1,7 +1,9 @@
 @extends('layouts.sidebar')
 @section('pageContent')
 
-<hr>
+<div class="container">
+    <a href="/mentors" class="btn btn-danger">Back</a>
+    <hr>
 <div class="row">
     
     <div class="col-lg-4">
@@ -69,5 +71,6 @@
         <h2>Mini Bio</h2>
             <p>{{$mentor->profile_bio}}</p>
     </div>
+</div>
 </div>
 @endsection

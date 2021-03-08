@@ -6,6 +6,7 @@ use App\Mentor;
 use App\MarketCategory;
 use App\product;
 use App\Venture;
+use App\Opportunities;
 use Illuminate\Http\Request;
 
 class landingPageController extends Controller

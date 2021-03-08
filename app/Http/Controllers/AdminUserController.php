@@ -61,6 +61,7 @@ class AdminUserController extends Controller
             $photo = Photo::create(['file'=> $name]);
             $input['photo_id'] = $photo->id;
        }
+       
        User::create($input);
        Session::flash('user_created','User '.$input['name'].' has been successfully created.');
        return redirect()->route('users.index');

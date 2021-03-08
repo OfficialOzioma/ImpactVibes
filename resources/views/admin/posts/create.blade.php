@@ -1,9 +1,9 @@
 @extends('layouts.sidebar')
 @section('pageContent')
 @include('layouts.tinyeditor')
+<div class="container">
+    <a href="/admin/posts" class="btn btn-danger">Back</a>
 <h2>Create Post</h2>
-<hr>
-<button type="button" onclick="window.location='{{ URL::route('posts.index') }}'" class="btn btn-dark">Go Back</button>
 <hr>
 {!! Form::open(['method' => 'POST','action' => 'AdminPostsController@store','files' => true]) !!}
     <div class="form-group">
@@ -30,4 +30,5 @@
 
 @include('layouts.messages')
 {!! Form::close() !!}
+</div>
 @endsection

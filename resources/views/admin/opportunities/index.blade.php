@@ -11,7 +11,7 @@
                 <a href="/showOpportunity/{{$opportunity->id}}">{{$opportunity->title}}</a>
             </h1>
             <p class="card-text"><strong>{{$opportunity->description}} </strong><br>
-                <a href="{{$opportunity->link}}">{{$opportunity->link}}</a>
+                {{-- <a href="{{$opportunity->link}}">{{$opportunity->link}}</a> --}}
             </p>  
         </div>
         @endforeach
