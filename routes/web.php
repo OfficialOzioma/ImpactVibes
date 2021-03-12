@@ -24,7 +24,9 @@ Route::get('/contact', 'contactController@index');
 
 Route::get('/blogs', 'PostsController@index');
 
-Route::get('/profiles', 'landingPageController@getProfile');
+Route::get('/venturesdeal', 'landingPageController@getVentures');
+
+Route::get('/venturesdeal/{id}', 'landingPageController@getVenturesDetails');
 
 Route::get('/ourimpactstories', 'landingPageController@getImpact');
 
