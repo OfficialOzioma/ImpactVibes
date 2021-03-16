@@ -39,4 +39,9 @@
 
 </div>
 
+<div class="row">
+    <div class="col-lg-12" style="margin: 20px">
+        <div><span>{{$mentor->profile_bio}}</span></div>
+    </div>
+</div>
 @endsection

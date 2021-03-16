@@ -1,7 +1,6 @@
 @extends('layouts.landing')
 
 @section('content')
-
 <!--====== SERVICES PART START ======-->
 <br><br><br><br><br>
 <div class="container">

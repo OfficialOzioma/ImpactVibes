@@ -1,9 +1,9 @@
 @extends('layouts.sidebar')
 @section('pageContent')
 @include('layouts.tinyeditor')
+<div class="container">
+    <a href="/admin/posts" class="btn btn-danger">Back</a>
 <h2>Edit Post</h2>
-<hr>
-<button type="button" onclick="window.location='{{ URL::route('posts.index') }}'" class="btn btn-dark">Go Back</button>
 <hr>
 <div class="row">
     <div class="col-md-2">
@@ -37,4 +37,5 @@
     </div>
 </div>
 @include('layouts.messages')
+</div>
 @endsection

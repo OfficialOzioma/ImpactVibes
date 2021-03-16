@@ -126,4 +126,85 @@
         position: relative;
         margin-right: 0;
     }
+
+/* ******************************* */
+/* **********VENTURES DEAL********************* */
+
+    .venture {
+       
+        width: 800px;
+        padding: 0 0 0 32px;
+    }
+    .venture h1 {
+        margin-bottom: 18px;
+    }
+    .venture h2 {
+        margin-bottom: 12px;
+    }
+    .venture h1 + h2 {
+        margin: 0;
+    }
+
+    .message label {
+        color: #000000;
+        display: block;
+        font: 13px/24px Arial, Helvetica, sans-serif;
+    }
+    .message input[type='text'] {
+        height: 24px;
+        width: 590px;
+        margin: 0 0 18px;
+        padding: 0 4px;
+    }
+    .message textarea {
+        height: 110px;
+        width: 590px;
+        margin: 0 0 18px;
+        padding: 0 4px;
+        overflow: auto;
+        resize: none;
+    }
+    .message input[type='submit'] {
+        cursor: pointer;
+        border: none;
+    }
+
+    #ventureContainer h1 {
+        text-align: center;
+    }
+    #ventureRow {
+        margin-left: 150px;
+    }
+    #venture {
+        text-transform: uppercase;
+        background-color: rgb(255, 255, 255);
+        height: 12rem;
+        width: 13rem;
+        border: 2px solid grey;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    #venture h1 {
+        text-align: center;
+        margin-top: 10px;
+    }
+    #venture h1 a {
+        text-decoration: none;
+        color: red;
+        font-weight: bolder;
+    }
+    #venture h1 a:hover {
+        text-decoration: italize;
+        color: rgb(101, 67, 252);
+    }
+    #venture p {
+        text-align: center;
+    }
+    #venture p strong{
+        font-size: 15px;
+    }
+
+    #ventureButton {
+        margin-top:25px;
+    }
 }

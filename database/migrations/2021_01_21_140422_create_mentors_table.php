@@ -21,9 +21,11 @@ class CreateMentorsTable extends Migration
             $table->string('contact');
             $table->string('image');
             $table->string('category');
+            $table->string('nationality');
             $table->string('linkedin');
             $table->string('twitter');
             $table->string('facebook');
+            $table->string('profile_bio')->nullable();
             $table->timestamps();
         });
     }

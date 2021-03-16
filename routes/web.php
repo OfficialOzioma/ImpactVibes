@@ -92,6 +92,30 @@ Route::group(['middleware' => 'Admin'],function(){
     /* For displaying created mentors */
     Route::get('/showMentor/{mentor}', 'MentorsController@show');
 
+    /* ********************* */
+    /* Routes For Venture Deals */
+    Route::get('/ventures','venturesDealController@index');
+    Route::get('/createVentures','venturesDealController@create');
+    Route::post('/createVentures','venturesDealController@store');
+    Route::get('/showVenture/{venturesDeal}', 'venturesDealController@show');
+    Route::get('/editVenture/{venturesDeal}','venturesDealController@edit');
+    Route::post('/updateVenture/{venturesDeal}','venturesDealController@update');
+    Route::get('/deleteVenture/{venturesDeal}','venturesDealController@destroy');
+
+    Route::get('/createVenturesImages/{venturesDeal}','venturesDealImageController@create');
+    Route::post('/createVenturesImages/{venturesDeal}','venturesDealImageController@store');
+    Route::get('/showVenturesImages/{venturesDeal}','venturesDealImageController@show');
+
+
+    /* ********************* */
+    /* Routes For Opportunities */
+    Route::get('/listOpportunities','OpportunitiesController@index');
+    Route::get('/createOpportunity','OpportunitiesController@create');
+    Route::post('/createOpportunity','OpportunitiesController@store');
+    Route::get('/showOpportunity/{opportunity}', 'OpportunitiesController@show');
+    Route::get('/editOpportunity/{opportunity}','OpportunitiesController@edit');
+    Route::post('/updateOpportunity/{opportunity}','OpportunitiesController@update');
+    Route::get('/deleteOpportunity/{opportunity}','OpportunitiesController@destroy');
     Route::resource('/adminVentures', 'adminVentureController');
 
      /* for creating opportunity */

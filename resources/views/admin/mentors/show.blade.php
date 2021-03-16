@@ -5,7 +5,7 @@
     <div class="col-md-10">
         <div class="card">
             <h5 class="card-header">
-                <b>{{$mentor->name}}'s Information</b>
+                <b>{{$mentor->name}}'s Detail</b>
                 <a href="/editMentor/{{$mentor->id}}" style="float:right;" class="btn btn-default">Edit</a>
             </h5>
             <div class="card-body">
@@ -55,6 +55,14 @@
             </div>
         </div>
     </div>
-   
+  
+</div>
+
+<div class="row">
+    <div class="col-lg-8">
+        <h2>Mini Bio</h2>
+            <p>{{$mentor->profile_bio}}</p>
+    </div>
+</div>
 </div>
 @endsection
