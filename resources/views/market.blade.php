@@ -20,26 +20,45 @@
         </div>
     </div>
             <br><br>
-    <div class="row justify-content-center">     
-        @foreach ($products as $product)
-        <div class="col-lg-3 col-md-4">
-            <div class="single-product-items">
-                <div class="product-item-image">
-                    <a href="/market/{{$product->id}}"><img style="height: 12rem;" src="product_images/{{$product->picture}}" alt="Product"></a>
+    <div class="row justify-content-center"> 
+        <div style="background: #4e4444" class="col-lg-3 col-md-4">
+            <h4 style="margin: 7px; color: #f78152" class="title mb-15">Market Categories</h4>
+                {{-- <div class="product-item-content text-center mt-30"> --}}
+                <ul>
+                    @foreach ($categories as $category)
+                    <li style="margin: 10px;">
+                        <div class="info-content">
+                            <h5 class="product-title"><a style="color: #ffffff;" href="/market/category/{{$category->id}}">{{$category->category_name}}</a></h5>
+                        </div>
+                    </li>
+                    @endforeach   
+                </ul>              
+                {{-- </div> --}}
+        </div>  
+        
+        <div class="col-lg-9 col-md-8">
+            <div class="row justify-content-center"> 
+                @foreach ($products as $product)
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-product-items">
+                        <div class="product-item-image">
+                            <a href="/market/{{$product->id}}"><img style="height: 12rem;" src="product_images/{{$product->picture}}" alt="Product"></a>
+                        </div>
+                        <div class="product-item-content text-center mt-30">
+                            <h5 class="product-title"><a href="/market/{{$product->id}}">{{$product->name}}</a></h5>
+                            <span class="regular-price">N {{$product->price}}</span>
+                            <div>
+                                <button class="btn btn-success">
+                                    <a href="/market/{{$product->id}}" class="text-white text-decoration-none">View Details</a>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div> <!-- single product items -->
                 </div>
-                <div class="product-item-content text-center mt-30">
-                    <h5 class="product-title"><a href="/market/{{$product->id}}">{{$product->name}}</a></h5>
-                    <span class="regular-price">N {{$product->price}}</span>
-                    <div>
-                        <button class="btn btn-success">
-                            <a href="/market/{{$product->id}}" class="text-white text-decoration-none">View Details</a>
-                        </button>
-                    </div>
-                </div>
-                
-            </div> <!-- single product items -->
-        </div>
-        @endforeach   
+                @endforeach
+            </div> 
+    </div>  
     </div>
 
 </div>

@@ -12,7 +12,7 @@
                 <div class="container-fluid" style=" background-color: #fff; padding: 11px;">
                     <div class="row">
                         <div class="col-lg-4 order-lg-2 order-1">
-                            <div class="image_selected"><img src="/product_images/{{$product->picture}}" alt="product"></div>
+                            <div class="image_selected"><img style="height: 100%;" src="/product_images/{{$product->picture}}" alt="product"></div>
                         </div>
                         <div class="col-lg-6 order-3">
                             <div class="product_description">

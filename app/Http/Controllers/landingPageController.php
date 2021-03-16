@@ -85,8 +85,9 @@ class landingPageController extends Controller
     public function viewProductByCategory($id)
     {
         $products = product::where('category_id', $id)->get();
+        $category = MarketCategory::find($id);
 
-        return view('viewproductbycategory', compact('products'));
+        return view('viewproductbycategory', compact('products', 'category'));
     }
 
     public function getMentors()

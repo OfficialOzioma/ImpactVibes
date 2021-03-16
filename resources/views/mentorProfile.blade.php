@@ -16,7 +16,7 @@
                 @if ($mentor->image == null)
                 <img style="height: 25rem; width: 100%;" alt="" src="{{ asset('images/avatar.png' ) }}">
                 @else 
-                <img style="height: 30rem; width: 100%;" src="{{ url('storage/'. $mentor->image)}}" alt="Mentor">
+                <img style="height: 30rem; width: 100%;" src="{{ url('mentor_images/'. $mentor->image)}}" alt="Mentor">
                @endif 
         </div>
     </div>
