@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section-title pb-30">
-                    <h2 class="mb-30">Help Center</h2>
+                    <h3 class="title mb-15">Help Center</h3>
                 </div> <!-- Help title -->
             </div>
         </div> <!-- row -->
@@ -15,7 +15,6 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="contact-info pt-25">
-                        <h4 class="info-title">Contact Info</h4>
                         <ul>
                             <li>
                                 <div class="single-info mt-30">

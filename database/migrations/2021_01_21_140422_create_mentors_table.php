@@ -17,6 +17,7 @@ class CreateMentorsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email');
+            $table->string('nationality');
             $table->string('contact');
             $table->string('image');
             $table->string('category');

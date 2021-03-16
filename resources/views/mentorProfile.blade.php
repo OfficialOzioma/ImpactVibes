@@ -1,55 +1,42 @@
 @extends('layouts.landing')
 
 @section('content')
-<br><br><br><br><br><br><br><br>
-
-<div class="row">
-    <div class="col-md-2">
-        <div class="container" style="height:15rem; width:15rem;">
-        <img id="profile_img" src="{{ url('storage/'. $mentor->image)}}" alt="NoImage" style="border: 2px solid black">
-        </div>
-    </div>    
-    <div class="col-md-8">
-        <div class="card" style="background: sandybrown">
-            <h5 class="card-header" style="color: blue;">
-                <b><strong>{{$mentor->name}}'s Profile</strong></b>
-            </h5>
-            <div class="card-body">
-                    <table class="table table-striped table-hover">
-                            <tr>
-                                <th>Name  </th>
-                                <td>{{$mentor->name}}</td>
-                            </tr>
-                            <tr>
-                                <th>Email Address </th>
-                                <td>{{$mentor->email}}</td>
-                            </tr>
-                            <tr>
-                                <th>Linkedin Handle  </th>
-                                <td><a href="{{$mentor->linkedin}}"><i class="lni-twitter-original"></i></a></td>
-                            </tr>
-                            <tr>
-                                <th>Twitter Handle  </th>
-                                <td><a href="{{$mentor->twitter}}"><i class="lni-twitter-original"></i></a></td>
-                            </tr>
-                            <tr>
-                                <th>Facebook  </th>
-                                <td><a href="{{$mentor->facebook}}"><i class="lni-facebook-filled"></i></a></td>
-                            </tr>
-                            <tr>
-                                <th>Contact  </th>
-                                <td>{{$mentor->contact}}</td>
-                            </tr>
-                            <tr>
-                                <th>Field Area </th>
-                                <td>An expert in {{$mentor->category}}</td>
-                            </tr>
-                                
-                    </table>
-            </div>
+<br><br><br><br><br>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="section-title pb-30">
+                <h3 class="title mb-15">{{$mentor->name}}</h3>
+            </div> <!-- section title -->
         </div>
     </div>
-   
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8" style="height: 30rem; width: 100%;">
+                @if ($mentor->image == null)
+                <img style="height: 25rem; width: 100%;" alt="" src="{{ asset('images/avatar.png' ) }}">
+                @else 
+                <img style="height: 30rem; width: 100%;" src="{{ url('storage/'. $mentor->image)}}" alt="Mentor">
+               @endif 
+        </div>
+    </div>
+<br><br>
+    <div class="row justify-content-center">
+        <div class="col-lg-4">
+            <div class="section-title pb-30">
+                <h6  style="margin: 5px;">Email: {{$mentor->email}}</h6>
+                <h6 style="margin: 5px;">Sector: {{$mentor->category}}<h6>
+                <h6 style="margin: 5px;">Phone Number: {{$mentor->contact}}</h6>
+                <ul class="social mt-15">
+                    <li><a href="{{$mentor->facebook}}"><i class="lni-facebook-filled"></i></a></li>
+                    <li><a href="{{$mentor->twitter}}"><i class="lni-twitter-original"></i></a></li>
+                    <li><a href="{{$mentor->instagram}}"><i class="lni-instagram"></i></a></li>
+                    <li><a href="{{$mentor->linkedin}}"><i class="lni lni-linkedin-original"></i></a></li>
+                </ul>
+            </div> <!-- section title -->
+        </div>
+    </div>
+
 </div>
 
 @endsection

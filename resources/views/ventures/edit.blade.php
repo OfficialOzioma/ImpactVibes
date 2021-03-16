@@ -4,10 +4,8 @@
 <link rel="stylesheet" href="{{ asset('assets/css/venturesForm.css') }} ">
 @endsection
 
-
 @section('content')
-<br><br><br>
-<br><br><br>
+<br>
 @include('ventures.menu')
  <div class="m-3">
     <div class="">

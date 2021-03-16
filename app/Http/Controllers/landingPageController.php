@@ -6,6 +6,7 @@ use App\Mentor;
 use App\MarketCategory;
 use App\product;
 use App\Venture;
+use App\Opportunity;
 use Illuminate\Http\Request;
 
 class landingPageController extends Controller
@@ -40,8 +41,8 @@ class landingPageController extends Controller
 
     public function getOpportunity()
     {
-       // $posts = Post::orderBy('created_at', 'DESC')->paginate(3);
-        return view('opportunities');
+       $opportunities = Opportunity::where('expired', 0)->get();
+        return view('opportunities', compact('opportunities'));
     }
 
 
@@ -51,6 +52,27 @@ class landingPageController extends Controller
         $products = product::get();
 
         return view('market', compact('categories','products'));
+    }
+
+    public function searchProduct(Request $request) 
+    {
+        // Get the search value from the request
+        $keyword = $request->input('search');
+
+        //Search in the Product table
+        $products = product::query()
+            ->where('name', 'LIKE', "%{$keyword}%")
+            ->orWhere('price', 'LIKE', "%{$keyword}%")
+            ->orWhere('units_in_stock', 'LIKE', "%{$keyword}%")
+            ->orWhere('details', 'LIKE', "%{$keyword}%")
+            ->get();
+
+        //Search in the Category table
+        $categories = MarketCategory::query()
+        ->where('category_name', 'LIKE', "%{$keyword}%")
+        ->get();
+
+        return view('marketSearch', compact('categories','products'));
     }
 
     public function viewProduct($id)

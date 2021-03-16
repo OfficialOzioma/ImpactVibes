@@ -1,10 +1,7 @@
 @extends('layouts.sidebar')
 @section('pageContent')
 
-<hr>
-<div class="row">
-    
-    
+<div class="row justify-content-center">
     <div class="col-md-10">
         <div class="card">
             <h5 class="card-header">
@@ -14,12 +11,16 @@
             <div class="card-body">
                     <table class="table table-striped table-hover">
                             <tr>
-                                <th>Name  </th>
+                                <th>Name of Mentor </th>
                                 <td>{{$mentor->name}}</td>
                             </tr>
                             <tr>
                                 <th>Email  </th>
                                 <td>{{$mentor->email}}</td>
+                            </tr>
+                            <tr>
+                                <th>Nationality  </th>
+                                <td>{{$mentor->nationality}}</td>
                             </tr>
                             <tr>
                                 <th>Linkedin Handle  </th>
@@ -34,11 +35,11 @@
                                 <td>{{$mentor->facebook}}</td>
                             </tr>
                             <tr>
-                                <th>Contact  </th>
+                                <th>Phone Number  </th>
                                 <td>{{$mentor->contact}}</td>
                             </tr>
                             <tr>
-                                <th>Field Area </th>
+                                <th>Sector </th>
                                 <td>An expert in {{$mentor->category}}</td>
                             </tr>
                             <tr>

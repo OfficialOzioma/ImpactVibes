@@ -1,10 +1,8 @@
 @extends('layouts.userDashboard')
 
 @section('content')
-<br><br><br>
-<br><br><br>
-@include('ventures.menu')
 <br>
+@include('ventures.menu')
 <br>
 <div class="container">
     <div class="bg-dark text-white m-3 p-3">

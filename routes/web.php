@@ -21,6 +21,8 @@ Route::get('/', 'landingPageController@index');
 
 Route::get('/contact', 'contactController@index');
 
+Route::get('/help', 'contactController@getHelp');
+
 
 Route::get('/blogs', 'PostsController@index');
 
@@ -39,7 +41,7 @@ Route::get('/market/{id}', 'landingPageController@viewProduct');
 
 Route::get('/market/category/{id}', 'landingPageController@viewProductByCategory');
 
-
+Route::get('/search', 'landingPageController@searchProduct');
 
 Route::get('/mentorsConnect', 'landingPageController@getMentors');
 /* Routes for viewing Mentors profile by the user*/
@@ -78,20 +80,33 @@ Route::group(['middleware' => 'Admin'],function(){
     Route::delete('/admin/delete/media','AdminMediaController@deleteBulkMedia');
 
     /* for creating mentors */
-    Route::get('/createMentor','MentorController@create');
-    Route::post('/createMentor','MentorController@store');
+    Route::get('/createMentor','MentorsController@create');
+    Route::post('/createMentor','MentorsController@store');
     /* For Editing mentors */
-    Route::get('/editMentor/{mentor}','MentorController@edit');
-    Route::post('/updateMentor/{mentor}','MentorController@update');
+    Route::get('/editMentor/{mentor}','MentorsController@edit');
+    Route::post('/updateMentor/{mentor}','MentorsController@update');
     /* For deleting mentors */
-    Route::get('/deleteMentor/{mentor}','MentorController@delete');
+    Route::get('/deleteMentor/{mentor}','MentorsController@destroy');
     /* For displaying mentors detail*/
-    Route::get('/mentors','MentorController@index');
+    Route::get('/mentors','MentorsController@index');
     /* For displaying created mentors */
-    Route::get('/showMentor/{mentor}', 'MentorController@show');
+    Route::get('/showMentor/{mentor}', 'MentorsController@show');
 
     Route::resource('/adminVentures', 'adminVentureController');
 
+     /* for creating opportunity */
+     Route::get('/createOpportunity','OpportunityController@create');
+     Route::post('/createOpportunity','OpportunityController@store');
+     /* For Editing opportunity */
+     Route::get('/editOpportunity/{opportunity}','OpportunityController@edit');
+     Route::post('/updateOpportunity/{opportunity}','OpportunityController@update');
+     /* For deleting opportunity */
+     Route::get('/deleteOpportunity/{opportunity}','OpportunityController@destroy');
+     /* For displaying opportunity detail*/
+     Route::get('/opportunities','OpportunityController@index');
+     /* For displaying created opportunity */
+     Route::get('/showOpportunity/{opportunity}', 'OpportunityController@show');
+ 
 });
 /*Authenticated Route - Accessible when user is logged in */
 Route::group(['middleware' => 'auth'],function(){
@@ -105,6 +120,7 @@ Route::group(['middleware' => 'auth'],function(){
     /*User Profile Settings*/
     Route::resource('dashboard', 'UserProfileController');
     Route::resource('product', 'ProductController');
+
     /** Ventures deal route */
     Route::resource('ventures', 'VentureDealController');
 

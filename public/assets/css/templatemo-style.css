@@ -28,6 +28,7 @@ button:focus {
 .navbar-brand {
   display: flex;
   align-items: center;
+  margin-left: 25px;
 }
 .tm-site-icon {
   color: #656565;
@@ -327,7 +328,7 @@ thead {
 .form-control {
   padding: 19px 18px;
   border-radius: 0;
-  height: 50px;
+  height: 60px;
 }
 .form-group {
   margin-bottom: 15px;

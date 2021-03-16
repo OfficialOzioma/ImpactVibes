@@ -1,50 +1,63 @@
 @extends('layouts.landing')
 
 @section('content')
-
-<br>
+<br><br><br><br><br>
 <div class="container">
-    <div class="page-header">
-        <hr>
-        <h3 class="headingTag"><b>Blog Post - </b></h3>
-        <button role="button" class="btn btn-dark addButtonAdminPanel" onclick="window.location='{{ route('blogposts.index') }}'">Go Back</button>
-        <hr>
-    </div>
-    <div class="blog-title">
-        <h1>{{$post->title}}</h1>
-    </div>
-    <div class="row blog-margin">
-        <div class="col-md-1">
-            <img alt="" src="{{$post->user->photo ? $post->user->photo->file : '/images/placeholder.png'}}" class="post-author-photo">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 col-md-8">
+            <div class="section-title pb-30">
+                <h3 class="title mb-15">{{$post->title}}</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-4">
+                        <button role="button" class="btn btn-dark addButtonAdminPanel" onclick="window.location='{{ route('blogposts.index') }}'">Back</button>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <span class="regular-price">Category-{{ $post->category->name }}</span>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <span class="regular-price">By-{{$post->user->name }}</span>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <p>On-{{ $post->created_at ? $post->created_at->toFormattedDateString() : 'Date unavailable'}}</p>
+                    </div>
+                </div>              
+            </div> <!-- section title -->           
         </div>
-        <div class="col-md-9">
-            <div class="grid-row"><b>{{ $post->user->name }}</b></div>
-            <div class="grid-row">
-                <b>{{ $post->created_at ? $post->created_at->toFormattedDateString() : 'Date unavailable'}} - <div class="tag"> {{$post->category->name }}</div></b>
-            </div>
-        </div>
     </div>
-    <div class="blogimage-margin">
-        <img src="{{ $post->photo ? $post->photo->file : '/images/placeholder_blog.png'}}" class="img-fluid rounded" alt="Blog Image">
+    <div class="row justify-content-center">     
+        <div class="col-lg-8 col-md-6">
+            <div class="single-product-items">
+              <div class="product-item-image">
+              @if ($post->photo == null)
+              <img style="height: 25rem;" alt="" src="{{ asset('images/avatar.png' ) }}">
+              @else 
+              <img style="height: 25rem; width: 100%;" src="{{ $post->photo ? $post->photo->file : '/images/placeholder_blog.png'}}" alt="Blog Image">
+             @endif   
+              </div>                
+            </div> 
+        </div>              
     </div>
-    <div class="blog-content">
-        <p>{!! $post->body !!}</p>
+<br><br>
+    <div class="row justify-content-center">     
+        <div class="col-lg-12 col-md-8">
+            <div class="single-product-items">
+                <p>{!! $post->body !!}</p>         
+            </div> 
+        </div>              
     </div>
-    <div class="tag"><b>{{$post->category->name }}<b></div><hr>
-</div>
-
-    <div class="responses">
-        <div class="container"><br><br>
-            <h3><b>Responses</b></h3>
-            <hr>
-            @if(Session::has('comment_submitted'))
+<br><br>
+    <div class="row justify-content-center">     
+        <div class="col-lg-12 col-md-8">
+                <h3>Comments</h3> 
+                @if(Session::has('comment_submitted'))
             <div class="alert alert-dismissible alert-success fade show">
                 {{ session('comment_submitted')}}
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            @endif
+            @endif 
+<br><br>
             @if(Auth::check())
             <div class="comments-container">
                 <ul id="comments-list" class="comments-list">
@@ -82,13 +95,9 @@
                     </div>
                 </ul>
             </div>
-            <hr>
             @else
-            <p>Login/Register to comment on the post...</p><hr>
+            <p>Login/Register to comment on the post.</p>
             @endif
-
-       
-
             <!-- Displaying all the comments and its reply-->
             <div class="comments-container">
                 <ul id="comments-list" class="comments-list">
@@ -171,8 +180,10 @@
                             </li>
                         @endif
                     @endforeach
-                </ul><hr>
-            </div> <!--Comments-Container ends --><br>
-        </div><!-- container division tag ends -->
-    </div><!-- responses division tag ends -->
+                </ul>
+            </div> <!--Comments-Container ends -->
+        </div>              
+    </div>
+    
+</div>
 @endsection

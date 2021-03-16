@@ -5,8 +5,7 @@
 @endsection
 
 @section('content')
-<br><br><br>
-<br><br><br>
+<br>
     <div class="container">
         @include('ventures.menu')
         <div class="m-3">

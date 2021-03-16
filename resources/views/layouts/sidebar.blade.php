@@ -36,10 +36,12 @@
                 </li>
                 <li>
                     <a href="{{route('comments.index')}}">Comments</a>
-
-                    <li>
+                </li>
+                <li>
                     <a href="/mentors">Mentors</a>
                 </li>
+                <li>
+                    <a href="/opportunities">Opportunities</a>
                 </li>
             </ul>
         </div>

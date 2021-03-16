@@ -10,11 +10,7 @@ use Illuminate\Support\Facades\Session;
 
 class VentureDealController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index()
     {
         $ventureDeal = Venture::where('user_id', Auth::user()->id)->get();
@@ -22,22 +18,13 @@ class VentureDealController extends Controller
         return view('ventures.index', compact('ventureDeal'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function create()
     {
         return view('ventures.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function store(Request $request)
     {
         $startup = new Venture();
@@ -86,37 +73,21 @@ class VentureDealController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Venture  $Venture
-     * @return \Illuminate\Http\Response
-     */
+    
     public function show(Venture $venture)
     {
         $getventure = Venture::findOrFail($venture->id);
         return view('ventures.show', compact('getventure'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Venture  $Venture
-     * @return \Illuminate\Http\Response
-     */
+   
     public function edit(Venture $venture)
     {
         $venturesRecord = Venture::findOrFail($venture->id);
         return view('ventures.edit', compact('venturesRecord'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Venture  $Venture
-     * @return \Illuminate\Http\Response
-     */
+    
     public function update(Request $request, Venture $venture)
     {
         $updateVenture = Venture::findOrFail($venture->id);
@@ -144,29 +115,11 @@ class VentureDealController extends Controller
         $updateVenture->team_member_designation = $request->input('team_member_designation');
         $updateVenture->team_member_phone_number = $request->input('team_member_phone_number');
 
-        // if($request->hasfile('picture_of_the_startup')){
-        //     $file = $request->file('picture_of_the_startup');
-        //     $extension = $file->getClientoriginalExtension();
-        //     $filename = time() . '.' . $extension;
-        //     $file->move('ventures_images/', $filename);
-        //     $updateVenture->picture_of_the_startup = $filename;
-        // }else {
-        //     $file = $request->file('picture_of_the_startup');
-        //     $updateVenture->picture_of_the_startup = "";
-
-        //     return $file;
-        // }
-
         $updateVenture->update();
         return redirect('ventures');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Venture  $Venture
-     * @return \Illuminate\Http\Response
-     */
+    
     public function destroy(Venture $venture)
     {
         $deleteRecord = Venture::findOrFail($venture->id);
