@@ -12,10 +12,21 @@
                     Greatness is your potential and Action, your opportunity.  Let’s explore and find 
                     the power to succeed together!                         
                 </p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <form action="/submit_opportunity" method="GET">
+                            <button type="submit" class="btn btn-info">Submit Opportunity</button>
+                        </form>
+                    </div>
+                </div>
             </div> <!-- section title -->
+            <form action="/opportunity_search" method="GET" class="navbar-form">
+                <input class="form-control" name="search" placeholder="Search for Opportunities" type="text" style="display: inline-block; width: 70%;">
+                  <button type="submit" class="btn btn-info">Search</button>
+            </form>
         </div>
     </div>
-
+<br>
     @if(Session::has('opportunity_deleted'))
     <div class="alert alert-dismissible alert-success fade show">
       {{ session('opportunity_deleted')}}
@@ -28,24 +39,28 @@
     @if(count($opportunities) > 0)
     <div class="row justify-content-center">
         @foreach ($opportunities as $key => $opportunity)
-        <div class="col-lg-3 col-sm-4">
-            <div class="single-services text-center mt-30" style="background: #ec5252">
-                <div class="image">
-                    @if ($opportunity->image == null)
-                    <img style="height: 5rem; width: 5rem;" alt="" src="{{ asset('images/avatar.png' ) }}">
-                    @else 
-                   <img style="height: 5rem; width: 5rem;" src="{{ url('opportunity_images/'. $opportunity->image)}}" alt="Opportunity">
-                    @endif
-                </div>
-                <div class="services-content mt-20">
-                    <h5 class="title mb-10" style="color: #000000">{{$opportunity->title}}</h5>
-                    <p style="color: #ffffff; font-size: 13px;">{{$opportunity->description}}</p>
-                    <a style="color: #0e0d0d; font-size: 15px;" href="{{$opportunity->link}}">More...</a><br>
-                </div>
-            </div> <!-- single services -->
+        <div class="col-lg-4 col-md-6">
+            <div class="single-product-items">
+              <div class="product-item-image">
+                @if ($opportunity->image == null)
+                <a href="/opportunity/{{$opportunity->id}}"><img style="height: 15rem;" alt="" src="{{ asset('images/avatar.png' ) }}"></a>
+                @else 
+                <a href="/opportunity/{{$opportunity->id}}"><img style="height: 15rem;" src="{{ url('opportunity_images/'. $opportunity->image)}}" alt="Opportunity"></a>
+                @endif   
+              </div>
+              <div class="product-item-content text-center mt-30">
+                  <h4 class="product-title"><a href="/opportunity/{{$opportunity->id}}">{{$opportunity->title}}</a></h4>
+                  <h6 class="product-title">{{$opportunity->category}}</h6>
+                  <h6 class="product-title">{{$opportunity->funded}} funded</h6>
+
+                <span class="regular-price">Posted: {{ $opportunity->created_at ? $opportunity->created_at->toFormattedDateString() : 'Date Unavailable' }}</span>                
+              </div>
+                
+            </div> <!-- single product items -->
         </div>
         @endforeach
     </div> <!-- row -->
+
     @else
     <div class="row justify-content-center">
         <div class="NoDataMessage">

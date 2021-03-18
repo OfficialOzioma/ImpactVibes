@@ -17,10 +17,13 @@ class CreateOpportunitiesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('user_id');
             $table->string('title');
+            $table->string('category');
+            $table->string('organizer_name');
+            $table->string('eligible_region');
+            $table->string('funded');
             $table->text('description');
             $table->string('link');
             $table->string('image');
-            $table->string('expired')->default(false);
             $table->timestamps();
         });
     }

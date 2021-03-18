@@ -7,6 +7,8 @@ use App\MarketCategory;
 use App\product;
 use App\Venture;
 use App\Opportunity;
+use App\SubmittedOpportunities;
+
 use Illuminate\Http\Request;
 
 class landingPageController extends Controller
@@ -41,8 +43,71 @@ class landingPageController extends Controller
 
     public function getOpportunity()
     {
-       $opportunities = Opportunity::where('expired', 0)->get();
+       $opportunities = Opportunity::orderBy('created_at', 'DESC')->paginate(16);
         return view('opportunities', compact('opportunities'));
+    }
+
+    public function submitOpportunity()
+    {
+        return view('opportunity_submit');
+    }
+
+    public function submittedOpportunity(Request $request)
+    {
+        $submiitedOpportunity = new SubmittedOpportunities;
+
+        $submiitedOpportunity->name = $request->input('name');
+        $submiitedOpportunity->email = $request->input('email');
+        $submiitedOpportunity->title = $request->input('title');
+        $submiitedOpportunity->category = $request->input('category');
+        $submiitedOpportunity->organizer_name = $request->input('organizer_name');
+        $submiitedOpportunity->eligible_region = $request->input('eligible_region');
+        $submiitedOpportunity->funded = $request->input('funded');
+        $submiitedOpportunity->description = $request->input('description');
+        $submiitedOpportunity->image = $request->input('image');
+
+        if($request->hasfile('image')){
+            $file = $request->file('image');
+            $name = $file->getClientoriginalName();
+            $filename = time() . '.' . $name;
+            $file->move('opportunity_suggested_images/', $filename);
+            $submiitedOpportunity->image = $filename;
+        }else {
+            $file = $request->file('image');
+            $submiitedOpportunity->image = "";
+
+            return $file;
+        }
+
+        $submiitedOpportunity->save();
+
+        return redirect('opportunity');
+
+    }
+
+
+    public function searchOpportunity(Request $request) 
+    {
+        // Get the search value from the request
+        $keyword = $request->input('search');
+
+        //Search in the Product table
+        $opportunities = Opportunity::query()
+            ->where('title', 'LIKE', "%{$keyword}%")
+            ->orWhere('category', 'LIKE', "%{$keyword}%")
+            ->orWhere('deadline', 'LIKE', "%{$keyword}%")
+            ->orWhere('elegible_regions', 'LIKE', "%{$keyword}%")
+            ->orWhere('organizer_name', 'LIKE', "%{$keyword}%")
+            ->orWhere('funded', 'LIKE', "%{$keyword}%")
+            ->get();
+
+        return view('opportunitySearch', compact('opportunities'));
+    }
+
+    public function getOpportunityInfo($id)
+    {
+       $opportunity = Opportunity::find($id);
+        return view('opportunityInfo', compact('opportunity'));
     }
 
 

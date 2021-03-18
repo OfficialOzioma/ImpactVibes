@@ -30,6 +30,10 @@ class OpportunityController extends Controller
 
         $opportunity->user_id = Auth::user()->id;
         $opportunity->title = $request->input('title');
+        $opportunity->category = $request->input('category');
+        $opportunity->organizer_name = $request->input('organizer_name');
+        $opportunity->eligible_region = $request->input('eligible_region');
+        $opportunity->funded = $request->input('funded');
         $opportunity->description = $request->input('description');
         $opportunity->link = $request->input('link');
         $opportunity->image = $request->input('image');
@@ -73,9 +77,14 @@ class OpportunityController extends Controller
 
         $opportunity->user_id = Auth::user()->id;
         $opportunity->title = $request->input('title');
+        $opportunity->category = $request->input('category');
+        $opportunity->organizer_name = $request->input('organizer_name');
+        $opportunity->eligible_region = $request->input('eligible_region');
+        $opportunity->funded = $request->input('funded');
         $opportunity->description = $request->input('description');
         $opportunity->link = $request->input('link');
         $opportunity->image = $request->input('image');
+
         if($request->hasfile('image')){
             $file = $request->file('image');
             $name = $file->getClientoriginalName();
@@ -102,4 +111,6 @@ class OpportunityController extends Controller
         Session::flash('Deleted',"The record has been successfully Deleted");
         return redirect('opportunities');
     }
+
+
 }

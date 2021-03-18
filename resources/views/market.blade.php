@@ -9,11 +9,11 @@
             <div class="section-title pb-30">
                 <h3 class="title mb-15">Our Market Place</h3>
                 <p>
-                    …brings the world closer to you – buyers and founders, to find to buy and to sell, 
+                    …brings the world closer to you – <b>buyers</b> and <b>founders</b>, to find to buy and to sell, 
                     whenever you choose. All you need to do is, have a budget
                 </p>
             </div> <!-- section title -->
-            <form action="/search" method="GET" class="navbar-form">
+            <form action="/market_search" method="GET" class="navbar-form">
                 <input class="form-control" name="search" placeholder="Search for Products" type="text" style="display: inline-block; width: 70%;">
                   <button type="submit" class="btn btn-success">Search</button>
             </form>

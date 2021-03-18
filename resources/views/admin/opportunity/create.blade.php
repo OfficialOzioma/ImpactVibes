@@ -24,12 +24,69 @@
                                                 <input class="input--style-6 form-control-lg" type="text" name="title" placeholder="Title of the Opportunity">
                                             </div>
                                         </div>
+
+                                        <div class="form-row">
+                                            <div class="name">Category</div>
+                                            <div class="value">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-lg" name="category">
+                                                        <option selected disabled>Select Category</option>
+                                                        <option value="Scholarships">Scholarships</option>
+                                                        <option value="Competitions">Competitions</option>
+                                                        <option value="Awards">Awards</option>
+                                                        <option value="Jobs">Jobs</option>
+                                                        <option value="Grants">Grants</option>
+                                                        <option value="Conferences">Conferences</option>
+                                                        <option value="Internships">Internships</option>
+                                                        <option value="Workshops">Workshops</option>
+                                                        <option value="Seminars">Seminars</option>
+                                                        <option value="Others">Others</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="name">Eligible Region</div>
+                                            <div class="value">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-lg" name="eligible_region">
+                                                        <option selected disabled>Select Regions</option>
+                                                        <option value="Africa">Africa</option>
+                                                        <option value="America">America</option>
+                                                        <option value="Europe">Europe</option>
+                                                        <option value="Asia">Asia</option>
+                                                        <option value="Australia">Australia</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="name">Funded </div>
+                                            <div class="value">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-lg" name="funded">
+                                                        <option selected disabled>Funded?</option>
+                                                        <option value="Partially">Partially</option>
+                                                        <option value="Fully">Fully</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="name">Organizer's Name</div>
+                                            <div class="value">
+                                                <input class="input--style-6 form-control-lg" type="text" name="organizer_name" placeholder="Name of the Organizer/Organization">
+                                            </div>
+                                        </div>
                                     
                                         <div class="form-row">
                                             <div class="name">Description</div>
                                             <div class="value">
                                                 <div class="input-group">
-                                                    <textarea class="textarea--style-6" name="description" placeholder="Briefly explain what the opportunity is about (100 Characters Max.)"></textarea>
+                                                    <textarea class="textarea--style-6" name="description" placeholder="Briefly explain what the opportunity is about (500 Characters Max.)"></textarea>
                                                 </div>
                                             </div>
                                         </div>

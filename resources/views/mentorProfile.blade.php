@@ -24,14 +24,11 @@
     <div class="row justify-content-center">
         <div class="col-lg-4">
             <div class="section-title pb-30">
+                <h6 style="margin: 5px;">Nationality: {{$mentor->nationality}}<h6>
                 <h6  style="margin: 5px;">Email: {{$mentor->email}}</h6>
                 <h6 style="margin: 5px;">Sector: {{$mentor->category}}<h6>
-                <h6 style="margin: 5px;">Phone Number: {{$mentor->contact}}</h6>
                 <ul class="social mt-15">
-                    <li><a href="{{$mentor->facebook}}"><i class="lni-facebook-filled"></i></a></li>
-                    <li><a href="{{$mentor->twitter}}"><i class="lni-twitter-original"></i></a></li>
-                    <li><a href="{{$mentor->instagram}}"><i class="lni-instagram"></i></a></li>
-                    <li><a href="{{$mentor->linkedin}}"><i class="lni lni-linkedin-original"></i></a></li>
+                    <li>LinkedIn: <a href="{{$mentor->linkedin}}"><i class="lni lni-linkedin-original"></i></a></li>
                 </ul>
             </div> <!-- section title -->
         </div>

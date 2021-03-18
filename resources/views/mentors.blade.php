@@ -32,7 +32,7 @@
           </div>
           <div class="product-item-content text-center mt-30">
               <h5 class="product-title"><a href="/profile/{{$mentor->id}}">{{$mentor->name}}</a></h5>
-              <h6 class="product-title">Nigeria</h6>
+              <h6 class="product-title">{{$mentor->nationality}}</h6>
               <h6 class="product-title">{{$mentor->category}}</h6>
               <span class="regular-price">Mentor</span>
               <a href="https://www.linkedin.com/in/impact-vibes-a89156204/"><i class="lni lni-linkedin-original"></i></a>

@@ -5,8 +5,8 @@
     <div class="row">
         @if(count($mentors) > 0) 
         @foreach($mentors as $key => $mentor)
-        <div class="card" style="width: 15rem; heigth: 15rem; float:left; margin:15px">
-            <a href="/showMentor/{{$mentor->id}}"><img src="{{ url('mentor_images/'. $mentor->image)}}" style="height:5rem;" class="card-img-top" alt="No Image"></a>
+        <div class="card" style="width: 15rem; heigth: 35rem; float:left; margin:15px">
+            <a href="/showMentor/{{$mentor->id}}"><img src="{{ url('mentor_images/'. $mentor->image)}}" style="height:7rem;" class="card-img-top" alt="No Image"></a>
             <div class="card-body" style="background: black; color:#ffffff">
             <p class="card-text" style="font-size:10px; height:1.0rem; "><strong>Email: {{$mentor->name}}
             </p>

@@ -32,8 +32,16 @@ Route::get('/venturesdeal/{id}', 'landingPageController@getVenturesDetails');
 
 Route::get('/ourimpactstories', 'landingPageController@getImpact');
 
-
+/* Routes for Opportunities for users*/
 Route::get('/opportunity', 'landingPageController@getOpportunity');
+
+Route::get('/opportunity_search', 'landingPageController@searchOpportunity');
+
+Route::get('/submit_opportunity', 'landingPageController@submitOpportunity');
+
+Route::post('/submit_opportunity', 'landingPageController@submittedOpportunity');
+
+Route::get('/opportunity/{opportunity}', 'landingPageController@getOpportunityInfo');
 
 Route::get('/market', 'landingPageController@getMarketPlace');
 
@@ -41,7 +49,7 @@ Route::get('/market/{id}', 'landingPageController@viewProduct');
 
 Route::get('/market/category/{id}', 'landingPageController@viewProductByCategory');
 
-Route::get('/search', 'landingPageController@searchProduct');
+Route::get('/product_search', 'landingPageController@searchProduct');
 
 Route::get('/mentorsConnect', 'landingPageController@getMentors');
 /* Routes for viewing Mentors profile by the user*/
@@ -105,19 +113,10 @@ Route::group(['middleware' => 'Admin'],function(){
     Route::get('/createVenturesImages/{venturesDeal}','venturesDealImageController@create');
     Route::post('/createVenturesImages/{venturesDeal}','venturesDealImageController@store');
     Route::get('/showVenturesImages/{venturesDeal}','venturesDealImageController@show');
-
-
+    
+    Route::resource('/adminVentures', 'adminVentureController');
     /* ********************* */
     /* Routes For Opportunities */
-    Route::get('/listOpportunities','OpportunitiesController@index');
-    Route::get('/createOpportunity','OpportunitiesController@create');
-    Route::post('/createOpportunity','OpportunitiesController@store');
-    Route::get('/showOpportunity/{opportunity}', 'OpportunitiesController@show');
-    Route::get('/editOpportunity/{opportunity}','OpportunitiesController@edit');
-    Route::post('/updateOpportunity/{opportunity}','OpportunitiesController@update');
-    Route::get('/deleteOpportunity/{opportunity}','OpportunitiesController@destroy');
-    Route::resource('/adminVentures', 'adminVentureController');
-
      /* for creating opportunity */
      Route::get('/createOpportunity','OpportunityController@create');
      Route::post('/createOpportunity','OpportunityController@store');

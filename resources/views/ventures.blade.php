@@ -11,7 +11,7 @@
                 <h3 class="title mb-15">Impact Ventures</h3>
                 <p style="text-align: center;">
                     We are passionate. We are smart.  We seek possible awe – inspiring ways to connecting 
-                    YOU to the world’s best investment deals ever.
+                    YOU to the world’s best investment deals ever.<br>
                     Just help us know what your Venture does.                          
                 </p>
             </div> <!-- section title -->

@@ -52,6 +52,7 @@
                 <div class="col-lg-8">
                     <div class="contact-form">
                         <form id="contact-form" action="assets/contact.php" method="post" data-toggle="validator">
+                            @csrf
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="single-form form-group">

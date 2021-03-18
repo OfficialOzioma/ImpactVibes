@@ -56,7 +56,7 @@
     <div class="row justify-content-center">
         <div class="col-lg-12">
             <div class="section-title pb-30">
-                <h6 style="margin: 5px;" class="title mb-15">About: <p> {{$venturesDetails->about_startup}}</p></h6>
+                <h6 style="margin: 5px; font-size: 22px;" class="title mb-15">About <p> {{$venturesDetails->about_startup}}</p></h6>
             </div> <!-- section title -->
         </div>
     </div>
