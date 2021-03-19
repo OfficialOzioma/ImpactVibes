@@ -58,11 +58,6 @@
   
 </div>
 
-<div class="row">
-    <div class="col-lg-8">
-        <h2>Mini Bio</h2>
-            <p>{{$mentor->profile_bio}}</p>
-    </div>
-</div>
+
 </div>
 @endsection

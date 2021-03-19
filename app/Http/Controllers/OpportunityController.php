@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use App\Opportunity;
+use App\SubmittedOpportunities;
 
 class OpportunityController extends Controller
 {
@@ -112,5 +113,26 @@ class OpportunityController extends Controller
         return redirect('opportunities');
     }
 
+    public function getSubmittedOpportunities()
+    {
+        $submitted_opportunities = SubmittedOpportunities::paginate(15);
+
+        return view('admin.submitted_opportunities.index', compact('submitted_opportunities'));
+    }
+
+    public function viewSubmittedOpportunities($id)
+    {
+        $submitted_opportunity = SubmittedOpportunities::find($id);
+
+        return view('admin.submitted_opportunities.show', compact('submitted_opportunity'));
+    }
+
+    public function destroySubmittedOpportunity($id)
+    {
+        $submitted_opportunity = SubmittedOpportunities::find($id);
+        $submitted_opportunity->delete();
+        Session::flash('Deleted',"The record has been successfully Deleted");
+        return redirect('submitted_opportunities');
+    }
 
 }

@@ -129,6 +129,12 @@ Route::group(['middleware' => 'Admin'],function(){
      Route::get('/opportunities','OpportunityController@index');
      /* For displaying created opportunity */
      Route::get('/showOpportunity/{opportunity}', 'OpportunityController@show');
+
+     Route::get('/submitted_opportunities','OpportunityController@getSubmittedOpportunities');
+
+     Route::get('/submitted_opportunities/{submitted_opportunity}','OpportunityController@viewSubmittedOpportunities');
+
+     Route::get('/submitted_opportunities/delete/{submitted_opportunity}','OpportunityController@destroySubmittedOpportunity');
  
 });
 /*Authenticated Route - Accessible when user is logged in */

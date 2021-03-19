@@ -2,6 +2,9 @@
 @section('pageContent')
 
 <div class="col-lg-12 col-md-12">
+    <div class="d-flex align-items-center justify-content-center">
+        <a href="/submitted_opportunities" class="btn btn-success">Submitted Opportunities</a>
+    </div>
     <div class="row">
         @if(count($opportunities) > 0) 
         @foreach($opportunities as $opportunity)
