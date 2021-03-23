@@ -21,6 +21,7 @@ class CreateOpportunitiesTable extends Migration
             $table->string('organizer_name');
             $table->string('eligible_region');
             $table->string('funded');
+            $table->date('end_date');
             $table->text('description');
             $table->string('link');
             $table->string('image');

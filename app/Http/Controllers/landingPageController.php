@@ -63,6 +63,7 @@ class landingPageController extends Controller
         $submiitedOpportunity->organizer_name = $request->input('organizer_name');
         $submiitedOpportunity->eligible_region = $request->input('eligible_region');
         $submiitedOpportunity->funded = $request->input('funded');
+        $submiitedOpportunity->end_date = $request->input('end_date');
         $submiitedOpportunity->description = $request->input('description');
         $submiitedOpportunity->image = $request->input('image');
 

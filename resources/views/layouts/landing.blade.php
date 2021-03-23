@@ -63,7 +63,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="/">
                             <img src="{{ asset('assets/images/logo6.png') }} " alt="Logo">
                         </a> <!-- Logo -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,7 +147,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-5 col-sm-7">
                         <div class="footer-logo mt-40">
-                            <a href="#">
+                            <a href="/">
                                 <img src="{{ asset('assets/images/logo6.png') }}" alt="Logo">
                             </a>
                             <ul class="footer-social mt-25">

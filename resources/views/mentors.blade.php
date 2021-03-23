@@ -35,7 +35,7 @@
               <h6 class="product-title">{{$mentor->nationality}}</h6>
               <h6 class="product-title">{{$mentor->category}}</h6>
               <span class="regular-price">Mentor</span>
-              <a href="https://www.linkedin.com/in/impact-vibes-a89156204/"><i class="lni lni-linkedin-original"></i></a>
+              <a href="{{$mentor->linkedin}}"><i class="lni lni-linkedin-original"></i></a>
           </div>
             
         </div> <!-- single product items -->

@@ -13,6 +13,9 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="{{ asset('assets/css/LineIcons.css') }} ">
+    
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->

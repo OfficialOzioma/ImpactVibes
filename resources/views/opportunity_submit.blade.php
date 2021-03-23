@@ -64,7 +64,7 @@
                                 <div class="help-block with-errors"></div>
                             </div> <!-- single form -->
                         </div>
-                        <div class="col-lg-12">
+                        <div class="col-lg-6">
                             <div class="single-form form-group">
                                 <select class="form-control form-control-lg" name="category">
                                     <option selected disabled>Select Category</option>
@@ -105,16 +105,22 @@
                                 <div class="help-block with-errors"></div>
                             </div> <!-- single form -->
                         </div>
+                        <div class="col-lg-6">
+                            <div class="single-form form-group">
+                                <input type="date" name="end_date" placeholder="Deadline date" required="required">
+                                <div class="help-block with-errors"></div>
+                            </div> <!-- single form -->
+                        </div>
                         <div class="col-lg-12">
                             <div class="single-form form-group">
-                                <textarea name="description" placeholder="Describe what the opportunity is about, the eligibility requirements and the link on how apply" data-error="Please Describe the opportunity with the link" required="required"></textarea>
+                                <textarea name="description" placeholder="Describe what the opportunity is about, the eligibility requirements and the link on how to apply" data-error="Please Describe the opportunity with the link" required="required"></textarea>
                                 <div class="help-block with-errors"></div>
                             </div> <!-- single form -->
                         </div>
                         <div class="col-lg-12">
                             <div class="single-form form-group">
                                 <div class="value">
-                                    <label for="formFileLg" class="form-label">Select Picture</label>
+                                    <label for="formFileLg" class="form-label">Select image</label>
                                     <input type="file" class="form-control form-control-lg" id="formFileLg" name="image" required />
                                     <div class="label--desc">Upload opportunity image. Max file size 3 MB</div>
                                 </div>

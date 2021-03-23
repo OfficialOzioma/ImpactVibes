@@ -76,6 +76,13 @@
                                         </div>
 
                                         <div class="form-row">
+                                            <div class="name">End Date</div>
+                                            <div class="value">
+                                                <input class="input--style-6 form-control-lg" type="date" name="end_date" placeholder="The deadline for the opportunity">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
                                             <div class="name">Organizer's Name</div>
                                             <div class="value">
                                                 <input class="input--style-6 form-control-lg" type="text" name="organizer_name" placeholder="Name of the Organizer/Organization">

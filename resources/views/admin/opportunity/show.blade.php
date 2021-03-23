@@ -16,20 +16,32 @@
                                 <td>{{$opportunity->title}}</td>
                             </tr>
                             <tr>
-                                <th>Description  </th>
-                                <td>{{$opportunity->email}}</td>
+                                <th>Category  </th>
+                                <td>{{$opportunity->category}}</td>
+                            </tr>
+                            <tr>
+                                <th>Opportunity Deadline</th>
+                                <td>{{$opportunity->end_date}}</td>
+                            </tr>
+                            <tr>
+                                <th>Eligible Region</th>
+                                <td>{{$opportunity->eligible_region}}</td>
                             </tr>
                             <tr>
                                 <th>Link to the Opportunity</th>
                                 <td>{{$opportunity->link}}</td>
                             </tr>
-                            {{-- <tr>
-                                <th>Uploaded By</th>
-                                <td>{{$opportunity->twitter}}</td>
-                            </tr> --}}
                             <tr>
-                                <th>Opportunity Expired</th>
-                                <td>{{$opportunity->expired}}</td>
+                                <th>Funded</th>
+                                <td>{{$opportunity->funded}}</td>
+                            </tr>
+                            <tr>
+                                <th>Organizer Name</th>
+                                <td>{{$opportunity->organizer_name}}</td>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
+                                <td>{{$opportunity->description}}</td>
                             </tr>
                             <tr>
                                 <th>The Image  </th>

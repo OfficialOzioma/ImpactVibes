@@ -52,8 +52,7 @@
                   <h4 class="product-title"><a href="/opportunity/{{$opportunity->id}}">{{$opportunity->title}}</a></h4>
                   <h6 class="product-title">{{$opportunity->category}}</h6>
                   <h6 class="product-title">{{$opportunity->funded}} funded</h6>
-
-                <span class="regular-price">Posted: {{ $opportunity->created_at ? $opportunity->created_at->toFormattedDateString() : 'Date Unavailable' }}</span>                
+                <span class="regular-price">{{$opportunity->remaining_days}} days left</span>                
               </div>
                 
             </div> <!-- single product items -->

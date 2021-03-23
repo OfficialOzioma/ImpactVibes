@@ -35,6 +35,7 @@ class OpportunityController extends Controller
         $opportunity->organizer_name = $request->input('organizer_name');
         $opportunity->eligible_region = $request->input('eligible_region');
         $opportunity->funded = $request->input('funded');
+        $opportunity->end_date = $request->input('end_date');
         $opportunity->description = $request->input('description');
         $opportunity->link = $request->input('link');
         $opportunity->image = $request->input('image');
@@ -82,6 +83,7 @@ class OpportunityController extends Controller
         $opportunity->organizer_name = $request->input('organizer_name');
         $opportunity->eligible_region = $request->input('eligible_region');
         $opportunity->funded = $request->input('funded');
+        $opportunity->end_date = $request->input('end_date');
         $opportunity->description = $request->input('description');
         $opportunity->link = $request->input('link');
         $opportunity->image = $request->input('image');

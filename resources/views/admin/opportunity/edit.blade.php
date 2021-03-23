@@ -15,7 +15,7 @@
                         <div class="wrapper wrapper--w900">
                             <div class="card card-6 p-3">
                                 <div class="card-heading">
-                                    <h2 class="title">Opportunity</h2>
+                                    <h2 class="title">Edit Opportunity</h2>
                                 </div>
                                 <div class="card-body">
                                         <div class="form-row">
@@ -24,12 +24,76 @@
                                             <input class="input--style-6 form-control-lg" value="{{$opportunity->title}}" type="text" name="title" placeholder="Title of the Opportunity">
                                             </div>
                                         </div>
+
+                                        <div class="form-row">
+                                            <div class="name">Category</div>
+                                            <div class="value">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-lg" name="category">
+                                                        <option selected disabled>{{$opportunity->category}}</option>
+                                                        <option value="Scholarships">Scholarships</option>
+                                                        <option value="Competitions">Competitions</option>
+                                                        <option value="Awards">Awards</option>
+                                                        <option value="Jobs">Jobs</option>
+                                                        <option value="Grants">Grants</option>
+                                                        <option value="Conferences">Conferences</option>
+                                                        <option value="Internships">Internships</option>
+                                                        <option value="Workshops">Workshops</option>
+                                                        <option value="Seminars">Seminars</option>
+                                                        <option value="Others">Others</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="name">Eligible Region</div>
+                                            <div class="value">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-lg" name="eligible_region">
+                                                        <option selected disabled>{{$opportunity->eligible_region}}</option>
+                                                        <option value="Africa">Africa</option>
+                                                        <option value="America">America</option>
+                                                        <option value="Europe">Europe</option>
+                                                        <option value="Asia">Asia</option>
+                                                        <option value="Australia">Australia</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="name">Funded </div>
+                                            <div class="value">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-lg" name="funded">
+                                                        <option selected disabled>{{$opportunity->funded}}</option>
+                                                        <option value="Partially">Partially</option>
+                                                        <option value="Fully">Fully</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="name">End Date</div>
+                                            <div class="value">
+                                                <input class="input--style-6 form-control-lg" value="{{$opportunity->end_date}}" type="date" name="end_date" placeholder="The deadline for the opportunity">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="name">Organizer's Name</div>
+                                            <div class="value">
+                                                <input class="input--style-6 form-control-lg" value="{{$opportunity->organizer_name}}" type="text" name="organizer_name" placeholder="Name of the Organizer/Organization">
+                                            </div>
+                                        </div>
                                     
                                         <div class="form-row">
                                             <div class="name">Description</div>
                                             <div class="value">
                                                 <div class="input-group">
-                                                    <textarea class="textarea--style-6" name="description" placeholder="Briefly explain what the opportunity is about (100 Characters Max.)">{{$opportunity->description}}</textarea>
+                                                    <textarea class="textarea--style-6" name="description" placeholder="Briefly explain what the opportunity is about (500 Characters Max.)">{{$opportunity->description}}</textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -45,7 +109,7 @@
                                             <div class="name">Upload Image</div>
                                             <div class="value">
                                                 <label for="formFileLg" class="form-label">Select Picture</label>
-                                                <input type="file" class="form-control form-control-lg" id="formFileLg" name="image" required />
+                                                <input type="file" class="form-control form-control-lg" id="formFileLg" value="{{$opportunity->image}}" name="image" required />
                                                 <div class="label--desc">Upload image. Max file size 50 MB</div>
                                             </div>
                                         </div>

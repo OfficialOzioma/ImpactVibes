@@ -15,6 +15,7 @@
         <th scope="col">Organizer/Organization</th>
         <th scope="col">Eligible Region</th>
         <th scope="col">Is it funded?</th>
+        <th scope="col">Deadline</th>
         <th scope="col">Submitted</th>
         <th scope="col">Operations</th>
     </tr>
@@ -31,6 +32,7 @@
                 <td>{{$submitted_opportunity->organizer_name}}</td>
                 <td>{{$submitted_opportunity->eligible_region}}</td>
                 <td>{{$submitted_opportunity->funded}}</td>
+                <td>{{$submitted_opportunity->end_date}}</td>
                 @if ($submitted_opportunity->created_at == null)
                 <td>{{$submitted_opportunity->created_at}}</td>
                 @else

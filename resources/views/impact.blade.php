@@ -10,7 +10,7 @@
             <div class="section-title pb-30">
                 <h3 class="title mb-15">Our Impact Stories</h3>
                 <h5 class="mb-15">To us, few acts of kindness can spark an Impact!</h5>
-                <p>
+                <p style="color: #000000">
                     It begins with empathy and passion – to bring change by solving a particular pressing problem.
                     Owerri, Nigeria is our home, but - a lot has to be done to address its neglect and falsity over 
                     the years to inspire and enable human capital development among the youths, as obtainable elsewhere.
@@ -40,7 +40,7 @@
                             </div>
                             <div class="services-content mt-20">
                                 <h5 class="title mb-10">Impact Circle</h5>
-                                <p>
+                                <p style="color: #ffffff">
                                     Our focus lies on inspiring the youths, breeding employability through 
                                     the acquisition of diverse valuable work skills, proffering career path 
                                     guidance and incubate innovative ideas, as well as exploring the vast 
@@ -65,12 +65,12 @@
                             </div>
                             <div class="services-content mt-20">
                                 <h5 class="title mb-10">Ripple Prize</h5>
-                                <p>
+                                <p style="color: #ffffff">
                                     To us, few acts of kindness can spark an 
                                     Impact, and Social Innovation is the way to bring humanity 
                                     back on track. 
                                 </p>
-                                <p>
+                                <p style="color: #ffffff">
                                     Based on that, the Ripples Prize Project - an initiative of the Impact 
                                     Circle Enterprise started off in June 2020 with a focus on bridging the 
                                     gap in raising talented youths and teens from the grassroots (within and 
@@ -93,7 +93,7 @@
                             </div>
                             <div class="services-content mt-20">
                                 <h5 class="title mb-10">HultPrize@IMSU</h5>
-                                <p>
+                                <p style="color: #ffffff">
                                     A UN/Hult Prize partnered OnCampus program or competition hosted in 2018 to launch a new wave of 
                                     student entrepreneurs in Imo State University, Owerri, who believe that through business, we can 
                                     solve some of the world's toughest social challenges.
@@ -115,7 +115,7 @@
                             </div>
                             <div class="services-content mt-20">
                                 <h5 class="title mb-10">IYS@IMSU</h5>
-                                <p>
+                                <p style="color: #ffffff">
                                     We are leading Sustainable Development Goals through the dignity of the person and 
                                     creating 'positive change' in our local communities.
                                 </p>
@@ -137,7 +137,7 @@
         <div class="col-lg-12 col-sm-8">
             <div class="section-title text-center pb-25">
                 <h3 class="title mb-15">MEET THE TEAM</h3>
-                <p>We’re a team of growing changemakers knitted together to impact through diligence, 
+                <p style="color: #000000">We’re a team of growing changemakers knitted together to impact through diligence, 
                 ingenuity and passion, in creating values, building prosperity and sharing in your many 
                 accomplishments.
                 </p>
@@ -191,7 +191,7 @@
                     <div class="col-lg-3 col-sm-4">
                         <div class="single-services text-center mt-30" style="height: 25rem; width: 20rem; background: #ffff">
                             <div class="team-image">
-                                <img style="height: 12rem;" src="{{asset('images/ozioma.jpeg')}}" alt="Team">
+                                <img style="height: 12rem;" src="{{asset('images/Ozioma2.jpg')}}" alt="Team">
                             </div>
                             <div class="services-content mt-20">
                                 <h5 class="title mb-10">Dike Paschal</h5>
@@ -209,7 +209,7 @@
                     <div class="col-lg-3 col-sm-4">
                         <div class="single-services text-center mt-30" style="height: 25rem; width: 20rem; background: #ffff">
                             <div class="team-image">
-                                <img style="height: 12rem;" src="{{asset('images/me.jpg')}}" alt="Team">
+                                <img style="height: 12rem;" src="{{asset('images/Emma3.jpg')}}" alt="Team">
                             </div>
                             <div class="services-content mt-20">
                                 <h5 class="title mb-10">Emmanuel C Mbagwu</h5>
@@ -235,7 +235,7 @@
         <div class="col-lg-12 col-sm-8">
             <div class="section-title text-center pb-25">
                 <h3 class="title mb-15">Our Mission</h3>
-                <p>The Impact Vibes' mission is to change the world around us by rewriting the narratives.</p>
+                <p style="color: #000000">The Impact Vibes' mission is to change the world around us by rewriting the narratives.</p>
             </div> <!-- section title -->
         </div>
     </div> <!-- row -->
@@ -244,7 +244,7 @@
         <div class="col-lg-12 col-sm-8">
             <div class="section-title text-center pb-25">
                 <h3 class="title mb-15">Our Vision</h3>
-                <p>The Impact Vibes' vision is to be part of your everyday life by creating endless values that can 
+                <p style="color: #000000">The Impact Vibes' vision is to be part of your everyday life by creating endless values that can 
                     transform tomorrow, Now!
                 </p>
             </div> <!-- section title -->
