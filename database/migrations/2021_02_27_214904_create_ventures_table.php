@@ -36,9 +36,9 @@ class CreateVenturesTable extends Migration
             $table->string('founder_name');
             $table->string('founder_phone_number');
             $table->string('founder_email_address');
-            $table->string('team_member_name');
-            $table->string('team_member_designation');
-            $table->string('team_member_phone_number');
+            $table->string('team_member_name')->nullable();
+            $table->string('team_member_designation')->nullable();
+            $table->string('team_member_phone_number')->nullable();
             $table->string('status');
             $table->timestamps();
         });

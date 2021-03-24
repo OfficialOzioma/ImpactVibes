@@ -155,10 +155,10 @@
                     <div class="col-lg-3 col-sm-4">
                         <div class="single-services text-center mt-30" style="height: 25rem; width: 20rem; background: #ffff">
                             <div class="team-image">
-                                <img style="height: 12rem;" src="{{asset('images/sirAbel.jpg')}}" alt="Team">
+                                <img style="height: 12rem;" src="{{asset('images/a0.jpeg')}}" alt="Team">
                             </div>
                             <div class="services-content mt-20">
-                                <h5 class="title mb-10">Abel Onyekachi Uchegbulam</h5>
+                                <h5 class="title mb-10">Abel O. Uchegbulam</h5>
                                 <p>Founder/CEO</p>
                                 <br>
                                 <ul class="social mt-15">
@@ -173,7 +173,7 @@
                     <div class="col-lg-3 col-sm-4">
                         <div class="single-services text-center mt-30" style="height: 25rem; width: 20rem; background: #ffff">
                             <div class="team-image">
-                                <img style="height: 12rem;" src="{{asset('images/lopo.jpg')}}" alt="Team">
+                                <img style="height: 12rem;" src="{{asset('images/a1.jpg')}}" alt="Team">
                             </div>
                             <div class="services-content mt-20">
                                 <h5 class="title mb-10">Amadi Austin</h5>
@@ -209,10 +209,10 @@
                     <div class="col-lg-3 col-sm-4">
                         <div class="single-services text-center mt-30" style="height: 25rem; width: 20rem; background: #ffff">
                             <div class="team-image">
-                                <img style="height: 12rem;" src="{{asset('images/Emma3.jpg')}}" alt="Team">
+                                <img style="height: 12rem;" src="{{asset('images/a2.jpg')}}" alt="Team">
                             </div>
                             <div class="services-content mt-20">
-                                <h5 class="title mb-10">Emmanuel C Mbagwu</h5>
+                                <h5 class="title mb-10">Emmanuel C. Mbagwu</h5>
                                 <p>Software Engineer</p>
                                 <br>
                                 <ul class="social mt-15">

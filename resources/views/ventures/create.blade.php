@@ -113,9 +113,7 @@
                                         <div class="form-row">
                                             <div class="name">Industries</div>
                                             <div class="value">
-                                                <div class="input-group">
-                                                    <textarea class="textarea--style-6" name="industries" placeholder="Which industry does your startup belong eg. techology, banking, agriculture."></textarea>
-                                                </div>
+                                                <input class="input--style-6 form-control-lg" type="text" name="industries" placeholder="Which industry does your startup belong eg. techology, banking, agriculture.">
                                             </div>
                                         </div>
                                         <div class="form-row">

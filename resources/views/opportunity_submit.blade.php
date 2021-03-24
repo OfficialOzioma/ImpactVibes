@@ -66,7 +66,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="single-form form-group">
-                                <select class="form-control form-control-lg" name="category">
+                                <select class="form-control form-control-lg" name="category" required="required">
                                     <option selected disabled>Select Category</option>
                                     <option value="Scholarships">Scholarships</option>
                                     <option value="Competitions">Competitions</option>
@@ -84,7 +84,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="single-form form-group">
-                                <select class="form-control form-control-lg" name="eligible_region">
+                                <select class="form-control form-control-lg" name="eligible_region" required="required">
                                     <option selected disabled>Select Eligible Region</option>
                                     <option value="Africa">Africa</option>
                                     <option value="America">America</option>
@@ -97,10 +97,11 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="single-form form-group">
-                                <select class="form-control form-control-lg" name="funded">
-                                    <option selected disabled>Funded ?</option>
+                                <select class="form-control form-control-lg" name="funded" required="required">
+                                    <option selected disabled>Is it funded ?</option>
                                     <option value="Partially">Partially</option>
                                     <option value="Fully">Fully</option>
+                                    <option value="None">None</option>
                                 </select>
                                 <div class="help-block with-errors"></div>
                             </div> <!-- single form -->
@@ -122,7 +123,7 @@
                                 <div class="value">
                                     <label for="formFileLg" class="form-label">Select image</label>
                                     <input type="file" class="form-control form-control-lg" id="formFileLg" name="image" required />
-                                    <div class="label--desc">Upload opportunity image. Max file size 3 MB</div>
+                                    <div class="label--desc">Upload the opportunity image or image flyer. Max file size 3 MB</div>
                                 </div>
                             </div> <!-- single form -->
                         </div>

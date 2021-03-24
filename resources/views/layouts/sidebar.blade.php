@@ -41,6 +41,9 @@
                     <a href="/mentors">Mentors</a>
                 </li>
                 <li>
+                    <a href="{{route('adminVentures.index')}}">Ventures Deal</a>
+                </li>
+                <li>
                     <a href="/opportunities">Opportunities</a>
                 </li>
             </ul>

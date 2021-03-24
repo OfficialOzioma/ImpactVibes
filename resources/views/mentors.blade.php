@@ -7,12 +7,12 @@
       <div class="col-lg-12 col-md-8">
           <div class="section-title pb-30">
               <h3 class="title mb-15">Connect With Mentors</h3>
-              <p style="text-align: center;">
+              <p style="text-align: center; color: #000000;">
                 Are you seemingly out of place? You think?
-                Need a leap from ho – hum to pro?
+                Need a leap from ho – hum to pro?<br>
                 Here’s a Safe Space!
-                With hundreds of years combined wealth of experience from a blend of global mentors, 
-                connect! Impact is just made easy and simple.       
+                With hundreds of years combined wealth of experience from a blend of global mentors' 
+                connect!<br> Impact is just made easy and simple.       
               </p>
           </div> <!-- section title -->
       </div>
