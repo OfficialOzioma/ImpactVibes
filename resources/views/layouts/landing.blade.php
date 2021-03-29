@@ -74,46 +74,46 @@
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul id="nav" class="navbar-nav ml-auto">
-                                <li class="nav-item">
+                                <li class="nav-item {{ (request()->is('/')) ? 'active' : '' }}">
                                     <a  href="/">Home</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item {{ (request()->is('market')) ? 'active' : '' }}">
                                     <a  href="/market">Market</a>
                                 </li>
 
-                                <li class="nav-item">
+                                <li class="nav-item {{ (request()->is('mentorsConnect')) ? 'active' : '' }}">
                                     <a  href="/mentorsConnect">Mentors</a>
                                 </li>
 
-                                <li class="nav-item">
+                                <li class="nav-item {{ (request()->is('venturesdeal')) ? 'active' : '' }}">
                                     <a  href="/venturesdeal">Ventures Deal</a>
                                 </li>
 
 
 
 
-                                <li class="nav-item">
+                                <li class="nav-item {{ (request()->is('opportunity')) ? 'active' : '' }}">
                                     <a  href="/opportunity">Opportunities</a>
                                 </li>
 
-                                <li class="nav-item">
+                                <li class="nav-item {{ (request()->is('blog')) ? 'active' : '' }}">
                                     <a  href="/blogs">Blog</a>
                                 </li>
 
-                                <li class="nav-item">
+                                <li class="nav-item {{ (request()->is('ourimpactstories')) ? 'active' : '' }}">
                                     <a  href="/ourimpactstories">Impacts</a>
                                 </li>
                                 @guest
-                                <li class="nav-item">
+                                <li class="nav-item {{ (request()->is('login')) ? 'active' : '' }}">
                                     <a  href="{{ route('login') }}">Login</a>
                                 </li>
                                 @if (Route::has('register'))
-                                <li class="nav-item">
+                                <li class="nav-item {{ (request()->is('register')) ? 'active' : '' }}">
                                     <a  href="{{ route('register') }}">Register</a>
                                 </li>
                                 @endif
                                 @else
-                                <li class="nav-item">
+                                <li class="nav-item {{ (request()->is('dashboard')) ? 'active' : '' }}">
                                     <a  href="/dashboard">Dashboard</a>
                                 </li>
                                 <li class="nav-item">
@@ -163,8 +163,8 @@
                             <h5 class="f-title">More</h5>
                             <ul>
                                 <li><a href="/ourimpactstories">Meet the Team</a></li>
-                                <li><a href="#">Work with us</a></li>
-                                <li><a href="#">Subscribe</a></li>
+                                <li><a href="/">Work with us</a></li>
+                                <li><a href="/">Subscribe</a></li>
 
                             </ul>
                         </div> <!-- footer link -->
@@ -175,7 +175,7 @@
                             <ul>
                                 <li><a href="/help">Help Center</a></li>
                                 <li><a href="/contact">Contact Us</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="/">Privacy Policy</a></li>
                             </ul>
                         </div> <!-- footer link -->
                     </div>

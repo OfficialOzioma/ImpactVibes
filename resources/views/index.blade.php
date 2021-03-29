@@ -374,10 +374,9 @@
                                     <p>Software Engineer</p>
                                     <br>
                                     <ul class="social mt-15">
-                                        <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                        <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                        <li><a href="#"><i class="lni-instagram"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/abel-onyekachi-uchegbulam-497215a9/"><i class="lni lni-linkedin-original"></i></a></li>
+                                        <li><a href="https://twitter.com/rexsteroxxy"><i class="lni-twitter-original"></i></a></li>
+                                        <li><a href="https://github.com/rexsteroxy"><i class="lni lni-github-original"></i></a></li>
+                                        <li><a href="https://linkedin.com/in/amadiaustinchukwuemeka"><i class="lni lni-linkedin-original"></i></a></li>
                                     </ul>
                                 </div>
                             </div> <!-- single services -->
@@ -410,9 +409,8 @@
                                     <p>Software Engineer</p>
                                     <br>
                                     <ul class="social mt-15">
-                                        <li><a href="https://web.facebook.com/lilstex.emmanuel.5"><i class="lni-facebook-filled"></i></a></li>
                                         <li><a href="https://twitter.com/lilstex4good"><i class="lni-twitter-original"></i></a></li>
-                                        <li><a href="https://www.instagram.com/lilstex/"><i class="lni-instagram"></i></a></li>
+                                        <li><a href="https://github.com/lilstex"><i class="lni lni-github-original"></i></a></li>
                                         <li><a href="https://www.linkedin.com/in/lilstex-emmanuel"><i class="lni lni-linkedin-original"></i></a></li>
                                     </ul>
                                 </div>
