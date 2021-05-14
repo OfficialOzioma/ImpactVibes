@@ -47,7 +47,7 @@
                                 <div class="slider-product-content">
                                 <br><br>
                                     <h3 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>We are</span> changing the <span>narrative</span></h3>
-                                    <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">One day however a small line of blind text by the name of Lorem Ipsum <br> decided to leave for the far World of Grammar.</p>
+                                    <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">Your one – stop haven to unlocking endless possibilities and reach beyond the skies, for more.</p>
                                     <a class="main-btn" href="#" data-animation="fadeInUp" data-delay="1.5s">Explore More <i class="lni-chevron-right"></i></a>
                                 </div> <!-- slider product content -->
                             </div>
@@ -70,7 +70,8 @@
                                 <div class="slider-product-content">
                                 <br><br>
                                     <h3 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>Brace up</span> for the  <span>Impact</span></h3>
-                                    <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">One day however a small line of blind text by the name of Lorem Ipsum <br> decided to leave for the far World of Grammar.</p>
+                                    <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">Exhale. Defy the odds. Emerge. Let’s walk the lane with YOU and evoke growth that transcends your expectation. 
+                                    </p>
                                     <a class="main-btn" href="/contact" data-animation="fadeInUp" data-delay="1.5s">Contact Us <i class="lni-chevron-right"></i></a>
                                 </div> <!-- slider product content -->
                             </div>
@@ -204,7 +205,7 @@
                                 </div>
                             </div> <!-- single services -->
                         </div>
-                        <div class="col-lg-6 col-sm-8" style="height: 12rem;">
+                        <div class="col-lg-6 col-sm-8">
                             <div class="single-services text-center mt-30">
                                 <div class="services-icon">
                                     <i class="lni-customer"></i>
@@ -259,11 +260,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="showcase-title pt-25">
-                    <h2 class="title">Our Events Gallery ShowCase<h2>
-                </div> <!-- showcase title -->
-            </div>
-            
+                <div class="section-title pb-30">
+                    <h3 class="title mb-15">Our Events Gallery ShowCase</h3>
+                    <!-- showcase title -->
+                </div> 
+            </div>     
         </div> <!-- row -->
         <div class="row">
             <div class="col-lg-12">
@@ -347,7 +348,7 @@
                     <div class="row justify-content-center">
 
                         <div class="col-lg-3 col-sm-4">
-                            <div class="single-services text-center mt-30" style="height: 25rem; width: 20rem; background: #ffff">
+                            <div class="single-services text-center mt-30" id="team">
                                 <div class="team-image">
                                     <img style="height: 12rem;" src="{{asset('images/a0.jpeg')}}" alt="Team">
                                 </div>
@@ -365,7 +366,7 @@
                             </div> <!-- single services -->
                         </div>
                         <div class="col-lg-3 col-sm-4">
-                            <div class="single-services text-center mt-30" style="height: 25rem; width: 20rem; background: #ffff">
+                            <div class="single-services text-center mt-30" id="team">
                                 <div class="team-image">
                                     <img style="height: 12rem;" src="{{asset('images/a1.jpg')}}" alt="Team">
                                 </div>
@@ -382,7 +383,7 @@
                             </div> <!-- single services -->
                         </div>
                         <div class="col-lg-3 col-sm-4">
-                            <div class="single-services text-center mt-30" style="height: 25rem; width: 20rem; background: #ffff">
+                            <div class="single-services text-center mt-30" id="team">
                                 <div class="team-image">
                                     <img style="height: 12rem;" src="{{asset('images/Ozioma2.jpg')}}" alt="Team">
                                 </div>
@@ -400,7 +401,7 @@
                             </div> <!-- single services -->
                         </div>
                         <div class="col-lg-3 col-sm-4">
-                            <div class="single-services text-center mt-30" style="height: 25rem; width: 20rem; background: #ffff">
+                            <div class="single-services text-center mt-30" id="team">
                                 <div class="team-image">
                                     <img style="height: 12rem;" src="{{asset('images/a2.jpg')}}" alt="Team">
                                 </div>

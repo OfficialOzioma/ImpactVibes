@@ -13,7 +13,7 @@
                     the power to succeed together!                         
                 </p>
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-12 col-md-12">
                         <form action="/submit_opportunity" method="GET">
                             <button type="submit" class="btn btn-info">Submit Opportunity</button>
                         </form>
@@ -62,8 +62,9 @@
 
     @else
     <div class="row justify-content-center">
-        <div class="NoDataMessage">
-            <h2><b>No available Opportunity!!</b></h2>
+        {{-- <div class="NoDataMessage"> --}}
+        <div class="col-lg-12 col-md-8">
+            <h2 style="text-align: center"><b>No available Opportunity!!</b></h2>
         </div>
     @endif 
 </div> <!-- container -->

@@ -22,7 +22,7 @@
                                         <div class="form-row">
                                             <div class="name">Startup Name</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="startup_name" placeholder="What is your the Name of your startup">
+                                                <input class="input--style-6 form-control-lg" type="text" name="startup_name" placeholder="What is the Name of your startup" required>
                                             </div>
                                         </div>
                                         <div class="form-row">
@@ -41,7 +41,7 @@
                                             <div class="name">About Startup</div>
                                             <div class="value">
                                                 <div class="input-group">
-                                                    <textarea class="textarea--style-6" name="about_startup" placeholder="Briefly tell us about your Venture (1,000 Characters Max.)"></textarea>
+                                                    <textarea class="textarea--style-6" name="about_startup" placeholder="Briefly tell us about your Venture (1,000 Characters Max.)" required></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -57,63 +57,63 @@
                                         <div class="form-row">
                                             <div class="name">City</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="city" placeholder="What City is your startup Located">
+                                                <input class="input--style-6 form-control-lg" type="text" name="city" placeholder="What City is your startup Located" required>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="name">State</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="state" placeholder="What State is your startup Located">
+                                                <input class="input--style-6 form-control-lg" type="text" name="state" placeholder="What State is your startup Located" required>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="name">Country</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="country" placeholder="What Country is your startup Located">
+                                                <input class="input--style-6 form-control-lg" type="text" name="country" placeholder="What Country is your startup Located" required>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="name">Website (www)</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="Website" placeholder="What is website of your startup">
+                                                <input class="input--style-6 form-control-lg" type="text" name="Website" placeholder="What is the website of your startup. Skip if none.">
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="name">LinkedIn Profile</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="linkedIn_profile" placeholder="Link to your startup Linkedin Page.">
+                                                <input class="input--style-6 form-control-lg" type="text" name="linkedIn_profile" placeholder="Link to your startup Linkedin Page. If any.">
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="name">Facebook Profile</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="facebook_profile" placeholder="Link to your Startup Facebook page">
+                                                <input class="input--style-6 form-control-lg" type="text" name="facebook_profile" placeholder="Link to your Startup Facebook page. If any.">
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="name">Twitter Profile</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="twitter_profile" placeholder="Link to your Startup twitter handle">
+                                                <input class="input--style-6 form-control-lg" type="text" name="twitter_profile" placeholder="Link to your Startup twitter handle. If any.">
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="name">Other Profile</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="other_profile" placeholder="Link to any other social media handle">
+                                                <input class="input--style-6 form-control-lg" type="text" name="other_profile" placeholder="Link to any other social media handle. If any.">
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="name">Address</div>
                                             <div class="value">
                                                 <div class="input-group">
-                                                    <textarea class="textarea--style-6" name="address" placeholder="Address of the Startup"></textarea>
+                                                    <textarea class="textarea--style-6" name="address" placeholder="Address of the Startup" required></textarea>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="name">Industries</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="industries" placeholder="Which industry does your startup belong eg. techology, banking, agriculture.">
+                                                <input class="input--style-6 form-control-lg" type="text" name="industries" placeholder="Which industry does your startup belong eg. techology, banking, agriculture." required>
                                             </div>
                                         </div>
                                         <div class="form-row">
@@ -126,7 +126,7 @@
                                             <div class="name">Are you Already making revenue</div>
                                             <div class="value">
                                                 <div class="form-group">
-                                                    <select class="form-control form-control-lg" name="making_revenue" id="making_revenue" >
+                                                    <select class="form-control form-control-lg" name="making_revenue" id="making_revenue" required>
                                                         <option selected disabled>Startup making profit ?</option>
                                                         <option value="Yes">Yes</option>
                                                         <option value="No">No</option>
@@ -138,7 +138,7 @@
                                             <div class="name">What stage startup</div>
                                             <div class="value">
                                                 <div class="form-group">
-                                                    <select class="form-control form-control-lg" name="venture_stage" id="venture_stage" >
+                                                    <select class="form-control form-control-lg" name="venture_stage" id="venture_stage" required>
                                                         <option selected disabled>What stage is your startup ?</option>
                                                         <option value="Idea">Idea</option>
                                                         <option value="MVP">MVP</option>
@@ -151,20 +151,20 @@
                                         <div class="form-row">
                                             <div class="name">Founder's Name</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="founder_name" placeholder="What is your the Name of Founder of your startup">
+                                                <input class="input--style-6 form-control-lg" type="text" name="founder_name" placeholder="What is the name of the founder of your startup" required>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="name">Founder Phone Number</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="founder_phone_number" placeholder="Startup founder's phone Number">
+                                                <input class="input--style-6 form-control-lg" type="text" name="founder_phone_number" placeholder="Startup founder's phone Number" required>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="name">Founder Email Address</div>
                                             <div class="value">
                                                 <div class="input-group">
-                                                    <input class="input--style-6" type="email" name="founder_email" placeholder="example@email.com">
+                                                    <input class="input--style-6" type="email" name="founder_email" placeholder="example@email.com" required>
                                                 </div>
                                             </div>
                                         </div>

@@ -41,15 +41,10 @@
                             <div class="services-content mt-20">
                                 <h5 class="title mb-10">Impact Circle</h5>
                                 <p style="color: #ffffff">
-                                    Our focus lies on inspiring the youths, breeding employability through 
-                                    the acquisition of diverse valuable work skills, proffering career path 
-                                    guidance and incubate innovative ideas, as well as exploring the vast 
-                                    global opportunities linkages and partnerships, thereby shaping them for 
-                                    a more thriving society.<br> Within the little period of time in existence, 
-                                    we’ve made successes that have earned us marks, and we are poised to 
-                                    unlock more that are still stuck with great innovations. 
+                                Our focus lies on inspiring the youths, breeding employability through 
+                                the acquisition of diverse valuable work skills...
                                 </p>
-                                
+                                <a href="/ourimpactstories">Read More</a><br>
                                 <ul class="social mt-15">
                                     <li><a href="https://web.facebook.com/thaimpactcircle/"><i class="lni-facebook-filled"></i></a></li>
                                     <li><a href="https://twitter.com/thaimpactcircle"><i class="lni-twitter-original"></i></a></li>
@@ -66,18 +61,11 @@
                             <div class="services-content mt-20">
                                 <h5 class="title mb-10">Ripple Prize</h5>
                                 <p style="color: #ffffff">
-                                    To us, few acts of kindness can spark an 
-                                    Impact, and Social Innovation is the way to bring humanity 
-                                    back on track. 
+                                To us, few acts of kindness can spark an 
+                                Impact, and Social Innovation is the way to bring humanity 
+                                back on track...
                                 </p>
-                                <p style="color: #ffffff">
-                                    Based on that, the Ripples Prize Project - an initiative of the Impact 
-                                    Circle Enterprise started off in June 2020 with a focus on bridging the 
-                                    gap in raising talented youths and teens from the grassroots (within and 
-                                    outside Owerri), with disruptive abilities to launch SMEs/startups and 
-                                    celebrating their sustainable impacts in diverse career paths. 
-                                </p>
-                                
+                                <a href="/ourimpactstories">Read More</a><br>
                                 <ul class="social mt-15">
                                     <li><a href="https://web.facebook.com/ripplesprize/"><i class="lni-facebook-filled"></i></a></li>
                                     <li><a href="https://twitter.com/ripplesprize"><i class="lni-twitter-original"></i></a></li>
@@ -86,7 +74,7 @@
                             </div>
                         </div> <!-- single services -->
                     </div>
-                    <div class="col-lg-6 col-sm-8" style="height: 12rem;">
+                    <div class="col-lg-6 col-sm-8">
                         <div class="single-services text-center mt-30">
                             <div class="services-icon">
                                 <i class="lni-customer"></i>
@@ -95,11 +83,9 @@
                                 <h5 class="title mb-10">HultPrize@IMSU</h5>
                                 <p style="color: #ffffff">
                                     A UN/Hult Prize partnered OnCampus program or competition hosted in 2018 to launch a new wave of 
-                                    student entrepreneurs in Imo State University, Owerri, who believe that through business, we can 
-                                    solve some of the world's toughest social challenges.
-
+                                    student entrepreneurs in Imo State University...
                                 </p>
-                                
+                                <a href="/ourimpactstories">Read More</a><br>
                                 <ul class="social mt-15">
                                     <li><a href="https://web.facebook.com/pg/hultprizeatimsu/"><i class="lni-facebook-filled"></i></a></li>
                                     <li><a href="https://twitter.com/hultprizeatimsu?lang=en"><i class="lni-twitter-original"></i></a></li>
@@ -116,10 +102,10 @@
                             <div class="services-content mt-20">
                                 <h5 class="title mb-10">IYS@IMSU</h5>
                                 <p style="color: #ffffff">
-                                    We are leading Sustainable Development Goals through the dignity of the person and 
-                                    creating 'positive change' in our local communities.
+                                We are leading Sustainable Development Goals through the dignity of the person and 
+                                creating 'positive change'...
                                 </p>
-                                
+                                <a href="/ourimpactstories">Read More</a><br>
                                 <ul class="social mt-15">
                                     {{-- <li><a href="#"><i class="lni-facebook-filled"></i></a></li> --}}
                                     <li><a href="https://twitter.com/iysatimsu"><i class="lni-twitter-original"></i></a></li>
@@ -153,7 +139,7 @@
                 <div class="row justify-content-center">
 
                     <div class="col-lg-3 col-sm-4">
-                        <div class="single-services text-center mt-30" style="height: 25rem; width: 20rem; background: #ffff">
+                        <div class="single-services text-center mt-30" id="team">
                             <div class="team-image">
                                 <img style="height: 12rem;" src="{{asset('images/a0.jpeg')}}" alt="Team">
                             </div>
@@ -171,7 +157,7 @@
                         </div> <!-- single services -->
                     </div>
                     <div class="col-lg-3 col-sm-4">
-                        <div class="single-services text-center mt-30" style="height: 25rem; width: 20rem; background: #ffff">
+                        <div class="single-services text-center mt-30" id="team">
                             <div class="team-image">
                                 <img style="height: 12rem;" src="{{asset('images/a1.jpg')}}" alt="Team">
                             </div>
@@ -188,7 +174,7 @@
                         </div> <!-- single services -->
                     </div>
                     <div class="col-lg-3 col-sm-4">
-                        <div class="single-services text-center mt-30" style="height: 25rem; width: 20rem; background: #ffff">
+                        <div class="single-services text-center mt-30" id="team">
                             <div class="team-image">
                                 <img style="height: 12rem;" src="{{asset('images/Ozioma2.jpg')}}" alt="Team">
                             </div>
@@ -206,7 +192,7 @@
                         </div> <!-- single services -->
                     </div>
                     <div class="col-lg-3 col-sm-4">
-                        <div class="single-services text-center mt-30" style="height: 25rem; width: 20rem; background: #ffff">
+                        <div class="single-services text-center mt-30" id="team">
                             <div class="team-image">
                                 <img style="height: 12rem;" src="{{asset('images/a2.jpg')}}" alt="Team">
                             </div>

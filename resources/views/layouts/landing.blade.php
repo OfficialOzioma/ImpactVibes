@@ -96,7 +96,7 @@
                                     <a  href="/opportunity">Opportunities</a>
                                 </li>
 
-                                <li class="nav-item {{ (request()->is('blog')) ? 'active' : '' }}">
+                                <li class="nav-item {{ (request()->is('blogs')) ? 'active' : '' }}">
                                     <a  href="/blogs">Blog</a>
                                 </li>
 
