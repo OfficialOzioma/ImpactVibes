@@ -22,8 +22,8 @@ class CreateMentorsTable extends Migration
             $table->string('category');
             $table->string('nationality');
             $table->string('linkedin');
-            $table->string('twitter');
-            $table->string('facebook');
+            $table->string('twitter')->nullable();
+            $table->string('facebook')->nullable();
             $table->string('profile_bio')->nullable();
             $table->timestamps();
         });

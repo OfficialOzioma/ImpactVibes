@@ -22,7 +22,7 @@
                                         <div class="form-row">
                                             <div class="name">Name of Mentor</div>
                                             <div class="value">
-                                            <input class="input--style-6 form-control-lg" type="text" name="name" placeholder="The name of the mentor here">
+                                            <input class="input--style-6 form-control-lg" type="text" name="name" placeholder="The name of the mentor here" required>
                                             </div>
                                         </div>
                                     
@@ -30,7 +30,7 @@
                                             <div class="name">Email Address</div>
                                             <div class="value">
                                                 <div class="value">
-                                                    <input class="input--style-6 form-control-lg" type="text" name="email" placeholder="Active email address">
+                                                    <input class="input--style-6 form-control-lg" type="text" name="email" placeholder="Active email address" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -39,7 +39,7 @@
                                             <div class="name">Category Of Mentorship</div>
                                             <div class="value">
                                                 <div class="form-group">
-                                                    <select class="form-control form-control-lg" name="category" id="venture_type">
+                                                    <select class="form-control form-control-lg" name="category" id="venture_type" required>
                                                         <option selected>Choose Category</option>
                                                         <option value="Agriculture">Agriculture</option>
                                                         <option value="Artificial Intelligence">Artificial Intelligence</option>
@@ -100,7 +100,7 @@
                                             <div class="name">Nationality</div>
                                             <div class="value">
                                                 <div class="form-group">
-                                                    <select class="form-control form-control-lg" name="nationality" id="venture_type">
+                                                    <select class="form-control form-control-lg" name="nationality" id="venture_type" required>
                                                         <option selected>Select Nationality</option>
                                                         <option value="Nigeria">Nigeria</option>
                                                         <option value="Ghana">Ghana</option>
@@ -117,7 +117,7 @@
                                         <div class="form-row">
                                             <div class="name">Phone Number</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="integer" name="contact" placeholder="Your Whatsapp Phone Number">
+                                                <input class="input--style-6 form-control-lg" type="integer" name="contact" placeholder="Your Whatsapp Phone Number" required>
                                             </div>
                                         </div>
 
@@ -138,7 +138,7 @@
                                         <div class="form-row">
                                             <div class="name">Linked In</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="linkedin" placeholder="The link to your linkedin account">
+                                                <input class="input--style-6 form-control-lg" type="text" name="linkedin" placeholder="The link to your linkedin account" required>
                                             </div>
                                         </div>
 

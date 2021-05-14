@@ -21,7 +21,7 @@
                                         <div class="form-row">
                                             <div class="name">Title</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="title" placeholder="Title of the Opportunity">
+                                                <input class="input--style-6 form-control-lg" type="text" name="title" placeholder="Title of the Opportunity" required>
                                             </div>
                                         </div>
 
@@ -29,7 +29,7 @@
                                             <div class="name">Category</div>
                                             <div class="value">
                                                 <div class="form-group">
-                                                    <select class="form-control form-control-lg" name="category">
+                                                    <select class="form-control form-control-lg" name="category" required>
                                                         <option selected disabled>Select Category</option>
                                                         <option value="Scholarships">Scholarships</option>
                                                         <option value="Competitions">Competitions</option>
@@ -50,7 +50,7 @@
                                             <div class="name">Eligible Region</div>
                                             <div class="value">
                                                 <div class="form-group">
-                                                    <select class="form-control form-control-lg" name="eligible_region">
+                                                    <select class="form-control form-control-lg" name="eligible_region" required>
                                                         <option selected disabled>Select Regions</option>
                                                         <option value="Africa">Africa</option>
                                                         <option value="America">America</option>
@@ -66,7 +66,7 @@
                                             <div class="name">Funded </div>
                                             <div class="value">
                                                 <div class="form-group">
-                                                    <select class="form-control form-control-lg" name="funded">
+                                                    <select class="form-control form-control-lg" name="funded" required>
                                                         <option selected disabled>Funded?</option>
                                                         <option value="Partially">Partially</option>
                                                         <option value="Fully">Fully</option>
@@ -78,14 +78,14 @@
                                         <div class="form-row">
                                             <div class="name">End Date</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="date" name="end_date" placeholder="The deadline for the opportunity">
+                                                <input class="input--style-6 form-control-lg" type="date" name="end_date" placeholder="The deadline for the opportunity" required>
                                             </div>
                                         </div>
 
                                         <div class="form-row">
                                             <div class="name">Organizer's Name</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="organizer_name" placeholder="Name of the Organizer/Organization">
+                                                <input class="input--style-6 form-control-lg" type="text" name="organizer_name" placeholder="Name of the Organizer/Organization" required>
                                             </div>
                                         </div>
                                     
@@ -93,7 +93,7 @@
                                             <div class="name">Description</div>
                                             <div class="value">
                                                 <div class="input-group">
-                                                    <textarea class="textarea--style-6" name="description" placeholder="Briefly explain what the opportunity is about (500 Characters Max.)"></textarea>
+                                                    <textarea class="textarea--style-6" name="description" placeholder="Briefly explain what the opportunity is about (500 Characters Max.)" required></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -101,7 +101,7 @@
                                         <div class="form-row">
                                             <div class="name">The Link</div>
                                             <div class="value">
-                                                <input class="input--style-6 form-control-lg" type="text" name="link" placeholder="The link to the opportunity">
+                                                <input class="input--style-6 form-control-lg" type="text" name="link" placeholder="The link to the opportunity" required>
                                             </div>
                                         </div>
 
