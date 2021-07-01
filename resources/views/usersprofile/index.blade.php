@@ -1,5 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.userDashboard')
+
 @section('content')
+
 <div class="container container-margin">
     @if(Session::has('user_updated'))
     <div class="alert alert-dismissible alert-success fade show">
@@ -9,17 +11,19 @@
         </button>
     </div>
     @endif
-    <h2>My Profile</h2>
-    <hr>
-    <button type="button" onclick="window.location='{{ URL::route('user.index') }}'" class="btn btn-dark">Go Back</button>
-    <hr>
+<br>
+<br>
     <div class="row">
-        <div class="col-md-2">
-                <img src="{{$user->photo ? $user->photo->file : '/images/placeholder.png'}}" id="profile-img-tag" class="img-fluid rounded"/>
+        <div class="col-lg-4">
+            @if ($user->photo == null)
+            <img style="height: 14rem;" alt="" src="{{ asset('images/avatar.png' ) }}">
+            @else 
+            <a href="/profile/{{$mentor->id}}"><img style="height: 14rem;" src="{{$user->photo ? $user->photo->file : '/images/placeholder.png'}}" alt="User"></a>
+           @endif  
         </div>
-        <div class="col-md-10">
+        <div class="col-lg-8">
             <div class="card">
-                <h5 class="card-header"><b>{{$user->name}}'s Information</b></h5>
+                <h4 class="card-header"><b>Profile</b></h4>
                 <div class="card-body">
                     <table class="table table-striped table-hover">
                                 <tr>
@@ -49,8 +53,8 @@
                     </table>
                 </div>
             </div><br>
-            <a class="btn btn-success" href="{{route('user.edit',$user->id)}}" style="color:white;">Update Profile</a>
-            <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Delete Account</button>
+            <a class="btn btn-success" href="{{route('dashboard.edit',$user->id)}}" style="color:white;">Update Profile</a>
+            <button style="float: right;" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Delete Account</button>
                 <!-- Modal for deleting user confirmation-->
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">

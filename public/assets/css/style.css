@@ -1,9 +1,9 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name: 
-    Template URI: 
-    Description: 
-    Author: 
+    Template Name:
+    Template URI:
+    Description:
+    Author:
     Author:
     Version: 1.1
 
@@ -29,7 +29,7 @@
 
 -----------------------------------------------------------------------------------*/
 /*===========================
-    1.COMMON css 
+    1.COMMON css
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
 body {
@@ -155,19 +155,22 @@ p {
       color: #fff; }
 
 /*===== All Section Title Style =====*/
-.section-title h5 {
-  position: relative;
-  font-size: 18px;
-  color: #fe7865;
+.section-title h3 {
+  /* position: relative; */
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  color: #000000;
   font-weight: 500;
-  padding-left: 110px; }
-  .section-title h5::before {
-    position: absolute;
+  /* padding-left: 110px;  */
+}
+  .section-title h3::before {
+    /* position: absolute; */
     content: '';
-    top: 50%;
-    left: 0;
+    top: 100%;
+    left: 300px;
     width: 100px;
-    height: 1px;
+    height: 2px;
     background-color: #fe7865;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -175,10 +178,16 @@ p {
     -o-transform: translateY(-50%);
     transform: translateY(-50%); }
 .section-title .title {
-  font-size: 32px; }
+  font-size: 32px; 
+  font-weight: bolder;
+}
   @media (max-width: 767px) {
     .section-title .title {
-      font-size: 26px; } }
+      font-size: 26px; 
+    } 
+    }
+
+
 
 /*===== All Preloader Title Style =====*/
 .preloader {
@@ -278,7 +287,7 @@ p {
     -o-transform: rotate(-360deg);
     transform: rotate(-360deg); } }
 /*===========================
-    2.HEADER css 
+    2.HEADER css
 ===========================*/
 .header-area {
   padding: 30px 0;
@@ -288,7 +297,8 @@ p {
   left: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 9; }
+  z-index: 9;
+}
   .header-area.sticky {
     position: fixed;
     top: 0;
@@ -376,7 +386,7 @@ p {
         color: #fe7865; }
 
 /*===========================
-    3.SLIDER css 
+    3.SLIDER css
 ===========================*/
 .slider-active .slick-dots {
   position: absolute;
@@ -462,11 +472,11 @@ p {
         margin-left: 0;
         padding: 40px 15px 50px; } }
     .single-slider .slider-product-content .slider-title {
-      font-size: 92px;
+      font-size: 40px;
       z-index: 1; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .single-slider .slider-product-content .slider-title {
-          font-size: 68px; } }
+          font-size: 58px; } }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .single-slider .slider-product-content .slider-title {
           font-size: 48px; } }
@@ -482,10 +492,10 @@ p {
           position: absolute;
           content: '';
           width: 100%;
-          height: 10px;
+          height: 8px;
           background-color: rgba(254, 120, 101, 0.5);
           left: 0;
-          bottom: 17px;
+          bottom: -5px;
           z-index: auto; }
           @media only screen and (min-width: 768px) and (max-width: 991px) {
             .single-slider .slider-product-content .slider-title span::before {
@@ -564,7 +574,7 @@ p {
           width: 65%; } }
 
 /*===========================
-    4.DESCOUNT PRODUCT css 
+    4.DESCOUNT PRODUCT css
 ===========================*/
 @media (max-width: 767px) {
   .discount-product {
@@ -625,7 +635,7 @@ p {
     transform: scale(1.2); }
 
 /*===========================
-     5.PRODUCT CARD css 
+     5.PRODUCT CARD css
 ===========================*/
 @media (max-width: 767px) {
   .product-area {
@@ -807,14 +817,18 @@ p {
     overflow: visible; }
 
 /*===========================
-     6.SERVICES css 
+     6.SERVICES css
 ===========================*/
 .services-area {
-  background-color: #fffaf6; }
+  background-color: #fffaf6; 
+}
   @media (max-width: 767px) {
     .services-area {
       padding-top: 75px;
-      padding-bottom: 80px; } }
+      padding-bottom: 80px; 
+      width: 100%;
+    } 
+  }
 
 .services-left {
   position: relative; }
@@ -824,7 +838,14 @@ p {
 .single-services {
   border: 1px solid #ddd;
   padding: 25px 15px;
-  background: #fff; }
+  background: #000000;
+  height: 25rem;
+  }
+#team {
+  background: #ffffff;
+  margin-left: 5px;
+  margin-right: 5px;
+  }
   .single-services .services-icon i {
     font-size: 50px;
     color: #fe7865; }
@@ -832,8 +853,28 @@ p {
     font-size: 20px;
     color: #fe7865; }
 
+    .single-services .services-content a {
+      font-size: 15px;
+      margin-top: 5px;
+      color: #47dbf5; }
+
+      .single-services .services-content a:hover {
+        color: #fe7865; }
+
+    .services-content .social {
+    display: inline-block;
+    line-height: 15px;
+    padding: 0 15px;
+     }
+    .social li {
+      display: inline-block;
+      margin: 0 10px; }
+  
+    .social li a:hover {
+          color: #fe7865; } 
+          
 /*===========================
-     7.SHOWCASE css 
+     7.SHOWCASE css
 ===========================*/
 @media (max-width: 767px) {
   .showcase-area {
@@ -913,7 +954,7 @@ p {
     cursor: pointer; }
 
 /*===========================
-     8.TEAM css 
+     8.TEAM css
 ===========================*/
 .team-area {
   background-color: #fffaf6; }
@@ -977,7 +1018,7 @@ p {
     box-shadow: 0px 0px 7px 0px rgba(254, 119, 101, 0.55); }
 
 /*===========================
-     9.TESTIMONIAL css 
+     9.TESTIMONIAL css
 ===========================*/
 .testimonial-area {
   position: relative; }
@@ -1038,7 +1079,7 @@ p {
     line-height: 90px; }
 
 /*===========================
-     10.BLOG css 
+     10.BLOG css
 ===========================*/
 @media (max-width: 767px) {
   .blog-area {
@@ -1119,7 +1160,7 @@ p {
     transform: scale(1.1); }
 
 /*===========================
-       11.CONTACT css 
+       11.CONTACT css
 ===========================*/
 .contact-area .contact-title .title {
   font-size: 60px;
@@ -1201,12 +1242,15 @@ p.form-message.error {
   color: #f00; }
 
 /*===========================
-       12.FOOTER css 
+       12.FOOTER css
 ===========================*/
 .footer-area {
-  position: relative; }
+  position: inherit;
+  width: 100%;
+}
 
 .footer-area::before {
+
   position: absolute;
   content: '';
   background-image: url(../images/footer-bg.png);
@@ -1331,7 +1375,7 @@ p.form-message.error {
     background-color: #fff; }
 
 /*===========================
-     13.PAGE BANNER css 
+     13.PAGE BANNER css
 ===========================*/
 @media (max-width: 767px) {
   .page-banner-area {
@@ -1362,7 +1406,7 @@ p.form-message.error {
       color: #fff; }
 
 /*===========================
- 14.PRODUCT SINGLE PAGE css 
+ 14.PRODUCT SINGLE PAGE css
 ===========================*/
 @media (max-width: 767px) {
   .product-single-page {
@@ -1600,4 +1644,118 @@ p.form-message.error {
           color: #fc924b;
           cursor: pointer; }
 
-/*# sourceMappingURL=style.css.map */
+/************************************/
+/************************************/
+/************Mentors Connect Page Styling************************/
+
+.single-blog-post.style-2 .blog-thumbnail {
+  margin-bottom: 20px; }
+  .single-blog-post.style-2 .blog-thumbnail img {
+    width: 100%; }
+.single-blog-post.style-2 .blog-content {
+  position: relative;
+  z-index: 1; }
+  .single-blog-post.style-2 .blog-content .post-date {
+    font-size: 15px;
+    color: #636363;
+    margin-bottom: 2px; 
+  }
+  .single-blog-post.style-2 .blog-content .post-title {
+    display: block;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #232323; }
+    .single-blog-post.style-2 .blog-content .post-title:hover, .single-blog-post.style-2 .blog-content .post-title:focus {
+      color: #ef1b48; }
+  .single-blog-post.style-2 .blog-content .post-author {
+    display: block;
+    font-size: 12px;
+    color: #636363;
+    font-weight: 500;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+    .single-blog-post.style-2 .blog-content .post-author:hover, .single-blog-post.style-2 .blog-content .post-author:focus {
+      color: #ef1b48; }
+.single-blog-post.style-2:hover {
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px); }
+  .single-blog-post.style-2:hover .blog-content .post-title {
+    color: #ef1b48; }
+.single-blog-post.style-3 .blog-thumbnail {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1; }
+
+/* ******************************* */
+/* **********VENTURES DEAL********************* */
+.single-blog-post.style-2 .blog-thumbnail {
+  margin-bottom: 20px; }
+  .single-blog-post.style-2 .blog-thumbnail img {
+    width: 100%; }
+.single-blog-post.style-2 .blog-content {
+  position: relative;
+  z-index: 1; }
+  .single-blog-post.style-2 .blog-content .post-date {
+    font-size: 12px;
+    color: #636363;
+    margin-bottom: 10px; }
+  .single-blog-post.style-2 .blog-content .post-title {
+    display: block;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #232323; }
+    .single-blog-post.style-2 .blog-content .post-title:hover, .single-blog-post.style-2 .blog-content .post-title:focus {
+      color: #ef1b48; }
+  .single-blog-post.style-2 .blog-content .post-author {
+    display: block;
+    font-size: 12px;
+    color: #636363;
+    font-weight: 500;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+    .single-blog-post.style-2 .blog-content .post-author:hover, .single-blog-post.style-2 .blog-content .post-author:focus {
+      color: #ef1b48; }
+.single-blog-post.style-2:hover {
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px); }
+  .single-blog-post.style-2:hover .blog-content .post-title {
+    color: #ef1b48; }
+  
+    /* ******************************* */
+/* **********Opportunity********************* */
+
+.sidebar-area {
+  position: relative;
+  z-index: 1; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .sidebar-area {
+      margin-top: 100px; } }
+  @media only screen and (max-width: 767px) {
+    .sidebar-area {
+      margin-top: 100px; } }
+
+.single-widget-area {
+  position: relative;
+  z-index: 1; 
+}
+  .single-widget-area.add-widget {
+    background-color:  #f32c1a;
+    margin: 5px;
+    padding: 20px 20px;
+    text-align: center; 
+  }
+  .single-widget-area.add-widget h4 {
+    color: #fff;
+    font-size: 25px;
+    margin: 0;
+  }
+
+    .single-widget-area.add-widget h5 {
+      color: #fff;
+      font-size: 15px;
+      margin-bottom: 5px;
+      font-style: italic; 
+    }
+ 

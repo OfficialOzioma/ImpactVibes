@@ -7,12 +7,15 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'ImpactVibes') }}</title>
 
      <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="{{ asset('assets/css/LineIcons.css') }} ">
+    
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
@@ -31,7 +34,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </a>
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'ImpactVibes') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -72,7 +75,7 @@
                                     <a class="dropdown-item" href="/admin">Admin Panel</a>
                                     @endif
                                     <!-- User profile settings -->
-                                    <a class="dropdown-item" href="{{ route('user.index') }}">My Account</a>
+                                    <a class="dropdown-item" href="{{ route('dashboard.index') }}">My Account</a>
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

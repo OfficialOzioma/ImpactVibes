@@ -1,11 +1,19 @@
-@extends('layouts.app')
+@extends('layouts.landing')
+
 @section('content')
+<br><br><br><br><br><br>
 <div class="container">
-    <div class="page-header">
-        <hr>
-        <h3 class="headingTag"><b>Blog Posts </b></h3>
-        <hr>
+    <div class="row justify-content-center">
+        <div class="col-lg-12 col-md-8">
+            <div class="section-title pb-30">
+                <h3 class="title mb-15">Impact Blogs</h3>
+                <p style="text-align: center;">
+                    Your only limitation is the commitment to turn your imagination and inspiration into Impact!                         
+                </p>
+            </div> <!-- section title -->
+        </div>
     </div>
+
     @if(Session::has('post_deleted'))
     <div class="alert alert-dismissible alert-success fade show">
       {{ session('post_deleted')}}
@@ -22,91 +30,49 @@
       </button>
     </div>
     @endif
-    @if(count($posts) > 0)
-    <div class="blog-card-row">
-        @foreach ($posts as $key => $post)
-        <a class="blog-redirection-to-single" href="{{ route('blogposts.show',$post->slug) }}">
-            <div class="blog-card">
-                <table class="card-container">
-                <tr>
-                    <td valign="top">
-                        <img class="card-img-top" src="{{ $post->photo_id ? $post->photo->file : '/images/placeholder_blog.png' }}" alt="Photo unavailable">
-                        <div class="card-body">
-                            <div class="card-text card-text-font">{{ str_limit($post->title,70) }}</div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="bottom">
-                        <hr class="card-hr">
-                        <div class="row">
-                            <div class="col-md-8 card-details">
-                                <div class="card-date">{{ $post->created_at ? $post->created_at->toFormattedDateString() : 'Date Unavailable' }}</div>
-                                <div class="card-author">By {{ $post->user_id ? $post->user->name : 'Anonymous' }}</div>
-                            </div>
-                            @if(Auth::check() && $post->user_id == Auth::user()->id)
-                                <div class="col-md-4 icon-details">
-                                    <a title="Edit Post" href="{{ route('userposts.edit',$post->id) }}"><i class="fas fa-edit operation-icon"></i></a>
-                                    <a title="Save Post" href="/usersposts/{{ $post->id }}/save"><i class="fas fa-bookmark operation-icon"></i></a>
-                                    <a title="Delete Post" data-toggle="modal" data-target="#exampleModal<?php echo $key?>"  href="{{ route('userposts.destroy',$post->id) }}"><i class="fas fa-trash operation-icon"></i></a>
-                                </div>
-                            @else
-                                <div class="col-md-4 save-icon-details">
-                                    <a title="Save Post" href="/usersposts/{{ $post->id }}/save"><i class="fas fa-bookmark operation-icon"></i></a>
-                                </div>
-                            @endif
 
-                        </div>
-                    </td>
-                </tr>
-                </table>
-            </div>
-        </a>
-        <!-- Modal for deleting user confirmation-->
-        <div class="modal fade" id="exampleModal<?php echo $key?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Confirm Action!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
-                    <div class="modal-body">
-                    <div class="row">
-                        <div class="col imgAlignment">
-                            <img alt="" src="{{$post->photo ? $post->photo->file : '/images/placeholder_blog.png'}}" class="indexImgDimension">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col textAlignment">
-                        Are you sure you want to delete post - <b>{{ $post->title }}</b>?
-                        </div>
-                    </div>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                    {!! Form::open(['method' => 'DELETE','action'=> ['UserPostsController@destroy',$post->id]]) !!}
-                        {!! Form::submit('Delete Post', ['class' => 'btn btn-danger']) !!}
-                    {!! Form::close() !!}
-                    </div>
+    @if(count($posts) > 0)<!-- row -->
+    <div class="row justify-content-center">
+        @foreach ($posts as $key => $post)
+        <div class="col-lg-4 col-md-6">
+            <div class="single-product-items">
+              <div class="product-item-image">
+              @if ($post->photo == null)
+              <img style="height: 15rem;" alt="" src="{{ asset('images/avatar.png' ) }}">
+              @else 
+              <a href="{{ route('blogposts.show',$post->slug) }}"><img style="height: 15rem;" src="{{$post->photo ? $post->photo->file : '/images/placeholder_blog.png'}}" alt="Blog"></a>
+             @endif   
+              </div>
+              <div class="product-item-content text-center mt-30">
+                  <h4 class="product-title"><a href="{{ route('blogposts.show',$post->slug) }}">{{ str_limit($post->title,70) }}</a></h4>
+                  <h6 class="product-title">By {{ $post->user_id ? $post->user->name : 'Anonymous' }}</h6>
+                  <div class="image">
+                    @if ($post->user->image == null)
+                    <img style="height: 3rem; width: 3rem;" alt="" src="{{ asset('images/avatar.png' ) }}">
+                    @else 
+                    <a href="{{ route('blogposts.show',$post->slug) }}"><img style="height: 3rem; width: 3rem;" src="{{$post->user->image}}" alt="User"></a>
+                    @endif
                 </div>
-            </div>
+                <span class="regular-price">{{ $post->created_at ? $post->created_at->toFormattedDateString() : 'Date Unavailable' }}</span>                
+              </div>
+                
+            </div> <!-- single product items -->
         </div>
         @endforeach
     </div>
-    <!-- Pagination -->
-    <div class="row">
-        <div class="col">
+		<!-- Pagination -->
+    <div class="row justify-content-center">
+        <div class="col-lg-12 col-md-8">
             <div class="d-flex align-items-center justify-content-center"> {{ $posts->links() }}</div>
         </div>
     </div>
     @else
-    <div class="NoDataMessage">
-        <h2><b>No Posts to Show!!</b></h2>
-    </div>
-    @endif
+    <div class="row justify-content-center">
+        <div class="NoDataMessage">
+            <h2><b>No Posts to Show!!</b></h2>
+        </div>
+    @endif    
+    </div> 
 </div>
 @endsection
-@section('footer-scripts')
-@endsection
+

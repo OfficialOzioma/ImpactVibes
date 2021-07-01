@@ -44,7 +44,7 @@ class CommentRepliesController extends Controller
 
     /**
      * Display the specified resource.
-     *
+     * 
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -68,7 +68,14 @@ class CommentRepliesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $check_reply = CommentReply::findOrFail($id);
+        $check_reply_status = $request->is_active;
+        $check_reply->update(['is_active' => $check_reply_status]);
+        if($check_reply_status == 0)
+            $request->session()->flash('reply_status', 'Reply with ID "'.$check_reply->id.'" has been successfully unapproved');
+        else if($check_reply_status == 1)
+        $request->session()->flash('reply_status', 'Reply with ID "'.$check_reply->id.'" has been successfully approved');
+        return redirect()->back();
     }
 
     /**

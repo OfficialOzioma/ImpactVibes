@@ -29,7 +29,22 @@
                     <a href="{{route('media.index')}}">Media</a>
                 </li>
                 <li>
+                    <a href="{{route('category.index')}}">Market</a>
+                </li>
+                <li>
                     <a href="{{route('comments.index')}}">Comments</a>
+                </li>
+                <li>
+                    <a href="{{route('comments.index')}}">Comments</a>
+                </li>
+                <li>
+                    <a href="/mentors">Mentors</a>
+                </li>
+                <li>
+                    <a href="{{route('adminVentures.index')}}">Ventures Deal</a>
+                </li>
+                <li>
+                    <a href="/opportunities">Opportunities</a>
                 </li>
             </ul>
         </div>

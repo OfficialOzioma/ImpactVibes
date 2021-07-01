@@ -33,7 +33,7 @@
   </div>
 @endif
 <h2 class="headingTag">Categories </h2><hr>
-@if(count($categories) > 0)
+
 <div class="row">
     <div class="col-md-4">
         {!! Form::open(['method' => 'POST','action'=>'AdminCategoriesController@store']) !!}
@@ -41,11 +41,12 @@
                 {!! Form::label('name','Category Name:') !!}
                 {!! Form::text('name',null,['class' => 'form-control']) !!}
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group ">
                 {!! Form::submit('Create Category',['class' => 'form-control btn btn-dark']) !!}
             </div>
         {!! Form::close() !!}
     </div>
+    @if(count($categories) > 0)
     <div class="col-md-8">
         <table class="table table-striped table-hover">
                 <thead>

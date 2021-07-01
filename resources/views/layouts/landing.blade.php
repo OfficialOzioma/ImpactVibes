@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'ImpactVibes') }}</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href=" {{ asset('assets/images/favicon.png') }}" type="image/png">
@@ -38,20 +38,22 @@
 
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }} ">
-
+    <!--====== Custom css ======-->
+    @yield('style')
 
 </head>
 
-<body>
+<body style="color:black;">
 
     <!--====== PRELOADER PART START ======-->
 
-    <div class="preloader">
+    {{-- <div class="preloader">
         <div class="spin">
             <div class="cube1"></div>
             <div class="cube2"></div>
         </div>
-    </div>
+
+    </div> --}}
 
     <!--====== PRELOADER PART START ======-->
 
@@ -61,8 +63,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/logo.png" alt="Logo">
+                        <a class="navbar-brand" href="/">
+                            <img src="{{ asset('assets/images/logo6.png') }} " alt="Logo">
                         </a> <!-- Logo -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="bar-icon"></span>
@@ -72,27 +74,59 @@
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul id="nav" class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a data-scroll-nav="0" href="/">Home</a>
+                                <li class="nav-item {{ (request()->is('/')) ? 'active' : '' }}">
+                                    <a  href="/">Home</a>
+                                </li>
+                                <li class="nav-item {{ (request()->is('market')) ? 'active' : '' }}">
+                                    <a  href="/market">Market</a>
+                                </li>
+
+                                <li class="nav-item {{ (request()->is('mentorsConnect')) ? 'active' : '' }}">
+                                    <a  href="/mentorsConnect">Mentors</a>
+                                </li>
+
+                                <li class="nav-item {{ (request()->is('venturesdeal')) ? 'active' : '' }}">
+                                    <a  href="/venturesdeal">Ventures Deal</a>
+                                </li>
+
+
+
+
+                                <li class="nav-item {{ (request()->is('opportunity')) ? 'active' : '' }}">
+                                    <a  href="/opportunity">Opportunities</a>
+                                </li>
+
+                                <li class="nav-item {{ (request()->is('blogs')) ? 'active' : '' }}">
+                                    <a  href="/blogs">Blog</a>
+                                </li>
+
+                                <li class="nav-item {{ (request()->is('ourimpactstories')) ? 'active' : '' }}">
+                                    <a  href="/ourimpactstories">Impacts</a>
+                                </li>
+                                @guest
+                                <li class="nav-item {{ (request()->is('login')) ? 'active' : '' }}">
+                                    <a  href="{{ route('login') }}">Login</a>
+                                </li>
+                                @if (Route::has('register'))
+                                <li class="nav-item {{ (request()->is('register')) ? 'active' : '' }}">
+                                    <a  href="{{ route('register') }}">Register</a>
+                                </li>
+                                @endif
+                                @else
+                                <li class="nav-item {{ (request()->is('dashboard')) ? 'active' : '' }}">
+                                    <a  href="/dashboard">Dashboard</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#product">Market Place</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#service">Our impacts</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#showcase">Opportunities</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#showcase">Personality profliling</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a data-scroll-nav="0" href="#blog">Blogs</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a data-scroll-nav="0" href="/contact">Contact</a>
-                                </li>
+											 <a href="{{ route('logout') }}" style="color:red"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+									</li>
+                                @endguest
                             </ul> <!-- navbar nav -->
                         </div>
                     </nav> <!-- navbar -->
@@ -113,26 +147,25 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-5 col-sm-7">
                         <div class="footer-logo mt-40">
-                            <a href="#">
-                                <img src="assets/images/logo.png" alt="Logo">
+                            <a href="/">
+                                <img src="{{ asset('assets/images/logo6.png') }}" alt="Logo">
                             </a>
-                            <p class="mt-10">Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit.</p>
                             <ul class="footer-social mt-25">
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-instagram"></i></a></li>
+                                <li><a href="https://web.facebook.com/thaimpactvibes"><i class="lni-facebook-filled"></i></a></li>
+                                <li><a href="https://twitter.com/thaimpactvibes"><i class="lni-twitter-original"></i></a></li>
+                                <li><a href="https://www.instagram.com/thaimpactvibes/?hl=en"><i class="lni-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/impact-vibes-a89156204/"><i class="lni lni-linkedin-original"></i></a></li>
                             </ul>
                         </div> <!-- footer logo -->
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-5">
                         <div class="footer-link mt-50">
-                            <h5 class="f-title">Services</h5>
+                            <h5 class="f-title">More</h5>
                             <ul>
-                                <li><a href="#">Architechture Design</a></li>
-                                <li><a href="#">Interior Design</a></li>
-                                <li><a href="#">Autocad Services</a></li>
-                                <li><a href="#">Lighting Design</a></li>
-                                <li><a href="#">Poster Design</a></li>
+                                <li><a href="/ourimpactstories">Meet the Team</a></li>
+                                <li><a href="/">Work with us</a></li>
+                                <li><a href="/">Subscribe</a></li>
+
                             </ul>
                         </div> <!-- footer link -->
                     </div>
@@ -140,11 +173,9 @@
                         <div class="footer-link mt-50">
                             <h5 class="f-title">Help</h5>
                             <ul>
-                                <li><a href="#">Forum</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Help Center</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="/help">Help Center</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
+                                <li><a href="/">Privacy Policy</a></li>
                             </ul>
                         </div> <!-- footer link -->
                     </div>
@@ -156,8 +187,7 @@
                                     <div class="single-footer-info mt-20">
                                         <span>Phone :</span>
                                         <div class="footer-info-content">
-                                            <p>+88123 4567 890</p>
-                                            <p>+88123 4567 890</p>
+                                            <p>+234 806 8807060</p>
                                         </div>
                                     </div> <!-- single footer info -->
                                 </li>
@@ -165,8 +195,8 @@
                                     <div class="single-footer-info mt-20">
                                         <span>Email :</span>
                                         <div class="footer-info-content">
-                                            <p>contact@yourmail.com</p>
-                                            <p>support@yourmail.com</p>
+                                            <p>contact@impactvibes.com</p>
+                                            <p>support@impactvibes.com</p>
                                         </div>
                                     </div> <!-- single footer info -->
                                 </li>
@@ -174,7 +204,7 @@
                                     <div class="single-footer-info mt-20">
                                         <span>Address :</span>
                                         <div class="footer-info-content">
-                                            <p>5078 Jensen Key, Port Kaya, WV 73505</p>
+                                            <p>Owerri Tech Hub, Opp. City School Wetheral.</p>
                                         </div>
                                     </div> <!-- single footer info -->
                                 </li>
@@ -187,16 +217,13 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright text-center">
-                            <p>Crafted by <a href="https://uideck.com" rel="nofollow">UIdeck</a></p>
+                           An Impact Circle Enterprise Initiative <p>Powered by <a href="https://amadiaustin.me" rel="nofollow">Rex-Tech-Group</a></p>
                         </div> <!-- copyright -->
                     </div>
                 </div> <!-- row -->
             </div> <!--  footer copyright -->
         </div> <!-- container -->
     </section>
-
-
-
 
     <!--====== FOOTER PART ENDS ======-->
 

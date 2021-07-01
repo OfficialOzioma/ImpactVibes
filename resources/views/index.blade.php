@@ -12,16 +12,19 @@
                     <div class="row no-gutters align-items-center ">
                         <div class="col-lg-4 col-md-5">
                             <div class="slider-product-image d-none d-md-block">
-                                <img src="assets/images/slider/1.jpg" alt="Slider">
+                                <img src="assets/images/slider/1.svg" alt="Slider">
                                 <div class="slider-discount-tag">
-                                    <p>Changing the <br> World</p>
+                                    <p>Explore</p>
                                 </div>
                             </div> <!-- slider product image -->
                         </div>
                         <div class="col-lg-8 col-md-7">
                             <div class="slider-product-content">
-                                <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>The</span> Impact <span>Circe</span></h1>
-                                <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">One day however a small line of blind text by the name of Lorem Ipsum <br> decided to leave for the far World of Grammar.</p>
+                            <br><br>
+                
+                                <h3 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>Hi! Welcome</span> to the <span>Vibes</span></h3>
+                                <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">We’re your all – in – one place impact companion – providing  <br>
+                                YOU and EVERYONE with varied exciting services and opportunities, every innovating step of the way.</p>
                                 <a class="main-btn" href="#" data-animation="fadeInUp" data-delay="1.5s">Explore More <i class="lni-chevron-right"></i></a>
                             </div> <!-- slider product content -->
                         </div>
@@ -34,16 +37,17 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col-lg-4 col-md-5">
                                 <div class="slider-product-image d-none d-md-block">
-                                    <img src="assets/images/slider/3.jpg" alt="Slider">
+                                    <img src="assets/images/slider/2.svg" alt="Slider">
                                     <div class="slider-discount-tag">
-                                        <p>One Life at <br> a Time</p>
+                                        <p>Connect</p>
                                     </div>
                                 </div> <!-- slider product image -->
                             </div>
                             <div class="col-lg-8 col-md-7">
                                 <div class="slider-product-content">
-                                    <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>Impacting</span> One Life at a <span>Time</span></h1>
-                                    <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">One day however a small line of blind text by the name of Lorem Ipsum <br> decided to leave for the far World of Grammar.</p>
+                                <br><br>
+                                    <h3 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>We are</span> changing the <span>narrative</span></h3>
+                                    <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">Your one – stop haven to unlocking endless possibilities and reach beyond the skies, for more.</p>
                                     <a class="main-btn" href="#" data-animation="fadeInUp" data-delay="1.5s">Explore More <i class="lni-chevron-right"></i></a>
                                 </div> <!-- slider product content -->
                             </div>
@@ -56,17 +60,19 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col-lg-4 col-md-5">
                                 <div class="slider-product-image d-none d-md-block">
-                                    <img src="assets/images/slider/2.jpg" alt="Slider">
+                                    <img src="assets/images/slider/3.svg" alt="Slider">
                                     <div class="slider-discount-tag">
-                                        <p>Impact<br> Circle</p>
+                                        <p>Grow</p>
                                     </div>
                                 </div> <!-- slider product image -->
                             </div>
                             <div class="col-lg-8 col-md-7">
                                 <div class="slider-product-content">
-                                    <h1 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>We</span> are Changing the <span>Narative</span></h1>
-                                    <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">One day however a small line of blind text by the name of Lorem Ipsum <br> decided to leave for the far World of Grammar.</p>
-                                    <a class="main-btn" href="#contact" data-animation="fadeInUp" data-delay="1.5s">Contact Us <i class="lni-chevron-right"></i></a>
+                                <br><br>
+                                    <h3 class="slider-title mb-10" data-animation="fadeInUp" data-delay="0.3s"><span>Brace up</span> for the  <span>Impact</span></h3>
+                                    <p class="mb-25" data-animation="fadeInUp" data-delay="0.9s">Exhale. Defy the odds. Emerge. Let’s walk the lane with YOU and evoke growth that transcends your expectation. 
+                                    </p>
+                                    <a class="main-btn" href="/contact" data-animation="fadeInUp" data-delay="1.5s">Contact Us <i class="lni-chevron-right"></i></a>
                                 </div> <!-- slider product content -->
                             </div>
                         </div> <!-- row -->
@@ -77,9 +83,10 @@
             <div class="row justify-content-end">
                 <div class="col-lg-7 col-md-6">
                     <ul class="social text-right">
-                        <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                        <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                        <li><a href="#"><i class="lni-instagram"></i></a></li>
+                        <li><a href="https://web.facebook.com/thaimpactvibes"><i class="lni-facebook-filled"></i></a></li>
+                        <li><a href="https://twitter.com/thaimpactvibes"><i class="lni-twitter-original"></i></a></li>
+                        <li><a href="https://www.instagram.com/thaimpactvibes/?hl=en"><i class="lni-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/impact-vibes-a89156204/"><i class="lni lni-linkedin-original"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -97,22 +104,22 @@
             <div class="col-lg-6">
                 <div class="single-discount-product mt-30">
                     <div class="product-image">
-                        <img src="assets/images/discount-product/product-1.jpg" alt="Product">
+                        <img src="assets/images/services/3.svg" alt="Product">
                     </div> <!-- product image -->
                     <div class="product-content">
-                        <h4 class="content-title mb-15">High-quality furnitures <br> For your home</h4>
-                        <a href="#">View Collection <i class="lni-chevron-right"></i></a>
+                        <h4 class="content-title mb-15">Our Impacts</h4>
+                        <a href="/ourimpactstories" style="color:red">Click Here<i class="lni-chevron-right"></i></a>
                     </div> <!-- product content -->
                 </div> <!-- single discount product -->
             </div>
             <div class="col-lg-6">
                 <div class="single-discount-product mt-30">
                     <div class="product-image">
-                        <img src="assets/images/discount-product/product-2.jpg" alt="Product">
+                        <img src="assets/images/services/2.svg" alt="opportunity">
                     </div> <!-- product image -->
                     <div class="product-content">
-                        <h4 class="content-title mb-15">Hot Offer <br> Discount up to 80%</h4>
-                        <a href="#">View Collection <i class="lni-chevron-right"></i></a>
+                        <h4 class="content-title mb-15">Hot Opportunities</h4>
+                        <a style="color:red" href="/opportunity">Click to view<i class="lni-chevron-right"></i></a>
                     </div> <!-- product content -->
                 </div> <!-- single discount product -->
             </div>
@@ -123,593 +130,6 @@
 <!--====== DISCOUNT PRODUCT PART ENDS ======-->
 
 <!--====== PRODUCT PART START ======-->
-
-<section id="product" class="product-area pt-100 pb-130">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-4">
-                <div class="collection-menu text-center mt-30">
-                    <h4 class="collection-tilte">OUR COLLECTION</h4>
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="active" id="v-pills-furniture-tab" data-toggle="pill" href="#v-pills-furniture" role="tab" aria-controls="v-pills-furniture" aria-selected="true">Furniture</a>
-
-                        <a id="v-pills-decorative-tab" data-toggle="pill" href="#v-pills-decorative" role="tab" aria-controls="v-pills-decorative" aria-selected="false">Decorative</a>
-
-                        <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">Lighting</a>
-
-                        <a id="v-pills-outdoor-tab" data-toggle="pill" href="#v-pills-outdoor" role="tab" aria-controls="v-pills-outdoor" aria-selected="false">Outdoor</a>
-
-                        <a id="v-pills-storage-tab" data-toggle="pill" href="#v-pills-storage" role="tab" aria-controls="v-pills-storage" aria-selected="false">Storage</a>
-                    </div> <!-- nav -->
-                </div> <!-- collection menu -->
-            </div>
-            <div class="col-lg-9 col-md-8">
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-furniture" role="tabpanel" aria-labelledby="v-pills-furniture-tab">
-                        <div class="product-items mt-30">
-                            <div class="row product-items-active">
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-1.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Fibre Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$49.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-2.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-20%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$129.00</span>
-                                            <span class="discount-price">$159.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-3.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-10%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Classic Wardrobe</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$89.00</span>
-                                            <span class="discount-price">$129.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-1.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-2.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                            </div> <!-- row -->
-                        </div> <!-- product items -->
-                    </div> <!-- tab pane -->
-
-                    <div class="tab-pane fade" id="v-pills-decorative" role="tabpanel" aria-labelledby="v-pills-decorative-tab">
-                        <div class="product-items mt-30">
-                            <div class="row product-items-active">
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-1.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-2.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-3.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-1.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-2.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                            </div> <!-- row -->
-                        </div> <!-- product items -->
-                    </div> <!-- tab pane -->
-
-                    <div class="tab-pane fade" id="v-pills-lighting" role="tabpanel" aria-labelledby="v-pills-lighting-tab">
-                        <div class="product-items mt-30">
-                            <div class="row product-items-active">
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-1.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-2.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-3.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-1.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-2.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                            </div> <!-- row -->
-                        </div> <!-- product items -->
-                    </div> <!-- tab pane -->
-
-                    <div class="tab-pane fade" id="v-pills-outdoor" role="tabpanel" aria-labelledby="v-pills-outdoor-tab">
-                        <div class="product-items mt-30">
-                            <div class="row product-items-active">
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-1.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-2.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-3.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-1.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-2.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                            </div> <!-- row -->
-                        </div> <!-- product items -->
-                    </div> <!-- tab pane -->
-
-                    <div class="tab-pane fade" id="v-pills-storage" role="tabpanel" aria-labelledby="v-pills-storage-tab">
-                        <div class="product-items mt-30">
-                            <div class="row product-items-active">
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-1.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-2.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-3.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-1.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="single-product-items">
-                                        <div class="product-item-image">
-                                            <a href="#"><img src="assets/images/product/p-2.jpg" alt="Product"></a>
-                                            <div class="product-discount-tag">
-                                                <p>-60%</p>
-                                            </div>
-                                        </div>
-                                        <div class="product-item-content text-center mt-30">
-                                            <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                            <ul class="rating">
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                                <li><i class="lni-star-filled"></i></li>
-                                            </ul>
-                                            <span class="regular-price">$59.00</span>
-                                            <span class="discount-price">$69.00</span>
-                                        </div>
-                                    </div> <!-- single product items -->
-                                </div>
-                            </div> <!-- row -->
-                        </div> <!-- product items -->
-                    </div> <!-- tab pane -->
-                </div> <!-- tab content -->
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
-
 <!--====== PRODUCT PART ENDS ======-->
 
 <!--====== SERVICES PART START ======-->
@@ -719,64 +139,109 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="section-title pb-30">
-                    <h5 class="mb-15">Our Story</h5>
-                    <h3 class="title mb-15">Build Your Sweet Home</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <h3 class="title mb-15">Our Impact Stories</h3>
+                    <h5 class="mb-15">To us, few acts of kindness can spark an Impact!</h5>
+                    <p style="color: #000000">
+                        It begins with empathy and passion – to bring change by solving a particular pressing problem.
+                        Owerri, Nigeria is our home, but - a lot has to be done to address its neglect and falsity over 
+                        the years to inspire and enable human capital development among the youths, as obtainable elsewhere.
+                        “Social Innovation is the way to bring humanity back on track”.
+                        Yes, and should be prized and not orphaned! <br><br>
+                        Hence, our Founder/CEO Abel had the burden to start up our parent -  Impact Circle Enterprise in August 
+                        2018 as a Social platform to lead and bridge the gap in raising  young potentials within and around, with 
+                        disruptive abilities to launch SMEs/startups and sustainable impacts in diverse career paths.<br><br>
+                        With a few strategic partners and projects, we’ve done our little in inspiring many talented youths and 
+                        teens from the grassroots, explored knowledge with them, converted opportunities, and NOW empowering 
+                        Be our next Partner towards Impact! <br><br>
+                        Thanks so kindly.
+                        </p>
                 </div> <!-- section title -->
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="services-left mt-45">
-                    <div class="services">
-                        <img src="assets/images/services/services.jpg" alt="">
-                        <a href="#" class="main-btn mt-30">Read More <i class="lni-chevron-right"></i></a>
-                    </div> <!-- services btn -->
-                </div> <!-- services left -->
-            </div>
+
             <div class="col-lg-6">
 
-                <div class="services-right mt-45">
+                <div class="services-right mt-30">
+
                     <div class="row justify-content-center">
-                        <div class="col-md-6 col-sm-8">
-                            <div class="single-services text-center">
+
+                        <div class="col-lg-6 col-sm-8">
+                            <div class="single-services text-center mt-30">
                                 <div class="services-icon">
                                     <i class="lni-grid-alt"></i>
                                 </div>
                                 <div class="services-content mt-20">
-                                    <h5 class="title mb-10">Furnitures</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
+                                    <h5 class="title mb-10">Impact Circle</h5>
+                                    <p style="color: #ffffff">
+                                    Our focus lies on inspiring the youths, breeding employability through 
+                                    the acquisition of diverse valuable work skills...
+                                    </p>
+                                    <a href="/ourimpactstories">Read More</a><br>
+                                    <ul class="social mt-15">
+                                        <li><a href="https://web.facebook.com/thaimpactcircle/"><i class="lni-facebook-filled"></i></a></li>
+                                        <li><a href="https://twitter.com/thaimpactcircle"><i class="lni-twitter-original"></i></a></li>
+                                        <li><a href="https://www.instagram.com/thaimpactcircle/"><i class="lni-instagram"></i></a></li>
+                                    </ul>
                                 </div>
                             </div> <!-- single services -->
-
+                        </div>
+                        <div class="col-lg-6 col-sm-8">
                             <div class="single-services text-center mt-30">
                                 <div class="services-icon">
                                     <i class="lni-ruler-pencil"></i>
                                 </div>
                                 <div class="services-content mt-20">
-                                    <h5 class="title mb-10">Decoration</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
+                                    <h5 class="title mb-10">Ripple Prize</h5>
+                                    <p style="color: #ffffff">
+                                    To us, few acts of kindness can spark an 
+                                    Impact, and Social Innovation is the way to bring humanity 
+                                    back on track...
+                                    </p>
+                                    <a href="/ourimpactstories">Read More</a><br>
+                                    <ul class="social mt-15">
+                                        <li><a href="https://web.facebook.com/ripplesprize/"><i class="lni-facebook-filled"></i></a></li>
+                                        <li><a href="https://twitter.com/ripplesprize"><i class="lni-twitter-original"></i></a></li>
+                                        <li><a href="https://www.instagram.com/ripplesprize/?hl=en"><i class="lni-instagram"></i></a></li>
+                                    </ul>
                                 </div>
                             </div> <!-- single services -->
                         </div>
-                        <div class="col-md-6 col-sm-8">
+                        <div class="col-lg-6 col-sm-8">
                             <div class="single-services text-center mt-30">
                                 <div class="services-icon">
                                     <i class="lni-customer"></i>
                                 </div>
                                 <div class="services-content mt-20">
-                                    <h5 class="title mb-10">Consultancy</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
+                                    <h5 class="title mb-10">HultPrize@IMSU</h5>
+                                    <p style="color: #ffffff">
+                                        A UN/Hult Prize partnered OnCampus program or competition hosted in 2018 to launch a new wave of 
+                                        student entrepreneurs in Imo State University...
+                                    </p>
+                                    <a href="/ourimpactstories">Read More</a><br>
+                                    <ul class="social mt-15">
+                                        <li><a href="https://web.facebook.com/pg/hultprizeatimsu/"><i class="lni-facebook-filled"></i></a></li>
+                                        <li><a href="https://twitter.com/hultprizeatimsu?lang=en"><i class="lni-twitter-original"></i></a></li>
+                                        <li><a href="https://www.instagram.com/hultprizeatimsu/?hl=en"><i class="lni-instagram"></i></a></li>
+                                    </ul>
                                 </div>
                             </div> <!-- single services -->
-
+                        </div>
+                        <div class="col-lg-6 col-sm-8">
                             <div class="single-services text-center mt-30">
                                 <div class="services-icon">
                                     <i class="lni-support"></i>
                                 </div>
                                 <div class="services-content mt-20">
-                                    <h5 class="title mb-10">Custom Orders</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor.</p>
+                                    <h5 class="title mb-10">IYS@IMSU</h5>
+                                    <p style="color: #ffffff">
+                                    We are leading Sustainable Development Goals through the dignity of the person and 
+                                    creating 'positive change'...
+                                    </p>
+                                    <a href="/ourimpactstories">Read More</a><br>
+                                    <ul class="social mt-15">
+                                        {{-- <li><a href="#"><i class="lni-facebook-filled"></i></a></li> --}}
+                                        <li><a href="https://twitter.com/iysatimsu"><i class="lni-twitter-original"></i></a></li>
+                                        <li><a href="https://www.instagram.com/iysatimsu/"><i class="lni-instagram"></i></a></li>
+                                    </ul>
                                 </div>
                             </div> <!-- single services -->
                         </div>
@@ -794,26 +259,62 @@
 <section id="showcase" class="showcase-area pt-100 pb-130">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                <div class="showcase-title pt-25">
-                    <h2 class="title">Showcase</h2>
-                </div> <!-- showcase title -->
-            </div>
-            <div class="col-lg-6">
-                <div class="showcase-title pt-25">
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo.</p>
-                </div> <!-- showcase title -->
-            </div>
+            <div class="col-lg-12">
+                <div class="section-title pb-30">
+                    <h3 class="title mb-15">Our Events Gallery ShowCase</h3>
+                    <!-- showcase title -->
+                </div> 
+            </div>     
         </div> <!-- row -->
         <div class="row">
             <div class="col-lg-12">
                 <div class="showcase-active mt-65">
                     <div class="single-showcase">
-                        <img src="assets/images/showcase/t-1.jpg" alt="Testimonial">
+                        <img src="assets/images/showcase/3.jpg" alt="Testimonial">
                         <a href="#" class="main-btn">Full Preview</a>
                     </div> <!-- single showcase -->
                     <div class="single-showcase">
-                        <img src="assets/images/showcase/t-2.jpg" alt="Testimonial">
+                        <img src="assets/images/showcase/2.jpg" alt="Testimonial">
+                        <a href="#" class="main-btn">Full Preview</a>
+                    </div> <!-- single showcase -->
+
+                    <div class="single-showcase">
+                        <img src="assets/images/showcase/8.jpg" alt="Testimonial">
+                        <a href="#" class="main-btn">Full Preview</a>
+                    </div> <!-- single showcase -->
+
+                    <div class="single-showcase">
+                        <img src="assets/images/showcase/6.jpg" alt="Testimonial">
+                        <a href="#" class="main-btn">Full Preview</a>
+                    </div> <!-- single showcase -->
+
+                    <div class="single-showcase">
+                        <img src="assets/images/showcase/3.jpg" alt="Testimonial">
+                        <a href="#" class="main-btn">Full Preview</a>
+                    </div> <!-- single showcase -->
+
+                    <div class="single-showcase">
+                        <img src="assets/images/showcase/10.jpg" alt="Testimonial">
+                        <a href="#" class="main-btn">Full Preview</a>
+                    </div> <!-- single showcase -->
+
+                    <div class="single-showcase">
+                        <img src="assets/images/showcase/4.jpg" alt="Testimonial">
+                        <a href="#" class="main-btn">Full Preview</a>
+                    </div> <!-- single showcase -->
+
+                    <div class="single-showcase">
+                        <img src="assets/images/showcase/7.jpg" alt="Testimonial">
+                        <a href="#" class="main-btn">Full Preview</a>
+                    </div> <!-- single showcase -->
+
+                    <div class="single-showcase">
+                        <img src="assets/images/showcase/9.jpg" alt="Testimonial">
+                        <a href="#" class="main-btn">Full Preview</a>
+                    </div> <!-- single showcase -->
+
+                    <div class="single-showcase">
+                        <img src="assets/images/showcase/5.jpeg" alt="Testimonial">
                         <a href="#" class="main-btn">Full Preview</a>
                     </div> <!-- single showcase -->
                 </div> <!-- showcase active -->
@@ -829,223 +330,162 @@
 <section id="team" class="team-area pt-125 pb-130">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-6">
+            <div class="col-lg-12 col-sm-8">
                 <div class="section-title text-center pb-25">
-                    <h3 class="title mb-15">Our Expert Team</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h3 class="title mb-15">MEET THE TEAM</h3>
+                    <p style="color: #000000">We’re a team of growing changemakers knitted together to impact through diligence, 
+                    ingenuity and passion, in creating values, building prosperity and sharing in your many 
+                    accomplishments.
+                    </p>
                 </div> <!-- section title -->
             </div>
         </div> <!-- row -->
         <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="single-temp text-center mt-30">
-                    <div class="team-image">
-                        <img src="assets/images/team/t-1.jpg"
-                         alt="Team">
-                    </div>
-                    <div class="team-content mt-30">
-                        <h4 class="title mb-10"><a href="#">Celina Gomez</a></h4>
-                        <span>FOUNDER</span>
-                        <ul class="social mt-15">
-                            <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                            <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                            <li><a href="#"><i class="lni-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div> <!-- single temp -->
+            <div class="col-lg-12 col-sm-8">
+
+                <div class="services-right mt-30">
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-3 col-sm-4">
+                            <div class="single-services text-center mt-30" id="team">
+                                <div class="team-image">
+                                    <img style="height: 12rem;" src="{{asset('images/a0.jpeg')}}" alt="Team">
+                                </div>
+                                <div class="services-content mt-20">
+                                    <h5 class="title mb-10">Abel O. Uchegbulam</h5>
+                                    <p>Founder/CEO</p>
+                                    <br>
+                                    <ul class="social mt-15">
+                                        <li><a href="https://web.facebook.com/abeldadiamond.uchegbulam"><i class="lni-facebook-filled"></i></a></li>
+                                        <li><a href="https://twitter.com/IamsimplyAbel"><i class="lni-twitter-original"></i></a></li>
+                                        <li><a href="https://www.instagram.com/iamsimplyabel"><i class="lni-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/abel-onyekachi-uchegbulam-497215a9/"><i class="lni lni-linkedin-original"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- single services -->
+                        </div>
+                        <div class="col-lg-3 col-sm-4">
+                            <div class="single-services text-center mt-30" id="team">
+                                <div class="team-image">
+                                    <img style="height: 12rem;" src="{{asset('images/a1.jpg')}}" alt="Team">
+                                </div>
+                                <div class="services-content mt-20">
+                                    <h5 class="title mb-10">Amadi Austin</h5>
+                                    <p>Software Engineer</p>
+                                    <br>
+                                    <ul class="social mt-15">
+                                        <li><a href="https://twitter.com/rexsteroxxy"><i class="lni-twitter-original"></i></a></li>
+                                        <li><a href="https://github.com/rexsteroxy"><i class="lni lni-github-original"></i></a></li>
+                                        <li><a href="https://linkedin.com/in/amadiaustinchukwuemeka"><i class="lni lni-linkedin-original"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- single services -->
+                        </div>
+                        <div class="col-lg-3 col-sm-4">
+                            <div class="single-services text-center mt-30" id="team">
+                                <div class="team-image">
+                                    <img style="height: 12rem;" src="{{asset('images/Ozioma2.jpg')}}" alt="Team">
+                                </div>
+                                <div class="services-content mt-20">
+                                    <h5 class="title mb-10">Dike Paschal</h5>
+                                    <p>Software Engineer</p>
+                                    <br>
+                                    <ul class="social mt-15">
+                                        <li><a href="https://web.facebook.com/dikep2"><i class="lni-facebook-filled"></i></a></li>
+                                        <li><a href="https://twitter.com/officialozioma"><i class="lni-twitter-original"></i></a></li>
+                                        <li><a href="https://www.instagram.com/officialozioma/"><i class="lni-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/oficialozioma"><i class="lni lni-linkedin-original"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- single services -->
+                        </div>
+                        <div class="col-lg-3 col-sm-4">
+                            <div class="single-services text-center mt-30" id="team">
+                                <div class="team-image">
+                                    <img style="height: 12rem;" src="{{asset('images/a2.jpg')}}" alt="Team">
+                                </div>
+                                <div class="services-content mt-20">
+                                    <h5 class="title mb-10">Emmanuel C. Mbagwu</h5>
+                                    <p>Software Engineer</p>
+                                    <br>
+                                    <ul class="social mt-15">
+                                        <li><a href="https://twitter.com/lilstex4good"><i class="lni-twitter-original"></i></a></li>
+                                        <li><a href="https://github.com/lilstex"><i class="lni lni-github-original"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/lilstex-emmanuel"><i class="lni lni-linkedin-original"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- single services -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- services right -->
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="single-temp text-center mt-30">
-                    <div class="team-image">
-                        <img src="assets/images/team/t-2.jpg"
-                         alt="Team">
-                    </div>
-                    <div class="team-content mt-30">
-                        <h4 class="title mb-10"><a href="#">Patric Green</a></h4>
-                        <span>Consultant</span>
-                        <ul class="social mt-15">
-                            <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                            <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                            <li><a href="#"><i class="lni-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div> <!-- single temp -->
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="single-temp text-center mt-30">
-                    <div class="team-image">
-                        <img src="assets/images/team/t-3.jpg"
-                         alt="Team">
-                    </div>
-                    <div class="team-content mt-30">
-                        <h4 class="title mb-10"><a href="#">Mark Parker</a></h4>
-                        <span>Business Manager</span>
-                        <ul class="social mt-15">
-                            <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                            <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                            <li><a href="#"><i class="lni-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div> <!-- single temp -->
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="single-temp text-center mt-30">
-                    <div class="team-image">
-                        <img src="assets/images/team/t-4.jpg"
-                         alt="Team">
-                    </div>
-                    <div class="team-content mt-30">
-                        <h4 class="title mb-10"><a href="#">Daryl Dixon</a></h4>
-                        <span>Marketing Manager</span>
-                        <ul class="social mt-15">
-                            <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                            <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                            <li><a href="#"><i class="lni-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div> <!-- single temp -->
-            </div>
+
+            
         </div> <!-- row -->
     </div> <!-- container -->
 </section>
 
 <!--====== TEAM PART ENDS ======-->
 
-<!--====== TESTIMONIAL PART START ======-->
-
-<section id="testimonial" class="testimonial-area pt-200">
-    <div class="testimonial-bg bg_cover" style="background-image: url(assets/images/testimonial/ts-bg.jpg)"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 col-md-8">
-                <div class="testimonial-content">
-                    <div class="testimonial-active">
-                        <div class="single-testimonial">
-                            <i class="lni-quotation"></i>
-                            <p class="mb-30">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor inc ididunt ut labore et dolore magna aliqua.</p>
-                            <h6 class="title">Roma De Suza</h6>
-                            <span>- CEO, Tesla</span>
-                        </div> <!-- single testimonial -->
-                        <div class="single-testimonial">
-                            <i class="lni-quotation"></i>
-                            <p class="mb-30">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor inc ididunt ut labore et dolore magna aliqua.</p>
-                            <h6 class="title">Lisa White</h6>
-                            <span>- Designer, Walmart</span>
-                        </div> <!-- single testimonial -->
-                    </div> <!-- testimonial active -->
-                </div> <!-- testimonial content -->
-            </div>
-            <div class="col-lg-7 col-md-4">
-                <div class="testimonial-play text-right d-none d-md-block">
-                    <a class="Video-popup" href="https://www.youtube.com/watch?v=l8ccw7BMrMA"><i class="lni-play"></i></a>
-                </div> <!-- testimonial play -->
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
-
-<!--====== TESTIMONIAL PART ENDS ======-->
-
 <!--======  BLOG PART START ======-->
 
 <section id="blog" class="blog-area pt-125">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-6">
+            <div class="col-lg-12 col-sm-8">
                 <div class="section-title text-center pb-25">
-                    <h3 class="title mb-15">From The Blog</h3>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                    <h3 class="title mb-15">From Impact Blog</h3>
+                    <p>Your only limitation is the commitment to turn your imagination and inspiration into Impact!
+                    </p>
                 </div> <!-- section title -->
             </div>
-        </div> <!-- row -->
+        </div> 
+        @if(count($posts) > 0)<!-- row -->
         <div class="row justify-content-center">
+
+        @foreach ($posts as $key => $post)
             <div class="col-lg-4 col-md-6">
-                <div class="single-blog mt-30">
+                <div class="single-blog mt-30"  style="height: 25rem;">
                     <div class="blog-image">
-                        <img src="assets/images/blog/b-1.jpg" alt="Blog">
+                        <img style="height: 14rem;" src="{{$post->photo ? $post->photo->file : '/images/placeholder_blog.png'}}" alt="Blog">
                     </div>
                     <div class="blog-content">
                         <div class="content">
-                            <h4 class="title"><a href="#">Rowan an orangutan known  & loved</a></h4>
-                            <span>25 JULY, 2022</span>
+                            <h4 class="title"><a href="{{ route('blogposts.show',$post->slug) }}">{{ str_limit($post->title,70) }}</a></h4>
+                            <span>{{ $post->created_at ? $post->created_at->toFormattedDateString() : 'Date Unavailable' }}</span>
                         </div>
                         <div class="meta d-flex justify-content-between align-items-center">
                             <div class="meta-admin d-flex align-items-center">
                                 <div class="image">
-                                    <a href="#"><img src="assets/images/blog/admin.jpg" alt="Admin"></a>
+                                    <a href="{{ route('blogposts.show',$post->slug) }}"><img style="height: 3rem; width: 3rem;" src="{{$post->photo ? $post->photo->file : '/images/placeholder_blog.png'}}" alt="Admin"></a>
                                 </div>
                                 <div class="admin-title">
-                                    <h6 class="title"><a href="#">J. PARKER</a></h6>
+                                    <h6 class="title"><a href="#">By {{ $post->user_id ? $post->user->name : 'Anonymous' }}</a></h6>
                                 </div>
                             </div>  <!-- meta admin -->
                             <div class="meta-icon">
                                 <ul>
-                                    <li><a href="#"><i class="lni-share"></i></a></li>
-                                    <li><a href="#"><i class="lni-heart"></i></a></li>
+                                    <li><a class="primary-button" href="{{ route('blogposts.show',$post->slug) }}" >Read More</a></li>
+                                   
                                 </ul>
                             </div> <!-- meta icon -->
                         </div> <!-- meta -->
                     </div>
                 </div> <!-- single blog -->
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog mt-30">
-                    <div class="blog-image">
-                        <img src="assets/images/blog/b-2.jpg" alt="Blog">
-                    </div>
-                    <div class="blog-content">
-                        <div class="content">
-                            <h4 class="title"><a href="#">Rowan an orangutan known  & loved</a></h4>
-                            <span>25 JULY, 2022</span>
-                        </div>
-                        <div class="meta d-flex justify-content-between align-items-center">
-                            <div class="meta-admin d-flex align-items-center">
-                                <div class="image">
-                                    <a href="#"><img src="assets/images/blog/admin.jpg" alt="Admin"></a>
-                                </div>
-                                <div class="admin-title">
-                                    <h6 class="title"><a href="#">J. PARKER</a></h6>
-                                </div>
-                            </div>  <!-- meta admin -->
-                            <div class="meta-icon">
-                                <ul>
-                                    <li><a href="#"><i class="lni-share"></i></a></li>
-                                    <li><a href="#"><i class="lni-heart"></i></a></li>
-                                </ul>
-                            </div> <!-- meta icon -->
-                        </div> <!-- meta -->
-                    </div>
-                </div> <!-- single blog -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog mt-30">
-                    <div class="blog-image">
-                        <img src="assets/images/blog/b-3.jpg" alt="Blog">
-                    </div>
-                    <div class="blog-content">
-                        <div class="content">
-                            <h4 class="title"><a href="#">Rowan an orangutan known  & loved</a></h4>
-                            <span>25 JULY, 2022</span>
-                        </div>
-                        <div class="meta d-flex justify-content-between align-items-center">
-                            <div class="meta-admin d-flex align-items-center">
-                                <div class="image">
-                                    <a href="#"><img src="assets/images/blog/admin.jpg" alt="Admin"></a>
-                                </div>
-                                <div class="admin-title">
-                                    <h6 class="title"><a href="#">J. PARKER</a></h6>
-                                </div>
-                            </div>  <!-- meta admin -->
-                            <div class="meta-icon">
-                                <ul>
-                                    <li><a href="#"><i class="lni-share"></i></a></li>
-                                    <li><a href="#"><i class="lni-heart"></i></a></li>
-                                </ul>
-                            </div> <!-- meta icon -->
-                        </div> <!-- meta -->
-                    </div>
-                </div> <!-- single blog -->
-            </div>
+            @endforeach
+			<!-- Pagination -->
+			<div class="row">
+				<div class="col">
+					<div class="d-flex align-items-center justify-content-center"> {{ $posts->links() }}</div>
+				</div>
+			</div>
+			@else
+			<div class="NoDataMessage">
+				<h2><b>No Posts to Show!!</b></h2>
+			</div>
+			@endif
         </div> <!-- row -->
     </div> <!-- container -->
 </section>
